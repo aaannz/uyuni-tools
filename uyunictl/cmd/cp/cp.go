@@ -33,8 +33,8 @@ func NewCommand(globalFlags *types.GlobalFlags) *cobra.Command {
 		},
 	}
 
-	cpCmd.Flags().String("user", "", "User or UID to set on the destination file")
-	cpCmd.Flags().String("group", "", "Group or GID to set on the destination file")
+	cpCmd.Flags().String("user", "tomcat", "User or UID to set on the destination file")
+	cpCmd.Flags().String("group", "susemanager", "Group or GID to set on the destination file")
 
 	cmd_utils.AddBackendFlag(cpCmd)
 	return cpCmd
