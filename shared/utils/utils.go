@@ -374,14 +374,14 @@ func ReadInspectData(scriptDir string, prefix ...string) (map[string]string, err
 }
 
 // InspectHost check values on a host machine.
-func InspectHost(serverHost bool) (map[string]string, error) {
+func InspectHost(proxyHost bool) (map[string]string, error) {
 	scriptDir, err := os.MkdirTemp("", "mgradm-*")
 	defer os.RemoveAll(scriptDir)
 	if err != nil {
 		return map[string]string{}, Errorf(err, L("failed to create temporary directory"))
 	}
 
-	if err := GenerateInspectHostScript(scriptDir, serverHost); err != nil {
+	if err := GenerateInspectHostScript(scriptDir, proxyHost); err != nil {
 		return map[string]string{}, err
 	}
 
@@ -403,6 +403,7 @@ func GenerateInspectHostScript(scriptDir string, proxyHost bool) error {
 		Param:      inspectValues,
 		OutputFile: scriptDir + "/" + InspectOutputFile.Basename,
 		ProxyHost:  proxyHost,
+		Debug:      log.Trace().Enabled(),
 	}
 
 	scriptPath := filepath.Join(scriptDir, InspectScriptFilename)
