@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-09 11:44+0100\n"
-"PO-Revision-Date: 2026-01-19 08:04+0000\n"
+"PO-Revision-Date: 2026-01-19 09:04+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ja/>\n"
 "Language: ja\n"
@@ -1987,7 +1987,7 @@ msgstr "既存のサーバ証明書とデータベース証明書を再利用す
 
 #: mgradm/shared/podman/ssl.go:147
 msgid "Generating both the server and database certificates since one is missing"
-msgstr ""
+msgstr "サーバ証明書とデータベース証明書の両方を生成する(いずれかが不足しているため)"
 
 #: mgradm/shared/podman/ssl.go:157
 msgid "Cannot generate certificates as the SSL CA key cannot be found. Please set up third-party certificates."
@@ -1995,7 +1995,7 @@ msgstr "SSL CAキーが見つからないため、証明書を生成できませ
 
 #: mgradm/shared/podman/ssl.go:173
 msgid "Verifying the CA key password…"
-msgstr ""
+msgstr "CAキーのパスワードを検証中…"
 
 #: mgradm/shared/podman/ssl.go:184
 msgid "Failed to verify the CA key password!"
@@ -2011,7 +2011,7 @@ msgstr "既存のデータベース証明書のシークレットを再利用す
 
 #: mgradm/shared/podman/ssl.go:259
 msgid "Missing SANs or subjects in certificate of secret %[1]: %[2]s"
-msgstr ""
+msgstr "シークレットの証明書 %[1] にSANまたはサブジェクトがありません: %[2]s"
 
 #: mgradm/shared/podman/ssl.go:295
 msgid "Reusing the existing server certificate files"
@@ -2024,7 +2024,7 @@ msgstr "既存のデータベース証明書ファイルを再利用する"
 #: mgradm/shared/podman/ssl.go:316
 #, javascript-format
 msgid "CA file %s not found."
-msgstr ""
+msgstr "CAファイル %s が見つかりません。"
 
 #: mgradm/shared/podman/ssl.go:321
 msgid "cannot write existing CA certificate"
@@ -2033,7 +2033,7 @@ msgstr "既存のCA証明書を書き込めません"
 #: mgradm/shared/podman/ssl.go:328
 #, javascript-format
 msgid "Certificate file %s not found."
-msgstr ""
+msgstr "証明書ファイル %s が見つかりません。"
 
 #: mgradm/shared/podman/ssl.go:332
 msgid "cannot write existing server certificate"
@@ -2046,7 +2046,7 @@ msgstr "証明書ファイル %[1]s が %[2]s のFQDNと一致しません。"
 #: mgradm/shared/podman/ssl.go:345
 #, javascript-format
 msgid "Certificate key file %s not found."
-msgstr ""
+msgstr "証明書キーファイル %s が見つかりません。"
 
 #: mgradm/shared/podman/ssl.go:349
 msgid "cannot write existing server key"
