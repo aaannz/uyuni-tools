@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-09 11:44+0100\n"
-"PO-Revision-Date: 2026-01-19 07:04+0000\n"
+"PO-Revision-Date: 2026-01-19 08:04+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -48,7 +48,7 @@ msgstr "不备份 podman 配置。恢复时将使用默认值"
 
 #: mgradm/cmd/backup/backup.go:40
 msgid "Do not restart services after backup is done"
-msgstr "完成备份后不重启动服务"
+msgstr "完成备份后不重启服务"
 
 #: mgradm/cmd/backup/backup.go:41 mgradm/cmd/backup/backup.go:64
 msgid "Print expected actions, but no action is done"
@@ -80,7 +80,7 @@ msgstr "不恢复 podman 配置。将使用默认值"
 
 #: mgradm/cmd/backup/backup.go:63
 msgid "Restart service after restore is done"
-msgstr "完成恢复后重启动服务"
+msgstr "完成恢复后重启服务"
 
 #: mgradm/cmd/backup/backup.go:65
 msgid "Force overwrite of existing items"
@@ -129,7 +129,7 @@ msgstr "正在停止服务器服务"
 
 #: mgradm/cmd/backup/create/create.go:82
 msgid "Restarting server service"
-msgstr "正在重启动服务器服务"
+msgstr "正在重启服务器服务"
 
 #: mgradm/cmd/backup/create/create.go:86
 #, javascript-format
@@ -686,7 +686,7 @@ msgstr "无法创建密钥环 %s"
 #: mgradm/cmd/gpg/add/gpg.go:89
 #, javascript-format
 msgid "failed to parse %s"
-msgstr "无法分析 %s"
+msgstr "无法解析 %s"
 
 #: mgradm/cmd/gpg/add/gpg.go:96
 #, javascript-format
@@ -718,7 +718,7 @@ msgstr "无法运行导入密钥"
 
 #: mgradm/cmd/gpg/add/gpg.go:137
 msgid "failed to restart uyuni-update-config"
-msgstr "无法重启动 uyuni-update-config"
+msgstr "无法重启 uyuni-update-config"
 
 #: mgradm/cmd/gpg/gpg.go:20
 msgid "Manage GPG keys for 3rd party repositories"
@@ -999,11 +999,11 @@ msgstr "第一个用户标志"
 
 #: mgradm/cmd/migrate/kubernetes/dataExtractor.go:49
 msgid "failed to parse data extractor pod output"
-msgstr "无法分析数据提取器 pod 输出"
+msgstr "无法解析数据提取器 pod 输出"
 
 #: mgradm/cmd/migrate/kubernetes/dataExtractor.go:65
 msgid "failed to parse migration data file"
-msgstr "无法分析迁移数据文件"
+msgstr "无法解析迁移数据文件"
 
 #: mgradm/cmd/migrate/kubernetes/dataExtractor.go:72
 msgid "found no data file after migration"
@@ -1109,7 +1109,7 @@ msgstr "无法获取 %s SSH 配置映射"
 
 #: mgradm/cmd/migrate/kubernetes/ssh.go:130
 msgid "failed to parse SSH ConfigMap data"
-msgstr "无法分析SSH 配置映射数据"
+msgstr "无法解析 SSH 配置映射数据"
 
 #: mgradm/cmd/migrate/kubernetes/ssh.go:135
 #: mgradm/cmd/migrate/kubernetes/ssh.go:140
@@ -1191,7 +1191,7 @@ msgstr "已构建，但不含 kubernetes 支持"
 
 #: mgradm/cmd/restart/restart.go:23 mgradm/cmd/restart/restart.go:24
 msgid "Restart the server"
-msgstr "重启动服务器"
+msgstr "重启服务器"
 
 #: mgradm/cmd/scale/kubernetes.go:23
 msgid "kubernetes not supported yet"
