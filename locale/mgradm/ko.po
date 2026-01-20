@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-09 11:44+0100\n"
-"PO-Revision-Date: 2026-01-20 02:04+0000\n"
+"PO-Revision-Date: 2026-01-20 03:04+0000\n"
 "Last-Translator: Seeun Lee <selee@e4net.net>\n"
 "Language-Team: Korean <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ko/>\n"
 "Language: ko\n"
@@ -1392,8 +1392,9 @@ msgid "The computed image is %s"
 msgstr "계산된 이미지는 %s입니다."
 
 #: mgradm/cmd/support/ptf/podman/utils.go:118
+#, fuzzy
 msgid "The %[1]s service image is %[2]s"
-msgstr "%[1]s 서비스 이미지는 %[2]s임"
+msgstr "%[1]s 서비스 이미지는 %[2]s입니다."
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
@@ -2045,18 +2046,18 @@ msgid "Reusing the existing database certificate files"
 msgstr "기존 데이터베이스 인증서 파일 재사용"
 
 #: mgradm/shared/podman/ssl.go:316
-#, javascript-format
+#, fuzzy, javascript-format
 msgid "CA file %s not found."
-msgstr ""
+msgstr "CA 파일 %s이(가) 없습니다."
 
 #: mgradm/shared/podman/ssl.go:321
 msgid "cannot write existing CA certificate"
 msgstr "기존 CA 인증서를 작성할 수 없음"
 
 #: mgradm/shared/podman/ssl.go:328
-#, javascript-format
+#, fuzzy, javascript-format
 msgid "Certificate file %s not found."
-msgstr ""
+msgstr "인증서 파일 %s이(가) 없습니다."
 
 #: mgradm/shared/podman/ssl.go:332
 msgid "cannot write existing server certificate"
@@ -2069,9 +2070,9 @@ msgid "Certificate file %[1]s doesn't match %[2]s FQDN."
 msgstr "인증서 파일 %[1]이(가) %[2] FQDN과 일치하지 않습니다."
 
 #: mgradm/shared/podman/ssl.go:345
-#, javascript-format
+#, fuzzy, javascript-format
 msgid "Certificate key file %s not found."
-msgstr ""
+msgstr "인증서 키 파일 %s이(가) 없습니다."
 
 #: mgradm/shared/podman/ssl.go:349
 msgid "cannot write existing server key"
