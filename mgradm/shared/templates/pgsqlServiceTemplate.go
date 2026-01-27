@@ -22,6 +22,7 @@ RequiresMountsFor=%t/containers
 
 [Service]
 Environment=PODMAN_SYSTEMD_UNIT=%n
+Environment=UYUNI_BACKUP_VOLUME=''
 Restart=on-failure
 ExecStartPre=/bin/rm -f %t/%n.pid %t/%n.ctr-id
 ExecStartPre=/usr/bin/podman rm --ignore --force -t 10 {{ .NamePrefix }}-db
@@ -53,7 +54,7 @@ ExecStart=/bin/sh -c '/usr/bin/podman run \
         -v {{ .Name }}:{{ .MountPath }} \
         {{- end }}
 	--network {{ .Network }} \
-	${PODMAN_EXTRA_ARGS} ${UYUNI_IMAGE}'
+	${UYUNI_BACKUP_VOLUME} ${PODMAN_EXTRA_ARGS} ${UYUNI_IMAGE}'
 ExecStop=/usr/bin/podman stop \
 	--ignore -t 10 \
 	--cidfile=%t/%n.ctr-id

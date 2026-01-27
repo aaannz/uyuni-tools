@@ -98,7 +98,11 @@ func installForPodman(
 		); err != nil {
 			return err
 		}
-
+		if flags.Installation.DB.Walbackup {
+			if err := pgsql.GenerateBackupVolumeConfig(systemd); err != nil {
+				return err
+			}
+		}
 		// Run the DB container setup if the user doesn't set a custom host name for it.
 		if err := pgsql.SetupPgsql(systemd, preparedPgsqlImage); err != nil {
 			return err
