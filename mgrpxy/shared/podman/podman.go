@@ -248,6 +248,10 @@ func UnpackConfig(configPath string) error {
 		return err
 	}
 
+	if err := os.Chmod(proxyConfigDir, 0755); err != nil {
+		return err
+	}
+
 	if err := checkPermissions(proxyConfigDir, 0005|0050|0500); err != nil {
 		return err
 	}
@@ -260,6 +264,11 @@ func UnpackConfig(configPath string) error {
 		}
 	} else {
 		log.Info().Msg(L("No tarball provided. Will check existing configuration files."))
+	}
+
+	configFilePath := path.Join(proxyConfigDir, "config.yaml")
+	if err := os.Chmod(configFilePath, 0644); err != nil {
+		return err
 	}
 
 	return validateInstallYamlFiles(proxyConfigDir)
