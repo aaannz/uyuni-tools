@@ -12,6 +12,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
+	"github.com/uyuni-project/uyuni-tools/mgradm/cmd/backup/db"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/coco"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/hub"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/pgsql"
@@ -106,6 +107,11 @@ func installForPodman(
 		// Run the DB container setup if the user doesn't set a custom host name for it.
 		if err := pgsql.SetupPgsql(systemd, preparedPgsqlImage); err != nil {
 			return err
+		}
+		if flags.Installation.DB.Walbackup {
+			if err := db.Enable(true); err != nil {
+				return err
+			}
 		}
 	} else {
 		log.Info().Msgf(
