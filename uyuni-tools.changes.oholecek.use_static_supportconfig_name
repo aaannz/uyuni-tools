@@ -1,0 +1,2 @@
+- Use static supportconfig name to avoid dynamic search
+  (bsc#1257941)
