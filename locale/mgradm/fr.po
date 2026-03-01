@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
 "PO-Revision-Date: 2025-09-03 14:59+0000\n"
 "Last-Translator: David D <dadu042@mailo.com>\n"
 "Language-Team: French <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/fr/>\n"
@@ -1415,13 +1415,19 @@ msgstr "impossible de déterminer l'image: %s"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:99
 #, fuzzy, javascript-format
-msgid "The computed image is %s"
+msgid "The computed PTF image is %s"
 msgstr "impossible de déterminer l'image: %s"
 
-#: mgradm/cmd/support/ptf/podman/utils.go:118
+#: mgradm/cmd/support/ptf/podman/utils.go:119
+#: mgradm/cmd/support/ptf/podman/utils.go:123
 #, fuzzy
 msgid "The %[1]s service image is %[2]s"
 msgstr "impossible de déterminer l'image: %s"
+
+#: mgradm/cmd/support/ptf/podman/utils.go:121
+#, javascript-format
+msgid "Cannot find PTF for %s"
+msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 #, fuzzy
@@ -2098,86 +2104,86 @@ msgstr "Création du certificat SSL du serveur"
 msgid "Missing SANs or subjects in certificate of secret %[1]: %[2]s"
 msgstr ""
 
-#: mgradm/shared/podman/ssl.go:295
+#: mgradm/shared/podman/ssl.go:293
 #, fuzzy
 msgid "Reusing the existing server certificate files"
 msgstr "Création du certificat SSL du serveur"
 
-#: mgradm/shared/podman/ssl.go:307
+#: mgradm/shared/podman/ssl.go:305
 #, fuzzy
 msgid "Reusing the existing database certificate files"
 msgstr "Création du certificat SSL du serveur"
 
-#: mgradm/shared/podman/ssl.go:316
+#: mgradm/shared/podman/ssl.go:314
 #, javascript-format
 msgid "CA file %s not found."
 msgstr ""
 
-#: mgradm/shared/podman/ssl.go:321
+#: mgradm/shared/podman/ssl.go:319
 #, fuzzy
 msgid "cannot write existing CA certificate"
 msgstr "impossible de mettre à jour le certificat SSL: %s"
 
-#: mgradm/shared/podman/ssl.go:328
+#: mgradm/shared/podman/ssl.go:326
 #, javascript-format
 msgid "Certificate file %s not found."
 msgstr ""
 
-#: mgradm/shared/podman/ssl.go:332
+#: mgradm/shared/podman/ssl.go:330
 #, fuzzy
 #| msgid "Creating SSL server certificate secret"
 msgid "cannot write existing server certificate"
 msgstr "Création du certificat SSL du serveur"
 
-#: mgradm/shared/podman/ssl.go:337
+#: mgradm/shared/podman/ssl.go:335
 msgid "Certificate file %[1]s doesn't match %[2]s FQDN."
 msgstr ""
 
-#: mgradm/shared/podman/ssl.go:345
+#: mgradm/shared/podman/ssl.go:343
 #, javascript-format
 msgid "Certificate key file %s not found."
 msgstr ""
 
-#: mgradm/shared/podman/ssl.go:349
+#: mgradm/shared/podman/ssl.go:347
 #, fuzzy
 msgid "cannot write existing server key"
 msgstr "impossible de générer le fichier du service systemd: %s"
 
-#: mgradm/shared/podman/ssl.go:400
+#: mgradm/shared/podman/ssl.go:398
 #, fuzzy
 #| msgid "failed to remove copied certificate files in the container"
 msgid "Cannot generate new certificates without a CA password. Please check input options"
 msgstr "impossible de copier les fichiers du certificat dans le conteneur"
 
-#: mgradm/shared/podman/ssl.go:402
+#: mgradm/shared/podman/ssl.go:400
 #, fuzzy
 #| msgid "Creating SSL server certificate secret"
 msgid "Generating the server certificate…"
 msgstr "Création du certificat SSL du serveur"
 
-#: mgradm/shared/podman/ssl.go:422
+#: mgradm/shared/podman/ssl.go:420
 #, fuzzy
 #| msgid "failed to remove copied certificate files in the container"
 msgid "Failed to generate server SSL certificate. Please check the input parameters."
 msgstr "impossible de copier les fichiers du certificat dans le conteneur"
 
-#: mgradm/shared/podman/ssl.go:425
+#: mgradm/shared/podman/ssl.go:423
 #, fuzzy
 #| msgid "SSL certificate state"
 msgid "Server SSL certificate generated"
 msgstr "État du certificat SSL"
 
-#: mgradm/shared/podman/ssl.go:436
+#: mgradm/shared/podman/ssl.go:434
 #, fuzzy
 msgid "Generating the database certificate…"
 msgstr "impossible de générer le fichier du service systemd: %s"
 
-#: mgradm/shared/podman/ssl.go:455
+#: mgradm/shared/podman/ssl.go:453
 #, fuzzy
 msgid "Failed to generate database SSL certificate"
 msgstr "impossible de générer le fichier du service systemd: %s"
 
-#: mgradm/shared/podman/ssl.go:458
+#: mgradm/shared/podman/ssl.go:456
 #, fuzzy
 #| msgid "SSL certificate state"
 msgid "Database SSL certificate generated"

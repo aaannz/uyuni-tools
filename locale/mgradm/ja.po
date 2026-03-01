@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
-"PO-Revision-Date: 2025-11-16 17:04+0000\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"PO-Revision-Date: 2026-01-19 09:04+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ja/>\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: mgradm/cmd/backup/backup.go:28
 msgid "Create backup"
@@ -1389,13 +1389,20 @@ msgid "failed to find server image"
 msgstr "サーバイメージが見つかりませんでした"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:99
-#, javascript-format
-msgid "The computed image is %s"
+#, fuzzy, javascript-format
+#| msgid "The computed image is %s"
+msgid "The computed PTF image is %s"
 msgstr "計算されたイメージは %s です"
 
-#: mgradm/cmd/support/ptf/podman/utils.go:118
+#: mgradm/cmd/support/ptf/podman/utils.go:119
+#: mgradm/cmd/support/ptf/podman/utils.go:123
 msgid "The %[1]s service image is %[2]s"
 msgstr "%[1]s サービスイメージは %[2]s です"
+
+#: mgradm/cmd/support/ptf/podman/utils.go:121
+#, javascript-format
+msgid "Cannot find PTF for %s"
+msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
@@ -1817,22 +1824,17 @@ msgid "cannot generate systemd user configuration file"
 msgstr "systemdユーザ設定ファイルを生成できません"
 
 #: mgradm/shared/podman/podman.go:139
-#, fuzzy
-#| msgid "failed to generate migration script"
 msgid "failed to generate SSL migration script"
-msgstr "移行スクリプトの生成に失敗しました"
+msgstr "SSL移行スクリプトの生成に失敗しました"
 
 #: mgradm/shared/podman/podman.go:159
-#, fuzzy, javascript-format
-#| msgid "Preparing SSL certificates to match the new hostname"
+#, javascript-format
 msgid "Migrating SSL certificates from the source server %s"
-msgstr "新しいホスト名に一致するSSL証明書を準備しています"
+msgstr "ソースサーバ %s からSSL証明書を移行しています"
 
 #: mgradm/shared/podman/podman.go:162
-#, fuzzy
-#| msgid "cannot run uyuni migration container"
 msgid "cannot run uyuni SSL migration container"
-msgstr "uyuni移行コンテナを実行できません"
+msgstr "uyuni SSL移行コンテナを実行できません"
 
 #: mgradm/shared/podman/podman.go:173
 #, javascript-format
@@ -1931,10 +1933,8 @@ msgid "error upgrading saline service."
 msgstr "salineサービスのアップグレード時のエラー。"
 
 #: mgradm/shared/podman/podman.go:606
-#, fuzzy
-#| msgid "cannot run migration script"
 msgid "cannot run SSL migration script"
-msgstr "移行スクリプトを実行できません"
+msgstr "SSL移行スクリプトを実行できません"
 
 #: mgradm/shared/podman/podman.go:618
 msgid "cannot run migration script"
@@ -1985,137 +1985,107 @@ msgid "Using provided 3rd party database certificates"
 msgstr "提供されたサードパーティのデータベース証明書を使用する"
 
 #: mgradm/shared/podman/ssl.go:120
-#, fuzzy
-#| msgid "failed to create the server deployment"
 msgid "Failed to create secrets from the provided SSL arguments"
-msgstr "サーバ配備の作成に失敗しました"
+msgstr "指定されたSSL引数からシークレットを作成できませんでした"
 
 #: mgradm/shared/podman/ssl.go:143
-#, fuzzy
-#| msgid "Reusing existing certificates"
 msgid "Reusing the existing server and database certificates"
-msgstr "既存の証明書の再利用"
+msgstr "既存のサーバ証明書とデータベース証明書を再利用する"
 
 #: mgradm/shared/podman/ssl.go:147
 msgid "Generating both the server and database certificates since one is missing"
-msgstr ""
+msgstr "サーバ証明書とデータベース証明書の両方を生成する(いずれかが不足しているため)"
 
 #: mgradm/shared/podman/ssl.go:157
-#, fuzzy
-#| msgid "Cannot generate new certificates without a CA password. Please check input options"
 msgid "Cannot generate certificates as the SSL CA key cannot be found. Please set up third-party certificates."
-msgstr "CAパスワードがないと新しい証明書を生成できません。入力オプションを確認してください"
+msgstr "SSL CAキーが見つからないため、証明書を生成できません。サードパーティ証明書を設定してください。"
 
 #: mgradm/shared/podman/ssl.go:173
 msgid "Verifying the CA key password…"
-msgstr ""
+msgstr "CAキーのパスワードを検証中…"
 
 #: mgradm/shared/podman/ssl.go:184
-#, fuzzy
-#| msgid "Failed to convert CA private key to RSA"
 msgid "Failed to verify the CA key password!"
-msgstr "CA機密鍵のRSAへの変換に失敗しました"
+msgstr "CAキーのパスワードの検証に失敗しました。"
 
 #: mgradm/shared/podman/ssl.go:202
-#, fuzzy
-#| msgid "Reusing existing certificates"
 msgid "Reusing the existing server certificate secrets"
-msgstr "既存の証明書の再利用"
+msgstr "既存のサーバ証明書のシークレットを再利用する"
 
 #: mgradm/shared/podman/ssl.go:207
-#, fuzzy
-#| msgid "Reusing existing certificates"
 msgid "Reusing the existing database certificate secrets"
-msgstr "既存の証明書の再利用"
+msgstr "既存のデータベース証明書のシークレットを再利用する"
 
 #: mgradm/shared/podman/ssl.go:259
 msgid "Missing SANs or subjects in certificate of secret %[1]: %[2]s"
-msgstr ""
+msgstr "シークレットの証明書 %[1] にSANまたはサブジェクトがありません: %[2]s"
 
-#: mgradm/shared/podman/ssl.go:295
-#, fuzzy
-#| msgid "Reusing existing certificates"
+#: mgradm/shared/podman/ssl.go:293
 msgid "Reusing the existing server certificate files"
-msgstr "既存の証明書の再利用"
+msgstr "既存のサーバ証明書ファイルを再利用する"
 
-#: mgradm/shared/podman/ssl.go:307
-#, fuzzy
-#| msgid "Reusing existing certificates"
+#: mgradm/shared/podman/ssl.go:305
 msgid "Reusing the existing database certificate files"
-msgstr "既存の証明書の再利用"
+msgstr "既存のデータベース証明書ファイルを再利用する"
 
-#: mgradm/shared/podman/ssl.go:316
+#: mgradm/shared/podman/ssl.go:314
 #, javascript-format
 msgid "CA file %s not found."
-msgstr ""
+msgstr "CAファイル %s が見つかりません。"
 
-#: mgradm/shared/podman/ssl.go:321
+#: mgradm/shared/podman/ssl.go:319
 msgid "cannot write existing CA certificate"
 msgstr "既存のCA証明書を書き込めません"
 
-#: mgradm/shared/podman/ssl.go:328
+#: mgradm/shared/podman/ssl.go:326
 #, javascript-format
 msgid "Certificate file %s not found."
-msgstr ""
+msgstr "証明書ファイル %s が見つかりません。"
 
-#: mgradm/shared/podman/ssl.go:332
+#: mgradm/shared/podman/ssl.go:330
 msgid "cannot write existing server certificate"
 msgstr "既存のサーバ証明書を書き込めません"
 
-#: mgradm/shared/podman/ssl.go:337
-#, fuzzy
-#| msgid "Cert file %[1]s doesn't match %[2]s FQDN. A new certificate will be created."
+#: mgradm/shared/podman/ssl.go:335
 msgid "Certificate file %[1]s doesn't match %[2]s FQDN."
-msgstr "証明書ファイル %[1]s が %[2]s のFQDNと一致しません。新しい証明書が作成されます。"
+msgstr "証明書ファイル %[1]s が %[2]s のFQDNと一致しません。"
 
-#: mgradm/shared/podman/ssl.go:345
+#: mgradm/shared/podman/ssl.go:343
 #, javascript-format
 msgid "Certificate key file %s not found."
-msgstr ""
+msgstr "証明書キーファイル %s が見つかりません。"
 
-#: mgradm/shared/podman/ssl.go:349
+#: mgradm/shared/podman/ssl.go:347
 msgid "cannot write existing server key"
 msgstr "既存のサーバキーを書き込めません"
 
-#: mgradm/shared/podman/ssl.go:400
+#: mgradm/shared/podman/ssl.go:398
 msgid "Cannot generate new certificates without a CA password. Please check input options"
 msgstr "CAパスワードがないと新しい証明書を生成できません。入力オプションを確認してください"
 
-#: mgradm/shared/podman/ssl.go:402
-#, fuzzy
-#| msgid "Creating SSL server certificate secret"
+#: mgradm/shared/podman/ssl.go:400
 msgid "Generating the server certificate…"
-msgstr "SSLサーバ証明書シークレットの作成"
+msgstr "サーバ証明書を生成しています…"
 
-#: mgradm/shared/podman/ssl.go:422
-#, fuzzy
-#| msgid "Failed to generate server SSL certificates. Please check the input parameters."
+#: mgradm/shared/podman/ssl.go:420
 msgid "Failed to generate server SSL certificate. Please check the input parameters."
 msgstr "サーバSSL証明書の生成に失敗しました。入力パラメータを確認してください。"
 
-#: mgradm/shared/podman/ssl.go:425
-#, fuzzy
-#| msgid "Server SSL certificates generated"
+#: mgradm/shared/podman/ssl.go:423
 msgid "Server SSL certificate generated"
-msgstr "サーバのSSL証明書が生成されました"
+msgstr "サーバSSL証明書が生成されました"
 
-#: mgradm/shared/podman/ssl.go:436
-#, fuzzy
-#| msgid "Cannot generate database certificate"
+#: mgradm/shared/podman/ssl.go:434
 msgid "Generating the database certificate…"
-msgstr "データベース証明書を生成できません"
+msgstr "データベース証明書を生成しています…"
 
-#: mgradm/shared/podman/ssl.go:455
-#, fuzzy
-#| msgid "Cannot generate database certificate"
+#: mgradm/shared/podman/ssl.go:453
 msgid "Failed to generate database SSL certificate"
-msgstr "データベース証明書を生成できません"
+msgstr "データベースSSL証明書を生成できませんでした"
 
-#: mgradm/shared/podman/ssl.go:458
-#, fuzzy
-#| msgid "Database SSL certificates generated"
+#: mgradm/shared/podman/ssl.go:456
 msgid "Database SSL certificate generated"
-msgstr "データベースのSSL証明書が生成されました"
+msgstr "データベースSSL証明書が生成されました"
 
 #: mgradm/shared/saline/saline.go:63 mgradm/shared/saline/saline.go:134
 msgid "Multiple Saline container replicas are not currently supported, setting up only one."

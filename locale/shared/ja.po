@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
 "PO-Revision-Date: 2025-06-16 14:59+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-shared/ja/>\n"
@@ -292,8 +292,8 @@ msgstr "helmチャート %[1]s (ネームスペース %[2]s 内)のインスト�
 msgid "namespace is required"
 msgstr "ネームスペースが必要です"
 
-#: shared/kubernetes/helm.go:77 shared/podman/images.go:373
-#: shared/podman/images.go:394 shared/podman/images.go:414
+#: shared/kubernetes/helm.go:77 shared/podman/images.go:372
+#: shared/podman/images.go:393 shared/podman/images.go:413
 #: shared/podman/network.go:108 shared/podman/secret.go:130
 #: shared/podman/systemd.go:248 shared/podman/systemd.go:326
 #: shared/podman/systemd.go:327 shared/podman/utils.go:188
@@ -630,138 +630,138 @@ msgstr "ホストシステムで検査スクリプトを実行できませんで
 msgid "cannot inspect host data"
 msgstr "ホストデータを検査できません"
 
-#: shared/podman/images.go:37
+#: shared/podman/images.go:36
 #, javascript-format
 msgid "Cannot prepare image %s because registry is missing"
 msgstr ""
 
-#: shared/podman/images.go:40
+#: shared/podman/images.go:39
 #, javascript-format
 msgid "Cannot prepare image %s because tag is missing"
 msgstr ""
 
-#: shared/podman/images.go:44
+#: shared/podman/images.go:43
 #, javascript-format
 msgid "Ensure image %s is available"
 msgstr "イメージ %s が使用可能であることを確認します"
 
-#: shared/podman/images.go:58
+#: shared/podman/images.go:57
 msgid "Pull Policy is always. Presence of RPM image will be checked and pulled from registry if not present"
 msgstr "プルポリシーが常に適用されます。RPMイメージがあるかどうかがチェックされ、存在しない場合はレジストリからプルされます"
 
-#: shared/podman/images.go:75
+#: shared/podman/images.go:74
 #, javascript-format
 msgid "image %s is missing and cannot be fetched"
 msgstr "イメージ %s が見つからないのでフェッチできません"
 
-#: shared/podman/images.go:82
+#: shared/podman/images.go:81
 #, javascript-format
 msgid "Cannot find RPM image for %s"
 msgstr "%s のRPMイメージが見つかりません"
 
-#: shared/podman/images.go:90
+#: shared/podman/images.go:89
 #, javascript-format
 msgid "Cannot use RPM image for %s"
 msgstr "%s のRPMイメージを使用できません"
 
-#: shared/podman/images.go:94
+#: shared/podman/images.go:93
 msgid "Using the %[1]s image loaded from the RPM instead of its online version %[2]s"
 msgstr "RPM からロードされた %[1]s イメージを使用(オンラインバージョン %[2]s ではない)"
 
-#: shared/podman/images.go:106
+#: shared/podman/images.go:105
 msgid "failed to determine image"
 msgstr "イメージの決定に失敗しました"
 
-#: shared/podman/images.go:114
+#: shared/podman/images.go:113
 msgid "failed to find the image of the currently running server container"
 msgstr "現在実行中のサーバコンテナのイメージが見つかりませんでした"
 
-#: shared/podman/images.go:125
+#: shared/podman/images.go:124
 msgid "failed to determine pgsql image"
 msgstr "pgsqlイメージの決定に失敗しました"
 
-#: shared/podman/images.go:133
+#: shared/podman/images.go:132
 msgid "failed to find the image of the currently running db container"
 msgstr "現在実行中のdbコンテナのイメージが見つかりませんでした"
 
-#: shared/podman/images.go:158
+#: shared/podman/images.go:157
 #, javascript-format
 msgid "Cannot correctly parse image name '%s', local image cannot be used"
 msgstr "イメージ名「%s」を正しく解析できません。ローカルイメージを使用できません"
 
-#: shared/podman/images.go:176
+#: shared/podman/images.go:175
 msgid "cannot unmarshal image RPM metadata"
 msgstr "イメージRPMメタデータをアンマーシャルできません"
 
-#: shared/podman/images.go:195
+#: shared/podman/images.go:194
 #, javascript-format
 msgid "skipping loading image from RPM as %s doesn't exist"
 msgstr "%s が存在しないため、RPMからのイメージのロードをスキップします"
 
-#: shared/podman/images.go:225
+#: shared/podman/images.go:224
 #, javascript-format
 msgid "Cannot unmarshal metadata file %s"
 msgstr "メタデータファイル %s をアンマーシャルできません"
 
-#: shared/podman/images.go:247
+#: shared/podman/images.go:246
 #, javascript-format
 msgid "error parsing: %s"
 msgstr "解析エラー: %s"
 
-#: shared/podman/images.go:255 shared/podman/images.go:269
-#: shared/podman/images.go:284
+#: shared/podman/images.go:254 shared/podman/images.go:268
+#: shared/podman/images.go:283
 #, javascript-format
 msgid "failed to check if image %s has already been pulled"
 msgstr "イメージ %s がすでにプルされているかどうかの確認に失敗しました"
 
-#: shared/podman/images.go:291
+#: shared/podman/images.go:290
 #, javascript-format
 msgid "%s should contains just lower case character, otherwise podman pull would fails"
 msgstr "%s には小文字のみを含める必要があります。含めない場合、podmanのプルは失敗します"
 
-#: shared/podman/images.go:293
+#: shared/podman/images.go:292
 #, javascript-format
 msgid "Running podman pull %s"
 msgstr "podmanのプル %s の実行中"
 
-#: shared/podman/images.go:305
+#: shared/podman/images.go:304
 #, javascript-format
 msgid "Running podman image search --list-tags %s --format={{.Tag}}"
 msgstr "podmanイメージ検索--list-tags %s --format={{.Tag}}の実行中"
 
-#: shared/podman/images.go:319
+#: shared/podman/images.go:318
 #, javascript-format
 msgid "cannot find any tag for image %s"
 msgstr "イメージ %s のタグが見つかりません"
 
-#: shared/podman/images.go:333
+#: shared/podman/images.go:332
 #, javascript-format
 msgid "Running podman ps --filter=name=%s --format={{ .Image }}"
 msgstr "podman ps --filter=name=%s --format={{ .Image }}の実行中"
 
-#: shared/podman/images.go:339
+#: shared/podman/images.go:338
 #, javascript-format
 msgid "cannot find any running image for container %s"
 msgstr "コンテナ %s に対して実行中のイメージが見つかりません"
 
-#: shared/podman/images.go:375 shared/podman/images.go:396
-#: shared/podman/images.go:416 shared/podman/utils.go:190
+#: shared/podman/images.go:374 shared/podman/images.go:395
+#: shared/podman/images.go:415 shared/podman/utils.go:190
 #: shared/podman/utils.go:224 shared/podman/utils.go:261
 #, javascript-format
 msgid "Run %s"
 msgstr "%s の実行"
 
-#: shared/podman/images.go:378
+#: shared/podman/images.go:377
 #, javascript-format
 msgid "Failed to remove image %s"
 msgstr "イメージ %s の削除に失敗しました"
 
-#: shared/podman/images.go:399
+#: shared/podman/images.go:398
 #, javascript-format
 msgid "Failed to export image %s"
 msgstr "イメージ %s のエクスポートに失敗しました"
 
-#: shared/podman/images.go:419
+#: shared/podman/images.go:418
 #, javascript-format
 msgid "Failed to restore image %s"
 msgstr "イメージ %s の復元に失敗しました"
@@ -1643,10 +1643,6 @@ msgstr "tarballの準備中"
 msgid "failed to add %s to tarball"
 msgstr "%s をtarballに追加できませんでした"
 
-#: shared/utils/support.go:94
-msgid "failed to run supportconfig on the host"
-msgstr "ホスト上でsupportconfigを実行できませんでした"
-
 #: shared/utils/support.go:104
 msgid "failed to find host supportconfig tarball from command output"
 msgstr "コマンド出力からホストのsupportconfig tarballが見つかりませんでした"
@@ -1820,6 +1816,9 @@ msgstr "Saline"
 #: shared/utils/uyuniservices.go:46
 msgid "Database"
 msgstr "データベース"
+
+#~ msgid "failed to run supportconfig on the host"
+#~ msgstr "ホスト上でsupportconfigを実行できませんでした"
 
 #~ msgid "No CA found"
 #~ msgstr "CAが見つかりません"
