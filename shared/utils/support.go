@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2025 SUSE LLC
+// SPDX-FileCopyrightText: 2026 SUSE LLC
 //
 // SPDX-License-Identifier: Apache-2.0
 
@@ -91,7 +91,7 @@ func RunSupportConfigOnHost() ([]string, error) {
 	if _, err := exec.LookPath("supportconfig"); err == nil {
 		out, err := newRunner("supportconfig").Spinner("").StdMapping().Exec()
 		if err != nil {
-			log.Error().Err(err).Msgf(L("failed to run supportconfig on the host"))
+			log.Error().Err(err)
 		}
 		tarballPath := GetSupportConfigPath(string(out))
 

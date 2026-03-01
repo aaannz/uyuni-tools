@@ -1,4 +1,42 @@
 -------------------------------------------------------------------
+Thu Feb 19 10:32:20 WET 2026 - psuarezhernandez@suse.com
+
+- version 5.1.25-0
+  * If PTF image doesn't exists, use the current service image (bsc#1258418)
+
+-------------------------------------------------------------------
+Fri Jan 16 15:28:06 CET 2026 - marina.latini@suse.com
+
+- version 5.1.24-0
+  * Actually use the --dbupgrade-tag parameter when computing the
+    image URL (bsc#1249400)
+  * Handle CA files with symlinks during migration (bsc#1251044)
+  * Adjust traefik exposed configuration for chart v27+ (bsc#1247721)
+  * Fix systemd object initialization in server rename. (bsc#1250981)
+  * Add SSL secrets to the db setup container during migration.
+    (bsc#1250976)
+  * Fix images handling in mgrpxy support ptf (bsc#1250940)
+  * Fix helm upgrade parameters (bsc#1253966)
+  * Detect custom apache and squid config in the /etc/uyuni/proxy
+    folder
+  * Add ssh tuning to configure sshd (bsc#1253738)
+  * Move the SSL checks at the begining of the migration
+  * Remove cgroup mount for podman containers (bsc#1253347)
+  * Convert the traefik install time to local time (bsc#1251138)
+  * During migration, krb5.conf.d should be copied in /etc/rhn (bsc#1254478)
+  * Read env var from http conf file (bsc#1253282)
+  * Add --registry-host, --registry-user and --registry-password
+    to pull images from an authenticate registry
+  * Deprecate --registry
+  * Unify backup create and restore dryrun option case
+  * Fix calling of squid -z in mgrpxy cache clear (bsc#1247644)
+  * Always start database container even if enabled
+  * Remove extra ipv6 mapping and nftables workaround
+    (bsc#1248848)
+  * Remove old PostgreSQL exporter environment file before migration
+  * Support config command parse correctly supportconfig output (bsc#1255781)
+
+-------------------------------------------------------------------
 Fri Nov 21 12:55:24 CET 2025 - marina.latini@suse.com
 
 - version 5.1.23-0

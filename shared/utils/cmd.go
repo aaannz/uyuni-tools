@@ -41,7 +41,7 @@ var DefaultImagePrefix = "uyuni"
 var DefaultImage = path.Join(DefaultImagePrefix, "server")
 
 // DefaultProxyChart represents the default proxy chart.
-var DefaultProxyChart = path.Join(DefaultHelmImagePrefix, "proxy-chart")
+var DefaultProxyChart = path.Join(DefaultHelmImagePrefix, "proxy-helm")
 
 // DefaultPullPolicy represents the default pull policy used for image.
 var DefaultPullPolicy = "Always"
