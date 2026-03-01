@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
 "PO-Revision-Date: 2024-05-16 09:23+0000\n"
 "Last-Translator: Marina Latini <marina.latini@suse.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgrpxy/it/>\n"
@@ -123,17 +123,17 @@ msgid ""
 "NOTE: for now installing on a remote podman is not supported!\n"
 msgstr ""
 
-#: mgrpxy/cmd/install/podman/utils.go:39
+#: mgrpxy/cmd/install/podman/utils.go:30
 #: mgrpxy/cmd/support/ptf/podman/utils.go:30 mgrpxy/shared/podman/podman.go:308
 msgid "install podman before running this command"
 msgstr "installare podman prima di eseguire questo comando"
 
-#: mgrpxy/cmd/install/podman/utils.go:44
+#: mgrpxy/cmd/install/podman/utils.go:35
 #, fuzzy
 msgid "failed to retrieve proxy config files"
 msgstr "mancata creazione della directory temporanea: %s"
 
-#: mgrpxy/cmd/install/podman/utils.go:58 mgrpxy/shared/podman/podman.go:324
+#: mgrpxy/cmd/install/podman/utils.go:49 mgrpxy/shared/podman/podman.go:324
 #, fuzzy
 msgid "Unable to fetch up to date systemid, using one from the provided configuration file"
 msgstr "mancata creazione della directory temporanea: %s"
@@ -497,11 +497,11 @@ msgstr ""
 msgid "cannot find tftpd image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:421
+#: mgrpxy/shared/podman/podman.go:424
 msgid "Not a system id event"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:430
+#: mgrpxy/shared/podman/podman.go:433
 msgid "System id not found in returned event"
 msgstr ""
 

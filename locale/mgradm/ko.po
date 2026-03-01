@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
 "PO-Revision-Date: 2026-01-21 01:04+0000\n"
 "Last-Translator: Seeun Lee <selee@e4net.net>\n"
 "Language-Team: Korean <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ko/>\n"
@@ -1387,13 +1387,20 @@ msgid "failed to find server image"
 msgstr "서버 이미지를 찾지 못함"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:99
-#, javascript-format
-msgid "The computed image is %s"
+#, fuzzy, javascript-format
+#| msgid "The computed image is %s"
+msgid "The computed PTF image is %s"
 msgstr "계산된 이미지는 %s입니다."
 
-#: mgradm/cmd/support/ptf/podman/utils.go:118
+#: mgradm/cmd/support/ptf/podman/utils.go:119
+#: mgradm/cmd/support/ptf/podman/utils.go:123
 msgid "The %[1]s service image is %[2]s"
 msgstr "%[1]s 서비스 이미지는 %[2]s입니다."
+
+#: mgradm/cmd/support/ptf/podman/utils.go:121
+#, javascript-format
+msgid "Cannot find PTF for %s"
+msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
@@ -2011,70 +2018,70 @@ msgstr "기존 데이터베이스 인증서 시크릿 재사용"
 msgid "Missing SANs or subjects in certificate of secret %[1]: %[2]s"
 msgstr "시크릿 %[1]의 인증서에 SAN 또는 주체 없음:"
 
-#: mgradm/shared/podman/ssl.go:295
+#: mgradm/shared/podman/ssl.go:293
 msgid "Reusing the existing server certificate files"
 msgstr "기존 서버 인증서 파일 재사용"
 
-#: mgradm/shared/podman/ssl.go:307
+#: mgradm/shared/podman/ssl.go:305
 msgid "Reusing the existing database certificate files"
 msgstr "기존 데이터베이스 인증서 파일 재사용"
 
-#: mgradm/shared/podman/ssl.go:316
+#: mgradm/shared/podman/ssl.go:314
 #, javascript-format
 msgid "CA file %s not found."
 msgstr "CA 파일 %s이(가) 없습니다."
 
-#: mgradm/shared/podman/ssl.go:321
+#: mgradm/shared/podman/ssl.go:319
 msgid "cannot write existing CA certificate"
 msgstr "기존 CA 인증서를 작성할 수 없음"
 
-#: mgradm/shared/podman/ssl.go:328
+#: mgradm/shared/podman/ssl.go:326
 #, javascript-format
 msgid "Certificate file %s not found."
 msgstr "인증서 파일 %s이(가) 없습니다."
 
-#: mgradm/shared/podman/ssl.go:332
+#: mgradm/shared/podman/ssl.go:330
 msgid "cannot write existing server certificate"
 msgstr "기존 서버 인증서를 작성할 수 없음"
 
-#: mgradm/shared/podman/ssl.go:337
+#: mgradm/shared/podman/ssl.go:335
 msgid "Certificate file %[1]s doesn't match %[2]s FQDN."
 msgstr "인증서 파일 %[1]이(가) %[2] FQDN과 일치하지 않습니다."
 
-#: mgradm/shared/podman/ssl.go:345
+#: mgradm/shared/podman/ssl.go:343
 #, javascript-format
 msgid "Certificate key file %s not found."
 msgstr "인증서 키 파일 %s이(가) 없습니다."
 
-#: mgradm/shared/podman/ssl.go:349
+#: mgradm/shared/podman/ssl.go:347
 msgid "cannot write existing server key"
 msgstr "기존 서버 키를 작성할 수 없음"
 
-#: mgradm/shared/podman/ssl.go:400
+#: mgradm/shared/podman/ssl.go:398
 msgid "Cannot generate new certificates without a CA password. Please check input options"
 msgstr "CA 비밀번호가 없으면 새 인증서를 생성할 수 없습니다. 입력 옵션을 확인하십시오."
 
-#: mgradm/shared/podman/ssl.go:402
+#: mgradm/shared/podman/ssl.go:400
 msgid "Generating the server certificate…"
 msgstr "서버 인증서 생성 중…"
 
-#: mgradm/shared/podman/ssl.go:422
+#: mgradm/shared/podman/ssl.go:420
 msgid "Failed to generate server SSL certificate. Please check the input parameters."
 msgstr "서버 SSL 인증서를 생성하지 못했습니다. 입력 파라미터를 확인하십시오."
 
-#: mgradm/shared/podman/ssl.go:425
+#: mgradm/shared/podman/ssl.go:423
 msgid "Server SSL certificate generated"
 msgstr "서버 SSL 인증서 생성됨"
 
-#: mgradm/shared/podman/ssl.go:436
+#: mgradm/shared/podman/ssl.go:434
 msgid "Generating the database certificate…"
 msgstr "데이터베이스 인증서 생성 중…"
 
-#: mgradm/shared/podman/ssl.go:455
+#: mgradm/shared/podman/ssl.go:453
 msgid "Failed to generate database SSL certificate"
 msgstr "데이터베이스 SSL 인증서를 생성하지 못함"
 
-#: mgradm/shared/podman/ssl.go:458
+#: mgradm/shared/podman/ssl.go:456
 msgid "Database SSL certificate generated"
 msgstr "데이터베이스 SSL 인증서 생성됨"
 

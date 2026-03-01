@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09 11:44+0100\n"
+"POT-Creation-Date: 2026-03-01 10:59+0100\n"
 "PO-Revision-Date: 2026-01-19 08:04+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/zh_CN/>\n"
@@ -1389,13 +1389,20 @@ msgid "failed to find server image"
 msgstr "找不到服务器映像"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:99
-#, javascript-format
-msgid "The computed image is %s"
+#, fuzzy, javascript-format
+#| msgid "The computed image is %s"
+msgid "The computed PTF image is %s"
 msgstr "计算出的映像为 %s"
 
-#: mgradm/cmd/support/ptf/podman/utils.go:118
+#: mgradm/cmd/support/ptf/podman/utils.go:119
+#: mgradm/cmd/support/ptf/podman/utils.go:123
 msgid "The %[1]s service image is %[2]s"
 msgstr "%[1]s 服务映像版本为 %[2]s"
+
+#: mgradm/cmd/support/ptf/podman/utils.go:121
+#, javascript-format
+msgid "Cannot find PTF for %s"
+msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
@@ -2013,70 +2020,70 @@ msgstr "正在重复使用现有数据库证书机密"
 msgid "Missing SANs or subjects in certificate of secret %[1]: %[2]s"
 msgstr "机密 %[1] 的证书中缺少 SAN 或主体：%[2]s"
 
-#: mgradm/shared/podman/ssl.go:295
+#: mgradm/shared/podman/ssl.go:293
 msgid "Reusing the existing server certificate files"
 msgstr "正在重复使用现有服务器证书文件"
 
-#: mgradm/shared/podman/ssl.go:307
+#: mgradm/shared/podman/ssl.go:305
 msgid "Reusing the existing database certificate files"
 msgstr "正在重复使用现有数据库证书文件"
 
-#: mgradm/shared/podman/ssl.go:316
+#: mgradm/shared/podman/ssl.go:314
 #, javascript-format
 msgid "CA file %s not found."
 msgstr "找不到 CA 文件 %s。"
 
-#: mgradm/shared/podman/ssl.go:321
+#: mgradm/shared/podman/ssl.go:319
 msgid "cannot write existing CA certificate"
 msgstr "无法写入现有 CA 证书"
 
-#: mgradm/shared/podman/ssl.go:328
+#: mgradm/shared/podman/ssl.go:326
 #, javascript-format
 msgid "Certificate file %s not found."
 msgstr "找不到证书文件 %s。"
 
-#: mgradm/shared/podman/ssl.go:332
+#: mgradm/shared/podman/ssl.go:330
 msgid "cannot write existing server certificate"
 msgstr "无法写入现有服务器证书"
 
-#: mgradm/shared/podman/ssl.go:337
+#: mgradm/shared/podman/ssl.go:335
 msgid "Certificate file %[1]s doesn't match %[2]s FQDN."
 msgstr "证书文件 %[1]s 与 %[2]s 的 FQDN 不匹配。"
 
-#: mgradm/shared/podman/ssl.go:345
+#: mgradm/shared/podman/ssl.go:343
 #, javascript-format
 msgid "Certificate key file %s not found."
 msgstr "找不到证书密钥文件 %s。"
 
-#: mgradm/shared/podman/ssl.go:349
+#: mgradm/shared/podman/ssl.go:347
 msgid "cannot write existing server key"
 msgstr "无法写入现有服务器密钥"
 
-#: mgradm/shared/podman/ssl.go:400
+#: mgradm/shared/podman/ssl.go:398
 msgid "Cannot generate new certificates without a CA password. Please check input options"
 msgstr "无 CA 口令无法生成新证书，请检查输入选项"
 
-#: mgradm/shared/podman/ssl.go:402
+#: mgradm/shared/podman/ssl.go:400
 msgid "Generating the server certificate…"
 msgstr "正在生成服务器证书…"
 
-#: mgradm/shared/podman/ssl.go:422
+#: mgradm/shared/podman/ssl.go:420
 msgid "Failed to generate server SSL certificate. Please check the input parameters."
 msgstr "服务器 SSL 证书生成失败，请检查输入参数。"
 
-#: mgradm/shared/podman/ssl.go:425
+#: mgradm/shared/podman/ssl.go:423
 msgid "Server SSL certificate generated"
 msgstr "已生成服务器 SSL 证书"
 
-#: mgradm/shared/podman/ssl.go:436
+#: mgradm/shared/podman/ssl.go:434
 msgid "Generating the database certificate…"
 msgstr "正在生成数据库证书…"
 
-#: mgradm/shared/podman/ssl.go:455
+#: mgradm/shared/podman/ssl.go:453
 msgid "Failed to generate database SSL certificate"
 msgstr "数据库 SSL 证书生成失败"
 
-#: mgradm/shared/podman/ssl.go:458
+#: mgradm/shared/podman/ssl.go:456
 msgid "Database SSL certificate generated"
 msgstr "已生成数据库 SSL 证书"
 
