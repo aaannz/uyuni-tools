@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2025-09-03 14:59+0000\n"
 "Last-Translator: David D <dadu042@mailo.com>\n"
 "Language-Team: French <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/fr/>\n"
@@ -522,7 +522,7 @@ msgstr "impossible d'enregistrer la distribution. Un enregistrement manuel de la
 msgid "Distribution %s successfully registered"
 msgstr "Distribution %s enregistrée avec succès"
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr "la source %s n'existe pas"
@@ -1433,10 +1433,6 @@ msgstr ""
 #, fuzzy
 msgid "Install a PTF"
 msgstr "Installer un nouveau serveur sur podman"
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
-msgstr ""
 
 #: mgradm/cmd/support/sql/sql.go:50
 msgid "unable to cleanup source file"

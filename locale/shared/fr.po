@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2024-04-08 14:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -252,28 +252,33 @@ msgstr ""
 msgid "no supported backend found"
 msgstr ""
 
-#: shared/connection.go:498
-#, fuzzy, javascript-format
-msgid "Running supportconfig in  %s"
-msgstr "Utilisation du fichier de configuration %s"
-
-#: shared/connection.go:506
+#: shared/connection.go:504 shared/utils/support.go:102
 #, fuzzy
-msgid "failed to run supportconfig"
+msgid "failed to generate supportconfig suffix: %w"
 msgstr "impossible de créer le répertoire %s: %s"
 
-#: shared/connection.go:510
-#, fuzzy
-msgid "failed to find container supportconfig tarball from command output"
-msgstr "impossible de créer la commande d'aide config"
+#: shared/connection.go:516 shared/utils/support.go:116
+#, fuzzy, javascript-format
+msgid "failed to generate unique supportconfig batch name after %d attempts"
+msgstr "impossible de créer le répertoire %s: %s"
 
-#: shared/connection.go:516
-msgid "cannot copy tarball"
+#: shared/connection.go:520
+#, fuzzy, javascript-format
+msgid "Running supportconfig in %s"
+msgstr "Utilisation du fichier de configuration %s"
+
+#: shared/connection.go:527 shared/utils/support.go:122
+msgid "Some parts of supportconfig were not successful"
 msgstr ""
 
-#: shared/connection.go:522
+#: shared/connection.go:532
+#, fuzzy
+msgid "cannot copy support config"
+msgstr "impossible de créer le répertoire %s: %s"
+
+#: shared/connection.go:538
 #, fuzzy, javascript-format
-msgid "failed to remove %s file in the container"
+msgid "failed to remove %s directory in the container"
 msgstr "impossible de créer le répertoire %s: %s"
 
 #: shared/kubernetes/apply.go:46
@@ -1639,11 +1644,11 @@ msgstr "impossible d'exécuter helm %s: %s"
 msgid "Couldn't open %[1]s file for writing, writing log to %[2]s"
 msgstr ""
 
-#: shared/utils/support.go:32
+#: shared/utils/support.go:26
 msgid "Unable to detect hostname, using localhost"
 msgstr ""
 
-#: shared/utils/support.go:46
+#: shared/utils/support.go:40
 msgid "Preparing the tarball"
 msgstr ""
 
@@ -1652,20 +1657,31 @@ msgstr ""
 msgid "failed to add %s to tarball"
 msgstr "impossible de créer le répertoire %s: %s"
 
-#: shared/utils/support.go:104
-msgid "failed to find host supportconfig tarball from command output"
+#: shared/utils/support.go:66
+#, javascript-format
+msgid "Support config tarball created at %s"
 msgstr ""
 
-#: shared/utils/support.go:107
+#: shared/utils/support.go:119
+#, fuzzy
+msgid "Running supportconfig on the host"
+msgstr "Utilisation du fichier de configuration %s"
+
+#: shared/utils/support.go:129
+#, fuzzy
+msgid "failed to find host supportconfig tarball"
+msgstr "impossible de créer le répertoire %s: %s"
+
+#: shared/utils/support.go:132
 msgid "supportconfig is not available on the host, skipping it"
 msgstr ""
 
-#: shared/utils/tar.go:48
+#: shared/utils/tar.go:49
 #, fuzzy
 msgid "Skipping extraction of %[1]s in %[2]s file as it resolves outside the target path"
 msgstr "Passe l'extraction de %s dans le fichier %s puisqu'il se situe en dehors de chemin cible"
 
-#: shared/utils/tar.go:90
+#: shared/utils/tar.go:91
 #, fuzzy, javascript-format
 msgid "failed to write tar.gz to %s"
 msgstr "impossible d'écrire l'archive tar.gz vers %s: %s"
@@ -1680,134 +1696,138 @@ msgstr "Fichier %s déjà présent, pas remplacé"
 msgid "failed to open %s for writing"
 msgstr "impossible d'ouvrir %s en écriture: %s"
 
-#: shared/utils/utils.go:59
+#: shared/utils/utils.go:60
 #, fuzzy, javascript-format
 msgid "Has to be more than %d character long"
 msgid_plural "Has to be more than %d characters long"
 msgstr[0] "Doit contenir plus de %d caractère"
 msgstr[1] "Doit contenir plus de %d caractères"
 
-#: shared/utils/utils.go:63
+#: shared/utils/utils.go:64
 #, javascript-format
 msgid "Has to be less than %d character long"
 msgid_plural "Has to be less than %d characters long"
 msgstr[0] "Doit contenir moins de %d caractère"
 msgstr[1] "Doit contenir moins de %d caractères"
 
-#: shared/utils/utils.go:74
+#: shared/utils/utils.go:75
 msgid "Failed to read password"
 msgstr "Impossible de lecture du mot de passe"
 
-#: shared/utils/utils.go:88
+#: shared/utils/utils.go:89
 msgid "Cannot contain spaces or tabs"
 msgstr "Ne peut contenir d'espace ou de tabulation"
 
-#: shared/utils/utils.go:105 shared/utils/utils.go:128
-#: shared/utils/utils.go:141
+#: shared/utils/utils.go:106 shared/utils/utils.go:129
+#: shared/utils/utils.go:142
 msgid "not an interactive device, not asking for missing value"
 msgstr ""
 
-#: shared/utils/utils.go:114
+#: shared/utils/utils.go:115
 #, fuzzy
 msgid "Confirm the password"
 msgstr "Impossible de lecture du mot de passe"
 
-#: shared/utils/utils.go:116
+#: shared/utils/utils.go:117
 msgid "Two different passwords have been provided"
 msgstr ""
 
-#: shared/utils/utils.go:150
+#: shared/utils/utils.go:151
 #, fuzzy
 msgid "failed to read input"
 msgstr "Impossible de lire la saisie"
 
-#: shared/utils/utils.go:158
+#: shared/utils/utils.go:159
 msgid "A value is required"
 msgstr "Une valeur est requise"
 
-#: shared/utils/utils.go:226 shared/utils/utils.go:248
+#: shared/utils/utils.go:227 shared/utils/utils.go:249
 #, javascript-format
 msgid "invalid image name: %s"
 msgstr "nom d'image invalid: %s"
 
-#: shared/utils/utils.go:230
+#: shared/utils/utils.go:231
 #, javascript-format
 msgid "tag missing on %s"
 msgstr "tag missing dans %s"
 
-#: shared/utils/utils.go:235 shared/utils/utils.go:239
+#: shared/utils/utils.go:236 shared/utils/utils.go:240
 #, fuzzy, javascript-format
 msgid "Computed image name is %s"
 msgstr "nom d'image invalid: %s"
 
-#: shared/utils/utils.go:266
+#: shared/utils/utils.go:267
 msgid "image path '%[1]s' does not start with registry path '%[2]s'"
 msgstr ""
 
-#: shared/utils/utils.go:276
+#: shared/utils/utils.go:277
 #, javascript-format
 msgid "Failed to run %s"
 msgstr "Erreur lors de l'exécution de %s"
 
-#: shared/utils/utils.go:285
+#: shared/utils/utils.go:286
 msgid "Failed to read random data"
 msgstr "Impossible de lire des données aléatoires"
 
-#: shared/utils/utils.go:306
+#: shared/utils/utils.go:307
 #, javascript-format
 msgid "error downloading from %s"
 msgstr ""
 
-#: shared/utils/utils.go:312
+#: shared/utils/utils.go:313
 #, javascript-format
 msgid "bad status: %s"
 msgstr ""
 
-#: shared/utils/utils.go:425
+#: shared/utils/utils.go:426
 #, fuzzy
 msgid "failed to compute server FQDN"
 msgstr "impossible de se connecter au serveur: %s"
 
-#: shared/utils/utils.go:439
+#: shared/utils/utils.go:440
 #, javascript-format
 msgid "%s is not a valid FQDN"
 msgstr ""
 
-#: shared/utils/utils.go:443
+#: shared/utils/utils.go:444
 #, fuzzy, javascript-format
 msgid "cannot resolve %s"
 msgstr "erreur d'analyse du fichier de configuration %s: %s"
 
-#: shared/utils/utils.go:474
+#: shared/utils/utils.go:475
 #, fuzzy, javascript-format
 msgid "error creating file %s"
 msgstr "Suppression du fichier %s"
 
-#: shared/utils/utils.go:479
+#: shared/utils/utils.go:480
 #, fuzzy, javascript-format
 msgid "error writing file %s"
 msgstr "Suppression du fichier %s"
 
-#: shared/utils/utils.go:491 shared/utils/utils.go:506
+#: shared/utils/utils.go:492 shared/utils/utils.go:507
 #, fuzzy, javascript-format
 #| msgid "Failed to remove file %s"
 msgid "Failed to calculate checksum of the file %s"
 msgstr "Impossible de supprimer le fichier %s"
 
-#: shared/utils/utils.go:496
+#: shared/utils/utils.go:497
 #, fuzzy
 msgid "Failed to write checksum of the file %[1]s to the %[2]s"
 msgstr "impossible de lier le répertoire du volume %s vers %s: %s"
 
-#: shared/utils/utils.go:513
+#: shared/utils/utils.go:514
 #, fuzzy
 #| msgid "Failed to remove file %s"
 msgid "Failed to read checksum of the file %[1]s"
 msgstr "Impossible de supprimer le fichier %s"
 
-#: shared/utils/utils.go:517
+#: shared/utils/utils.go:518
 #, javascript-format
 msgid "Checksum of %s does not match"
+msgstr ""
+
+#: shared/utils/utils.go:526
+msgid "nBytes must be > 0"
 msgstr ""
 
 #: shared/utils/uyuniservices.go:18
@@ -1836,8 +1856,8 @@ msgid "Database"
 msgstr ""
 
 #, fuzzy
-#~ msgid "failed to run supportconfig on the host"
-#~ msgstr "impossible de créer le répertoire %s: %s"
+#~ msgid "failed to find container supportconfig tarball from command output"
+#~ msgstr "impossible de créer la commande d'aide config"
 
 #~ msgid "failed to unmarshall configuration"
 #~ msgstr "erreur d'analyse du fichier de configuration"

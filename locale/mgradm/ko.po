@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2026-01-21 01:04+0000\n"
 "Last-Translator: Seeun Lee <selee@e4net.net>\n"
 "Language-Team: Korean <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ko/>\n"
@@ -486,7 +486,7 @@ msgstr "배포를 등록할 수 없습니다. 배포를 수동으로 등록해�
 msgid "Distribution %s successfully registered"
 msgstr "%s 배포가 등록되었습니다."
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr "%s 소스가 없습니다."
@@ -1405,10 +1405,6 @@ msgstr ""
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
 msgstr "PTF 설치"
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
-msgstr "임의의 파일 접두사를 가져올 수 없음"
 
 #: mgradm/cmd/support/sql/sql.go:50
 msgid "unable to cleanup source file"
@@ -2415,6 +2411,9 @@ msgstr "유효한 전자 메일 주소 아님"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "설치 스크립트를 렌더링하지 못함"
+
+#~ msgid "unable to get random file prefix"
+#~ msgstr "임의의 파일 접두사를 가져올 수 없음"
 
 #~ msgid "CA validation failed!"
 #~ msgstr "CA 유효성 검사 실패!"

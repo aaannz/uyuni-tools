@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2026-01-19 09:04+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ja/>\n"
@@ -486,7 +486,7 @@ msgstr "ディストリビューションを登録できません。手動ディ
 msgid "Distribution %s successfully registered"
 msgstr "ディストリビューション %s が正常に登録されました"
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr "ソース %s が存在しません"
@@ -1407,10 +1407,6 @@ msgstr ""
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
 msgstr "PTFのインストール"
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
-msgstr "ランダムなファイルプレフィックスを取得できません"
 
 #: mgradm/cmd/support/sql/sql.go:50
 msgid "unable to cleanup source file"
@@ -2417,6 +2413,9 @@ msgstr "有効な電子メールアドレスではありません"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "セットアップスクリプトのレンダリングに失敗しました"
+
+#~ msgid "unable to get random file prefix"
+#~ msgstr "ランダムなファイルプレフィックスを取得できません"
 
 #~ msgid "CA validation failed!"
 #~ msgstr "CA検証に失敗しました。"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -484,7 +484,7 @@ msgstr ""
 msgid "Distribution %s successfully registered"
 msgstr ""
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr ""
@@ -1300,10 +1300,6 @@ msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
-msgstr ""
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
 msgstr ""
 
 #: mgradm/cmd/support/sql/sql.go:50
