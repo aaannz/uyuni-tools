@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2025-06-17 08:59+0000\n"
 "Last-Translator: Seeun Lee <selee@e4net.net>\n"
 "Language-Team: Korean <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-shared/ko/>\n"
@@ -244,26 +244,38 @@ msgstr "적합한 백엔드를 확인하지 못했습니다."
 msgid "no supported backend found"
 msgstr "지원되는 백엔드를 찾을 수 없습니다."
 
-#: shared/connection.go:498
-#, javascript-format
-msgid "Running supportconfig in  %s"
-msgstr "%s에서 supportconfig 실행 중"
-
-#: shared/connection.go:506
-msgid "failed to run supportconfig"
+#: shared/connection.go:504 shared/utils/support.go:102
+#, fuzzy
+#| msgid "failed to run supportconfig"
+msgid "failed to generate supportconfig suffix: %w"
 msgstr "supportconfig 실행 실패"
 
-#: shared/connection.go:510
-msgid "failed to find container supportconfig tarball from command output"
-msgstr "명령 출력에서 컨테이너 supportconfig tarball을 찾지 못함"
+#: shared/connection.go:516 shared/utils/support.go:116
+#, fuzzy, javascript-format
+#| msgid "failed to run supportconfig on the host"
+msgid "failed to generate unique supportconfig batch name after %d attempts"
+msgstr "호스트에서 supportconfig 실행 실패"
 
-#: shared/connection.go:516
-msgid "cannot copy tarball"
-msgstr "tarball을 복사할 수 없음"
+#: shared/connection.go:520
+#, fuzzy, javascript-format
+#| msgid "Running supportconfig in  %s"
+msgid "Running supportconfig in %s"
+msgstr "%s에서 supportconfig 실행 중"
 
-#: shared/connection.go:522
-#, javascript-format
-msgid "failed to remove %s file in the container"
+#: shared/connection.go:527 shared/utils/support.go:122
+msgid "Some parts of supportconfig were not successful"
+msgstr ""
+
+#: shared/connection.go:532
+#, fuzzy
+#| msgid "cannot read config"
+msgid "cannot copy support config"
+msgstr "구성을 읽을 수 없음"
+
+#: shared/connection.go:538
+#, fuzzy, javascript-format
+#| msgid "failed to remove %s file in the container"
+msgid "failed to remove %s directory in the container"
 msgstr "컨테이너에서 %s 제거 실패"
 
 #: shared/kubernetes/apply.go:46
@@ -1627,11 +1639,11 @@ msgstr "%s 서비스 비활성화 실패"
 msgid "Couldn't open %[1]s file for writing, writing log to %[2]s"
 msgstr "%[1]s 파일을 쓰기용으로 열 수 없음, %[2]s에 로그 기록 중"
 
-#: shared/utils/support.go:32
+#: shared/utils/support.go:26
 msgid "Unable to detect hostname, using localhost"
 msgstr "localhost를 사용하여 호스트 이름을 감지하지 못함"
 
-#: shared/utils/support.go:46
+#: shared/utils/support.go:40
 msgid "Preparing the tarball"
 msgstr "tarball 준비 중"
 
@@ -1640,19 +1652,32 @@ msgstr "tarball 준비 중"
 msgid "failed to add %s to tarball"
 msgstr "%s을(를) tarball에 추가 실패"
 
-#: shared/utils/support.go:104
-msgid "failed to find host supportconfig tarball from command output"
+#: shared/utils/support.go:66
+#, javascript-format
+msgid "Support config tarball created at %s"
+msgstr ""
+
+#: shared/utils/support.go:119
+#, fuzzy
+#| msgid "Running supportconfig in  %s"
+msgid "Running supportconfig on the host"
+msgstr "%s에서 supportconfig 실행 중"
+
+#: shared/utils/support.go:129
+#, fuzzy
+#| msgid "failed to find host supportconfig tarball from command output"
+msgid "failed to find host supportconfig tarball"
 msgstr "명령 출력에서 호스트 supportconfig tarball 찾기 실패"
 
-#: shared/utils/support.go:107
+#: shared/utils/support.go:132
 msgid "supportconfig is not available on the host, skipping it"
 msgstr "호스트에서 supportconfig 사용 불가, 건너뛰는 중"
 
-#: shared/utils/tar.go:48
+#: shared/utils/tar.go:49
 msgid "Skipping extraction of %[1]s in %[2]s file as it resolves outside the target path"
 msgstr "대상 경로 외부에서 확인되므로 %[2]s 파일에서 %[1]s 추출 건너뛰기"
 
-#: shared/utils/tar.go:90
+#: shared/utils/tar.go:91
 #, javascript-format
 msgid "failed to write tar.gz to %s"
 msgstr "tar.gz를 %s에 쓰지 못함"
@@ -1667,128 +1692,132 @@ msgstr "%s 파일 이미 있음, 덮어쓰지 않음"
 msgid "failed to open %s for writing"
 msgstr "쓰기 위해 %s을(를) 열지 못함"
 
-#: shared/utils/utils.go:59
+#: shared/utils/utils.go:60
 #, javascript-format
 msgid "Has to be more than %d character long"
 msgid_plural "Has to be more than %d characters long"
 msgstr[0] "%d자 이상이어야 합니다."
 
-#: shared/utils/utils.go:63
+#: shared/utils/utils.go:64
 #, javascript-format
 msgid "Has to be less than %d character long"
 msgid_plural "Has to be less than %d characters long"
 msgstr[0] "%d자 미만이어야 합니다."
 
-#: shared/utils/utils.go:74
+#: shared/utils/utils.go:75
 msgid "Failed to read password"
 msgstr "비밀번호 읽기 실패"
 
-#: shared/utils/utils.go:88
+#: shared/utils/utils.go:89
 msgid "Cannot contain spaces or tabs"
 msgstr "공백이나 탭을 포함할 수 없습니다."
 
-#: shared/utils/utils.go:105 shared/utils/utils.go:128
-#: shared/utils/utils.go:141
+#: shared/utils/utils.go:106 shared/utils/utils.go:129
+#: shared/utils/utils.go:142
 msgid "not an interactive device, not asking for missing value"
 msgstr "대화형 장치가 아니며, 누락된 값을 요구하지 않음"
 
-#: shared/utils/utils.go:114
+#: shared/utils/utils.go:115
 msgid "Confirm the password"
 msgstr "비밀번호 확인"
 
-#: shared/utils/utils.go:116
+#: shared/utils/utils.go:117
 msgid "Two different passwords have been provided"
 msgstr "2개의 다른 비밀번호가 입력되었습니다."
 
-#: shared/utils/utils.go:150
+#: shared/utils/utils.go:151
 msgid "failed to read input"
 msgstr "입력 읽기 실패"
 
-#: shared/utils/utils.go:158
+#: shared/utils/utils.go:159
 msgid "A value is required"
 msgstr "값은 필수입니다."
 
-#: shared/utils/utils.go:226 shared/utils/utils.go:248
+#: shared/utils/utils.go:227 shared/utils/utils.go:249
 #, javascript-format
 msgid "invalid image name: %s"
 msgstr "잘못된 이미지 이름: %s"
 
-#: shared/utils/utils.go:230
+#: shared/utils/utils.go:231
 #, javascript-format
 msgid "tag missing on %s"
 msgstr "%s에 태그 누락"
 
-#: shared/utils/utils.go:235 shared/utils/utils.go:239
+#: shared/utils/utils.go:236 shared/utils/utils.go:240
 #, javascript-format
 msgid "Computed image name is %s"
 msgstr "계산된 이미지 이름: %s"
 
-#: shared/utils/utils.go:266
+#: shared/utils/utils.go:267
 msgid "image path '%[1]s' does not start with registry path '%[2]s'"
 msgstr ""
 
-#: shared/utils/utils.go:276
+#: shared/utils/utils.go:277
 #, javascript-format
 msgid "Failed to run %s"
 msgstr "%s 실행 실패"
 
-#: shared/utils/utils.go:285
+#: shared/utils/utils.go:286
 msgid "Failed to read random data"
 msgstr "임의 데이터 읽기 실패"
 
-#: shared/utils/utils.go:306
+#: shared/utils/utils.go:307
 #, javascript-format
 msgid "error downloading from %s"
 msgstr "%s에서 다운로드하지 못함"
 
-#: shared/utils/utils.go:312
+#: shared/utils/utils.go:313
 #, javascript-format
 msgid "bad status: %s"
 msgstr "잘못된 상태: %s"
 
-#: shared/utils/utils.go:425
+#: shared/utils/utils.go:426
 msgid "failed to compute server FQDN"
 msgstr "서버 FQDN 계산 실패"
 
-#: shared/utils/utils.go:439
+#: shared/utils/utils.go:440
 #, javascript-format
 msgid "%s is not a valid FQDN"
 msgstr "%s은(는) 유효한 FQDN이 아닙니다."
 
-#: shared/utils/utils.go:443
+#: shared/utils/utils.go:444
 #, javascript-format
 msgid "cannot resolve %s"
 msgstr "%s 해결 불가"
 
-#: shared/utils/utils.go:474
+#: shared/utils/utils.go:475
 #, javascript-format
 msgid "error creating file %s"
 msgstr "%s 파일 생성 오류"
 
-#: shared/utils/utils.go:479
+#: shared/utils/utils.go:480
 #, javascript-format
 msgid "error writing file %s"
 msgstr "%s 파일 쓰기 오류"
 
-#: shared/utils/utils.go:491 shared/utils/utils.go:506
+#: shared/utils/utils.go:492 shared/utils/utils.go:507
 #, javascript-format
 msgid "Failed to calculate checksum of the file %s"
 msgstr "파일 %s의 체크섬을 계산하지 못함"
 
-#: shared/utils/utils.go:496
+#: shared/utils/utils.go:497
 msgid "Failed to write checksum of the file %[1]s to the %[2]s"
 msgstr "%[1] 파일의 체크섬을 %[2]에 쓰지 못함"
 
-#: shared/utils/utils.go:513
+#: shared/utils/utils.go:514
 #, fuzzy
 #| msgid "Failed to calculate checksum of the file %s"
 msgid "Failed to read checksum of the file %[1]s"
 msgstr "파일 %s의 체크섬을 계산하지 못함"
 
-#: shared/utils/utils.go:517
+#: shared/utils/utils.go:518
 #, javascript-format
 msgid "Checksum of %s does not match"
 msgstr "%s의 체크섬이 일치하지 않음"
+
+#: shared/utils/utils.go:526
+msgid "nBytes must be > 0"
+msgstr ""
 
 #: shared/utils/uyuniservices.go:18
 msgid "Main service"
@@ -1814,8 +1843,11 @@ msgstr "Saline"
 msgid "Database"
 msgstr "데이터베이스"
 
-#~ msgid "failed to run supportconfig on the host"
-#~ msgstr "호스트에서 supportconfig 실행 실패"
+#~ msgid "failed to find container supportconfig tarball from command output"
+#~ msgstr "명령 출력에서 컨테이너 supportconfig tarball을 찾지 못함"
+
+#~ msgid "cannot copy tarball"
+#~ msgstr "tarball을 복사할 수 없음"
 
 #~ msgid "No CA found"
 #~ msgstr "CA 없음"

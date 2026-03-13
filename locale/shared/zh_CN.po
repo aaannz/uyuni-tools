@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2025-06-12 08:59+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-shared/zh_CN/>\n"
@@ -244,26 +244,38 @@ msgstr "无法确定合适的后端"
 msgid "no supported backend found"
 msgstr "未找到支持的后端"
 
-#: shared/connection.go:498
-#, javascript-format
-msgid "Running supportconfig in  %s"
-msgstr "正在 %s 中运行 supportconfig"
-
-#: shared/connection.go:506
-msgid "failed to run supportconfig"
+#: shared/connection.go:504 shared/utils/support.go:102
+#, fuzzy
+#| msgid "failed to run supportconfig"
+msgid "failed to generate supportconfig suffix: %w"
 msgstr "无法运行 supportconfig"
 
-#: shared/connection.go:510
-msgid "failed to find container supportconfig tarball from command output"
-msgstr "在命令输出中找不到容器 supportconfig Tar 包"
+#: shared/connection.go:516 shared/utils/support.go:116
+#, fuzzy, javascript-format
+#| msgid "failed to run supportconfig on the host"
+msgid "failed to generate unique supportconfig batch name after %d attempts"
+msgstr "无法在主机上运行 supportconfig"
 
-#: shared/connection.go:516
-msgid "cannot copy tarball"
-msgstr "无法复制 Tar 包"
+#: shared/connection.go:520
+#, fuzzy, javascript-format
+#| msgid "Running supportconfig in  %s"
+msgid "Running supportconfig in %s"
+msgstr "正在 %s 中运行 supportconfig"
 
-#: shared/connection.go:522
-#, javascript-format
-msgid "failed to remove %s file in the container"
+#: shared/connection.go:527 shared/utils/support.go:122
+msgid "Some parts of supportconfig were not successful"
+msgstr ""
+
+#: shared/connection.go:532
+#, fuzzy
+#| msgid "cannot read config"
+msgid "cannot copy support config"
+msgstr "无法读取配置"
+
+#: shared/connection.go:538
+#, fuzzy, javascript-format
+#| msgid "failed to remove %s file in the container"
+msgid "failed to remove %s directory in the container"
 msgstr "无法去除容器中的 %s 文件"
 
 #: shared/kubernetes/apply.go:46
@@ -1627,11 +1639,11 @@ msgstr "无法禁用 %s 服务"
 msgid "Couldn't open %[1]s file for writing, writing log to %[2]s"
 msgstr "无法打开 %[1]s 文件写入数据，正在将日志写入 %[2]s"
 
-#: shared/utils/support.go:32
+#: shared/utils/support.go:26
 msgid "Unable to detect hostname, using localhost"
 msgstr "无法检测主机名，正在使用 localhost"
 
-#: shared/utils/support.go:46
+#: shared/utils/support.go:40
 msgid "Preparing the tarball"
 msgstr "正在准备 Tar 包"
 
@@ -1640,19 +1652,32 @@ msgstr "正在准备 Tar 包"
 msgid "failed to add %s to tarball"
 msgstr "无法将 %s 添加到 Tar 包"
 
-#: shared/utils/support.go:104
-msgid "failed to find host supportconfig tarball from command output"
+#: shared/utils/support.go:66
+#, javascript-format
+msgid "Support config tarball created at %s"
+msgstr ""
+
+#: shared/utils/support.go:119
+#, fuzzy
+#| msgid "Running supportconfig in  %s"
+msgid "Running supportconfig on the host"
+msgstr "正在 %s 中运行 supportconfig"
+
+#: shared/utils/support.go:129
+#, fuzzy
+#| msgid "failed to find host supportconfig tarball from command output"
+msgid "failed to find host supportconfig tarball"
 msgstr "在命令输出中找不到主机 supportconfig Tar 包"
 
-#: shared/utils/support.go:107
+#: shared/utils/support.go:132
 msgid "supportconfig is not available on the host, skipping it"
 msgstr "无法在主机上使用 supportconfig，正在跳过"
 
-#: shared/utils/tar.go:48
+#: shared/utils/tar.go:49
 msgid "Skipping extraction of %[1]s in %[2]s file as it resolves outside the target path"
 msgstr "正在跳过在 %[2]s 文件中提取 %[1]s 的步骤，因为该文件在目标路径之外解析"
 
-#: shared/utils/tar.go:90
+#: shared/utils/tar.go:91
 #, javascript-format
 msgid "failed to write tar.gz to %s"
 msgstr "无法在 %s 中写入 tar.gz"
@@ -1667,128 +1692,132 @@ msgstr "%s 文件已存在，将不重写"
 msgid "failed to open %s for writing"
 msgstr "无法打开 %s 以写入数据"
 
-#: shared/utils/utils.go:59
+#: shared/utils/utils.go:60
 #, javascript-format
 msgid "Has to be more than %d character long"
 msgid_plural "Has to be more than %d characters long"
 msgstr[0] "包含的字符数必须大于 %d"
 
-#: shared/utils/utils.go:63
+#: shared/utils/utils.go:64
 #, javascript-format
 msgid "Has to be less than %d character long"
 msgid_plural "Has to be less than %d characters long"
 msgstr[0] "包含的字符数必须小于 %d"
 
-#: shared/utils/utils.go:74
+#: shared/utils/utils.go:75
 msgid "Failed to read password"
 msgstr "无法读取口令"
 
-#: shared/utils/utils.go:88
+#: shared/utils/utils.go:89
 msgid "Cannot contain spaces or tabs"
 msgstr "不得包含空格或制表符"
 
-#: shared/utils/utils.go:105 shared/utils/utils.go:128
-#: shared/utils/utils.go:141
+#: shared/utils/utils.go:106 shared/utils/utils.go:129
+#: shared/utils/utils.go:142
 msgid "not an interactive device, not asking for missing value"
 msgstr "不是交互设备，不提示提供缺少的值"
 
-#: shared/utils/utils.go:114
+#: shared/utils/utils.go:115
 msgid "Confirm the password"
 msgstr "确认口令"
 
-#: shared/utils/utils.go:116
+#: shared/utils/utils.go:117
 msgid "Two different passwords have been provided"
 msgstr "两次提供的口令不相同"
 
-#: shared/utils/utils.go:150
+#: shared/utils/utils.go:151
 msgid "failed to read input"
 msgstr "无法读取输入"
 
-#: shared/utils/utils.go:158
+#: shared/utils/utils.go:159
 msgid "A value is required"
 msgstr "必须提供值"
 
-#: shared/utils/utils.go:226 shared/utils/utils.go:248
+#: shared/utils/utils.go:227 shared/utils/utils.go:249
 #, javascript-format
 msgid "invalid image name: %s"
 msgstr "映像名称无效：%s"
 
-#: shared/utils/utils.go:230
+#: shared/utils/utils.go:231
 #, javascript-format
 msgid "tag missing on %s"
 msgstr "%s 缺少标记"
 
-#: shared/utils/utils.go:235 shared/utils/utils.go:239
+#: shared/utils/utils.go:236 shared/utils/utils.go:240
 #, javascript-format
 msgid "Computed image name is %s"
 msgstr "计算的映像名称为 %s"
 
-#: shared/utils/utils.go:266
+#: shared/utils/utils.go:267
 msgid "image path '%[1]s' does not start with registry path '%[2]s'"
 msgstr ""
 
-#: shared/utils/utils.go:276
+#: shared/utils/utils.go:277
 #, javascript-format
 msgid "Failed to run %s"
 msgstr "无法运行 %s"
 
-#: shared/utils/utils.go:285
+#: shared/utils/utils.go:286
 msgid "Failed to read random data"
 msgstr "无法读取随机数据"
 
-#: shared/utils/utils.go:306
+#: shared/utils/utils.go:307
 #, javascript-format
 msgid "error downloading from %s"
 msgstr "从 %s 下载时出错"
 
-#: shared/utils/utils.go:312
+#: shared/utils/utils.go:313
 #, javascript-format
 msgid "bad status: %s"
 msgstr "不良状态：%s"
 
-#: shared/utils/utils.go:425
+#: shared/utils/utils.go:426
 msgid "failed to compute server FQDN"
 msgstr "无法计算服务器 FQDN"
 
-#: shared/utils/utils.go:439
+#: shared/utils/utils.go:440
 #, javascript-format
 msgid "%s is not a valid FQDN"
 msgstr "%s 不是有效 FQDN"
 
-#: shared/utils/utils.go:443
+#: shared/utils/utils.go:444
 #, javascript-format
 msgid "cannot resolve %s"
 msgstr "无法解析 %s"
 
-#: shared/utils/utils.go:474
+#: shared/utils/utils.go:475
 #, javascript-format
 msgid "error creating file %s"
 msgstr "创建文件 %s 时出错"
 
-#: shared/utils/utils.go:479
+#: shared/utils/utils.go:480
 #, javascript-format
 msgid "error writing file %s"
 msgstr "写入文件 %s 时出错"
 
-#: shared/utils/utils.go:491 shared/utils/utils.go:506
+#: shared/utils/utils.go:492 shared/utils/utils.go:507
 #, javascript-format
 msgid "Failed to calculate checksum of the file %s"
 msgstr "无法计算文件 %s 的校验和"
 
-#: shared/utils/utils.go:496
+#: shared/utils/utils.go:497
 msgid "Failed to write checksum of the file %[1]s to the %[2]s"
 msgstr "无法将文件 %[1]s 的校验和写入 %[2]s"
 
-#: shared/utils/utils.go:513
+#: shared/utils/utils.go:514
 #, fuzzy
 #| msgid "Failed to calculate checksum of the file %s"
 msgid "Failed to read checksum of the file %[1]s"
 msgstr "无法计算文件 %s 的校验和"
 
-#: shared/utils/utils.go:517
+#: shared/utils/utils.go:518
 #, javascript-format
 msgid "Checksum of %s does not match"
 msgstr "%s 的校验和不匹配"
+
+#: shared/utils/utils.go:526
+msgid "nBytes must be > 0"
+msgstr ""
 
 #: shared/utils/uyuniservices.go:18
 msgid "Main service"
@@ -1814,8 +1843,11 @@ msgstr "Saline"
 msgid "Database"
 msgstr "数据库"
 
-#~ msgid "failed to run supportconfig on the host"
-#~ msgstr "无法在主机上运行 supportconfig"
+#~ msgid "failed to find container supportconfig tarball from command output"
+#~ msgstr "在命令输出中找不到容器 supportconfig Tar 包"
+
+#~ msgid "cannot copy tarball"
+#~ msgstr "无法复制 Tar 包"
 
 #~ msgid "No CA found"
 #~ msgstr "未找到 CA"

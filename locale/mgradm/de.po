@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2025-10-19 13:59+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/de/>\n"
@@ -490,7 +490,7 @@ msgstr ""
 msgid "Distribution %s successfully registered"
 msgstr "Distribution %s erfolgreich registriert"
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr "Quelle %s existiert nicht"
@@ -1319,10 +1319,6 @@ msgstr ""
 
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
-msgstr ""
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
 msgstr ""
 
 #: mgradm/cmd/support/sql/sql.go:50

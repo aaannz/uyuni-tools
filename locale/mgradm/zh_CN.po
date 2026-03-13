@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-06 11:22+0100\n"
 "PO-Revision-Date: 2026-01-19 08:04+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/zh_CN/>\n"
@@ -486,7 +486,7 @@ msgstr "无法注册该发行套件。需要手动注册发行套件"
 msgid "Distribution %s successfully registered"
 msgstr "已成功注册发行套件 %s"
 
-#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:34
+#: mgradm/cmd/distro/cp.go:76 mgradm/cmd/support/sql/sql.go:32
 #, javascript-format
 msgid "source %s does not exists"
 msgstr "源 %s 不存在"
@@ -1407,10 +1407,6 @@ msgstr ""
 #: mgradm/cmd/support/ptf/ptf.go:20
 msgid "Install a PTF"
 msgstr "安装 PTF"
-
-#: mgradm/cmd/support/sql/sql.go:38
-msgid "unable to get random file prefix"
-msgstr "无法获取随机文件前缀"
 
 #: mgradm/cmd/support/sql/sql.go:50
 msgid "unable to cleanup source file"
@@ -2417,6 +2413,9 @@ msgstr "不是有效的电子邮件地址"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "无法显示设置脚本"
+
+#~ msgid "unable to get random file prefix"
+#~ msgstr "无法获取随机文件前缀"
 
 #~ msgid "CA validation failed!"
 #~ msgstr "CA 验证失败！"
