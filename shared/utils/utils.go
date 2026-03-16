@@ -212,7 +212,7 @@ func ComputeImage(
 
 	name := imageFlags.Name
 
-	if !StartWithFQDN(name) {
+	if !StartWithFQDN(name) && !strings.HasPrefix(name, "localhost/") {
 		name = path.Join(registry, imageFlags.Name)
 	}
 
