@@ -16,6 +16,7 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+	backup_db "github.com/uyuni-project/uyuni-tools/mgradm/cmd/backup/db"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/coco"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/hub"
 	"github.com/uyuni-project/uyuni-tools/mgradm/shared/pgsql"
@@ -656,6 +657,14 @@ func Migrate(
 		log.Warn().Err(err).Msg(L("cannot remove temporary etc-tls volume"))
 	}
 
+	// Let's prepare volume config in advance, we don't have to restart database later
+	if db.Walbackup {
+		if err := pgsql.GenerateBackupVolumeConfig(systemd); err != nil {
+			// I don't expect errors here, but if there is, just report it. Here we are after multihour
+			// migration procedure, let's not fail on later fixable things.
+			log.Error().Err(err).Msg(L("failed to prepare backup volume configuration"))
+		}
+	}
 	if err := pgsql.Upgrade(preparedPgsqlImage, systemd); err != nil {
 		return err
 	}
@@ -703,6 +712,12 @@ func Migrate(
 
 	if err := saline.Upgrade(systemd, authFile, image, salineFlags, utils.GetLocalTimezone()); err != nil {
 		return utils.Errorf(err, L("error upgrading saline service."))
+	}
+
+	if db.Walbackup {
+		if err := backup_db.Enable(true); err != nil {
+			log.Error().Err(err).Msg(L("failed to enable coninuous backup."))
+		}
 	}
 
 	return systemd.ReloadDaemon(false)
