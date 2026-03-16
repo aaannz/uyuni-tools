@@ -268,7 +268,7 @@ func (c *Connection) ExecScript(script string) ([]byte, error) {
 
 	defer func() {
 		if _, err := c.Exec("rm", "-f", remotePath); err != nil {
-			log.Debug().Err(err).Msgf(L("failed to remove %s"), remotePath)
+			log.Debug().Err(err).Msgf("failed to remove %s", remotePath)
 		}
 	}()
 
