@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 11:22+0100\n"
+"POT-Creation-Date: 2026-03-18 13:47+0100\n"
 "PO-Revision-Date: 2026-01-19 08:04+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/zh_CN/>\n"
@@ -18,108 +18,108 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.15.2\n"
 
-#: mgradm/cmd/backup/backup.go:28
+#: mgradm/cmd/backup/backup.go:29
 msgid "Create backup"
 msgstr "创建备份"
 
-#: mgradm/cmd/backup/backup.go:29
+#: mgradm/cmd/backup/backup.go:30
 msgid "Create backup of the already configured Uyuni system"
 msgstr "创建已配置的 Uyuni 系统的备份"
 
-#: mgradm/cmd/backup/backup.go:35
+#: mgradm/cmd/backup/backup.go:36
 msgid "Skip backup of selected volumes"
 msgstr "跳过备份所选卷步骤"
 
-#: mgradm/cmd/backup/backup.go:36
+#: mgradm/cmd/backup/backup.go:37
 msgid "Backup additional volumes to the build-in ones"
 msgstr "将附加卷备份到内置卷"
 
-#: mgradm/cmd/backup/backup.go:37
+#: mgradm/cmd/backup/backup.go:38
 msgid "Do not backup database volume, allow online backup."
 msgstr "不备份数据库卷，允许联机备份。"
 
-#: mgradm/cmd/backup/backup.go:38
+#: mgradm/cmd/backup/backup.go:39
 msgid "Do not backup container images"
 msgstr "不备份容器映像"
 
-#: mgradm/cmd/backup/backup.go:39
+#: mgradm/cmd/backup/backup.go:40
 msgid "Do not backup podman configuration. On restore defaults will be used"
 msgstr "不备份 podman 配置。恢复时将使用默认值"
 
-#: mgradm/cmd/backup/backup.go:40
+#: mgradm/cmd/backup/backup.go:41
 msgid "Do not restart services after backup is done"
 msgstr "完成备份后不重启服务"
 
-#: mgradm/cmd/backup/backup.go:41 mgradm/cmd/backup/backup.go:64
+#: mgradm/cmd/backup/backup.go:42 mgradm/cmd/backup/backup.go:65
 msgid "Print expected actions, but no action is done"
 msgstr "列显要执行的操作，但不真正执行"
 
-#: mgradm/cmd/backup/backup.go:52
+#: mgradm/cmd/backup/backup.go:53
 msgid "Restore backup from the directory"
 msgstr "从目录恢复备份"
 
-#: mgradm/cmd/backup/backup.go:53
+#: mgradm/cmd/backup/backup.go:54
 msgid "Restore backup of the previously configured Uyuni system from a specified directory"
 msgstr "从指定目录恢复之前配置的 Uyuni 系统的备份"
 
-#: mgradm/cmd/backup/backup.go:59
+#: mgradm/cmd/backup/backup.go:60
 msgid "Skip restore of selected volumes"
 msgstr "跳过恢复所选卷步骤"
 
-#: mgradm/cmd/backup/backup.go:60
+#: mgradm/cmd/backup/backup.go:61
 msgid "Do not restore database volume"
 msgstr "不恢复数据库卷"
 
-#: mgradm/cmd/backup/backup.go:61
+#: mgradm/cmd/backup/backup.go:62
 msgid "Skip restore of container images"
 msgstr "跳过恢复容器映像步骤"
 
-#: mgradm/cmd/backup/backup.go:62
+#: mgradm/cmd/backup/backup.go:63
 msgid "Do not restore podman configuration. Defaults will be used"
 msgstr "不恢复 podman 配置。将使用默认值"
 
-#: mgradm/cmd/backup/backup.go:63
+#: mgradm/cmd/backup/backup.go:64
 msgid "Restart service after restore is done"
 msgstr "完成恢复后重启服务"
 
-#: mgradm/cmd/backup/backup.go:65
+#: mgradm/cmd/backup/backup.go:66
 msgid "Force overwrite of existing items"
 msgstr "强制重写现有项"
 
-#: mgradm/cmd/backup/backup.go:66
+#: mgradm/cmd/backup/backup.go:67
 msgid "Skip existing items and restore the rest"
 msgstr "跳过现有项，恢复其余内容"
 
-#: mgradm/cmd/backup/backup.go:67
+#: mgradm/cmd/backup/backup.go:68
 msgid "Skip verification of the backup files"
 msgstr "跳过验证备份文件步骤"
 
-#: mgradm/cmd/backup/backup.go:77
+#: mgradm/cmd/backup/backup.go:78
 msgid "Backup solution"
 msgstr "备份解决方案"
 
-#: mgradm/cmd/backup/backup.go:78
+#: mgradm/cmd/backup/backup.go:79
 msgid "Tools for local backup management"
 msgstr "用于管理本地备份的工具"
 
-#: mgradm/cmd/backup/backup.go:101
+#: mgradm/cmd/backup/backup.go:103
 #, javascript-format
 msgid "Backup aborted, partially backed up files remains in '%s'"
 msgstr "备份已中止，部分备份的文件会保留在 '%s' 中"
 
-#: mgradm/cmd/backup/backup.go:105
+#: mgradm/cmd/backup/backup.go:107
 msgid "Important data were backed up successfully, but errors were present. Restore will use default values where needed"
 msgstr "已成功备份重要数据，但发生了错误。恢复时将根据需要使用默认值"
 
-#: mgradm/cmd/backup/backup.go:125
+#: mgradm/cmd/backup/backup.go:127
 msgid "Encountered problems:"
 msgstr "遇到的问题："
 
-#: mgradm/cmd/backup/backup.go:127
+#: mgradm/cmd/backup/backup.go:129
 msgid "Restore aborted with partially restored files. Resolve the error and try again"
 msgstr "恢复已中止，恢复了部分文件。请解决错误后再重试"
 
-#: mgradm/cmd/backup/backup.go:130
+#: mgradm/cmd/backup/backup.go:132
 msgid "Important data were restored successfully, but with warnings"
 msgstr "已成功恢复重要数据，但出现警告"
 
@@ -231,6 +231,221 @@ msgstr "将备份 %s"
 #: mgradm/cmd/backup/create/systemd_utils.go:35
 msgid "failed to create Systemd backup tarball: %w"
 msgstr "无法创建 systemd 备份 Tar 包：%w"
+
+#: mgradm/cmd/backup/db/cmd.go:19
+#, fuzzy
+#| msgid "Database name"
+msgid "Database backup management"
+msgstr "数据库名称"
+
+#: mgradm/cmd/backup/db/cmd.go:20
+#, fuzzy
+#| msgid "Tools for local backup management"
+msgid "Tools for online database backup management"
+msgstr "用于管理本地备份的工具"
+
+#: mgradm/cmd/backup/db/cmd.go:34
+msgid "Enable continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:39
+msgid "Reconfigure already configured backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:48
+msgid "Rebase continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:61
+msgid "Disable continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:66
+msgid "Don't ask for confirmation when purging volume"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:67
+#, fuzzy
+#| msgid "Failed to remove volume %s"
+msgid "Also remove the volume"
+msgstr "无法去除卷 %s"
+
+#: mgradm/cmd/backup/db/cmd.go:76
+msgid "Check WAL based database backup status"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:88
+#, fuzzy
+#| msgid "Report database name"
+msgid "Restore database backup"
+msgstr "报告数据库名称"
+
+#: mgradm/cmd/backup/db/cmd.go:93
+#, fuzzy
+#| msgid "Import without asking confirmation"
+msgid "Don't ask for confirmation"
+msgstr "不要求确认即导入"
+
+#: mgradm/cmd/backup/db/disable.go:17
+msgid "Disabling DB backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:24 mgradm/cmd/backup/db/enable.go:34
+msgid "Database service needs to be restarted to reload backup configurations, continue"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:26
+#, fuzzy
+#| msgid "Backing up podman configuration"
+msgid "Backup reconfiguration aborted"
+msgstr "正在备份 podman 配置"
+
+#: mgradm/cmd/backup/db/disable.go:45
+msgid "Backup volume will be removed, continue?"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:47
+msgid "Aborting volume purge"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:54
+#, javascript-format
+msgid "Backup volume '%s' removed"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:58 mgradm/cmd/backup/db/enable.go:66
+#: mgradm/cmd/backup/db/rebase.go:28
+#, fuzzy
+#| msgid "Starting %s"
+msgid "Starting database…"
+msgstr "正在启动 %s"
+
+#: mgradm/cmd/backup/db/enable.go:22
+#, fuzzy
+#| msgid "Create backup"
+msgid "Enable DB backup"
+msgstr "创建备份"
+
+#: mgradm/cmd/backup/db/enable.go:25
+#, fuzzy
+#| msgid "server is already initialized. Use force to overwrite"
+msgid "backup is already configured. Use --force to reconfigure"
+msgstr "服务器已初始化。使用强制选项将会重写"
+
+#: mgradm/cmd/backup/db/enable.go:36
+#, fuzzy
+#| msgid "Backing up podman configuration"
+msgid "Backup configuration aborted"
+msgstr "正在备份 podman 配置"
+
+#: mgradm/cmd/backup/db/enable.go:85
+#, javascript-format
+msgid "Continuous Archiving backup configured. Backup target volume is '%s'"
+msgstr ""
+
+#: mgradm/cmd/backup/db/enable.go:98
+#, fuzzy
+#| msgid "failed to generate postgresql migration script"
+msgid "failed to generate postgresql backup script"
+msgstr "无法生成 postgresql 迁移脚本"
+
+#: mgradm/cmd/backup/db/rebase.go:17
+msgid "Rebasing postgres WAL backup to new basebackup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/rebase.go:20
+msgid "database backup is not correctly configured: %w"
+msgstr ""
+
+#: mgradm/cmd/backup/db/rebase.go:42
+#, fuzzy
+#| msgid "Skipping database volume %s"
+msgid "Stopping database…"
+msgstr "正在跳过数据库卷 %s"
+
+#: mgradm/cmd/backup/db/restore.go:25
+msgid "Restoring DB backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:28
+msgid "Restoring from backup is a destructive operation. Proceed"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:29
+msgid "Aborting"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:33
+#, fuzzy
+#| msgid "Stopping server service"
+msgid "Stopping database service…"
+msgstr "正在停止服务器服务"
+
+#: mgradm/cmd/backup/db/restore.go:40
+#, fuzzy
+#| msgid "failed to determine server image"
+msgid "failed to determine database image"
+msgstr "无法确定服务器映像"
+
+#: mgradm/cmd/backup/db/restore.go:56
+#, fuzzy
+#| msgid "failed to generate postgresql migration script"
+msgid "failed to generate postgresql restore script"
+msgstr "无法生成 postgresql 迁移脚本"
+
+#: mgradm/cmd/backup/db/restore.go:59
+msgid "Restoring base backup…"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:73
+#, fuzzy
+#| msgid "Generating the database certificate…"
+msgid "Starting database service…"
+msgstr "正在生成数据库证书…"
+
+#: mgradm/cmd/backup/db/restore.go:78
+msgid "Base backup restore complete. Database is recovering."
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:88 mgradm/cmd/backup/db/restore.go:101
+#, fuzzy
+#| msgid "Database user"
+msgid "Database is restored."
+msgstr "数据库用户"
+
+#: mgradm/cmd/backup/db/restore.go:91
+#, fuzzy
+#| msgid "failed to inspect database container image"
+msgid "failed to check database recovery status"
+msgstr "无法检查数据库容器映像"
+
+#: mgradm/cmd/backup/db/restore.go:95
+msgid " Database is recovering… (use Ctrl-C to interrupt waiting)"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:104
+msgid "error while waiting for database recovery to complete, check database logs"
+msgstr ""
+
+#: mgradm/cmd/backup/db/status.go:24
+msgid "Checking DB backup status"
+msgstr ""
+
+#: mgradm/cmd/backup/db/status.go:40
+msgid "Database continuous backup is %[1]s. Backup volume is %[2]s"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:24
+msgid "archive_mode is off"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:25
+msgid "archive_command is misconfigured"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:26
+msgid "archive volume is not configured correctly"
+msgstr ""
 
 #: mgradm/cmd/backup/restore/podman_utils.go:47
 #, javascript-format
@@ -430,41 +645,41 @@ msgstr "无法确定目标 %s 的存储空间大小"
 msgid "insufficient space on target device"
 msgstr "目标设备上的空间不足"
 
-#: mgradm/cmd/backup/shared/utils.go:68 mgradm/cmd/install/podman/utils.go:44
+#: mgradm/cmd/backup/shared/utils.go:68 mgradm/cmd/install/podman/utils.go:45
 #: mgradm/cmd/migrate/podman/utils.go:40 mgradm/cmd/upgrade/podman/utils.go:34
 msgid "install podman before running this command"
 msgstr "在运行此命令前安装 podman"
 
-#: mgradm/cmd/cmd.go:43
+#: mgradm/cmd/cmd.go:42
 msgid "Uyuni administration tool"
 msgstr "Uyuni 管理工具"
 
-#: mgradm/cmd/cmd.go:44
+#: mgradm/cmd/cmd.go:43
 msgid "Tool to help administering Uyuni servers in containers"
 msgstr "用于帮助管理容器中的 Uyuni 服务器的工具"
 
-#: mgradm/cmd/cmd.go:51
+#: mgradm/cmd/cmd.go:50
 msgid "Server Deployment:"
 msgstr "服务器部署："
 
-#: mgradm/cmd/cmd.go:55
+#: mgradm/cmd/cmd.go:54
 msgid "Server Management:"
 msgstr "服务器管理："
 
-#: mgradm/cmd/cmd.go:59
+#: mgradm/cmd/cmd.go:58
 msgid "Administrator tools:"
 msgstr "管理员工具："
 
-#: mgradm/cmd/cmd.go:69
+#: mgradm/cmd/cmd.go:68
 #, javascript-format
 msgid "Starting %s"
 msgstr "正在启动 %s"
 
-#: mgradm/cmd/cmd.go:70
+#: mgradm/cmd/cmd.go:69
 msgid "Use of this software implies acceptance of the End User License Agreement."
 msgstr "使用此软件即表示您接受本《最终用户许可协议》。"
 
-#: mgradm/cmd/cmd.go:74
+#: mgradm/cmd/cmd.go:73
 msgid "configuration file path"
 msgstr "配置文件路径"
 
@@ -740,63 +955,6 @@ msgstr "列出系统密钥环中的密钥"
 msgid "failed to list keys in selected keyring"
 msgstr "无法列出所选密钥环中的密钥"
 
-#: mgradm/cmd/hub/hub.go:19
-msgid "Hub management"
-msgstr "Hub 管理"
-
-#: mgradm/cmd/hub/hub.go:20
-msgid "Tools and utilities for Hub management"
-msgstr "用于进行 Hub 管理的工具和实用程序"
-
-#: mgradm/cmd/hub/register/register.go:30
-msgid "Register"
-msgstr "注册"
-
-#: mgradm/cmd/hub/register/register.go:31
-msgid "Register this peripheral server to Hub API"
-msgstr "将此外设服务器注册到 Hub API"
-
-#: mgradm/cmd/hub/register/register.go:81
-#, javascript-format
-msgid "invalid line format: %s"
-msgstr "命令行格式无效：%s"
-
-#: mgradm/cmd/hub/register/register.go:96
-#, javascript-format
-msgid "mandatory %s entry missing in config"
-msgstr "配置中缺少必需的 %s 项"
-
-#: mgradm/cmd/hub/register/register.go:99
-#, javascript-format
-msgid "Hub API server: %s"
-msgstr "Hub API 服务器：%s"
-
-#: mgradm/cmd/hub/register/register.go:105
-msgid "failed to connect to the Hub server"
-msgstr "无法连接到 Hub 服务器"
-
-#: mgradm/cmd/hub/register/register.go:114
-msgid "failed to register this peripheral server"
-msgstr "无法注册此外设服务器"
-
-#: mgradm/cmd/hub/register/register.go:117
-#, javascript-format
-msgid "failed to register this peripheral server: %s"
-msgstr "无法注册此外设服务器：%s"
-
-#: mgradm/cmd/hub/register/register.go:131
-msgid "failed to update peripheral server info"
-msgstr "无法更新外设服务器信息"
-
-#: mgradm/cmd/hub/register/register.go:135
-#, javascript-format
-msgid "failed to update peripheral server info: %s"
-msgstr "无法更新外设服务器信息：%s"
-
-#: mgradm/cmd/hub/register/register.go:137
-msgid "Registered peripheral server: %[1]s, ID: %[2]d"
-msgstr "已注册外设服务器：%[1]s，ID：%[2]d"
-
 #: mgradm/cmd/inspect/inspect.go:28
 msgid "Inspect"
 msgstr "检查"
@@ -897,55 +1055,55 @@ msgstr ""
 "\n"
 "注意：目前不支持在远程 podman 上安装！\n"
 
-#: mgradm/cmd/install/podman/utils.go:55
+#: mgradm/cmd/install/podman/utils.go:56
 msgid "Server is already initialized! Uninstall before attempting new installation or use upgrade command"
 msgstr "服务器已初始化！请先将其卸装，再尝试进行全新安装或使用升级命令"
 
-#: mgradm/cmd/install/podman/utils.go:62
+#: mgradm/cmd/install/podman/utils.go:63
 #, javascript-format
 msgid "Setting up the server with the FQDN '%s'"
 msgstr "正在使用 FQDN '%s' 设置服务器"
 
-#: mgradm/cmd/install/podman/utils.go:66 mgradm/shared/podman/podman.go:392
-#: mgradm/shared/podman/podman.go:592
+#: mgradm/cmd/install/podman/utils.go:67 mgradm/shared/podman/podman.go:393
+#: mgradm/shared/podman/podman.go:593
 msgid "cannot prepare images"
 msgstr "无法准备映像"
 
-#: mgradm/cmd/install/podman/utils.go:70 mgradm/shared/podman/podman.go:93
-#: mgradm/shared/podman/podman.go:382 mgradm/shared/podman/podman.go:584
+#: mgradm/cmd/install/podman/utils.go:71 mgradm/shared/podman/podman.go:94
+#: mgradm/shared/podman/podman.go:383 mgradm/shared/podman/podman.go:585
 msgid "cannot setup network"
 msgstr "无法设置网络"
 
-#: mgradm/cmd/install/podman/utils.go:108 mgradm/shared/podman/podman.go:941
+#: mgradm/cmd/install/podman/utils.go:118 mgradm/shared/podman/podman.go:956
 #, javascript-format
 msgid "Skipped database container setup to use external database %s"
 msgstr "已跳过数据库容器设置步骤，将使用外部数据库 %s"
 
-#: mgradm/cmd/install/podman/utils.go:113
+#: mgradm/cmd/install/podman/utils.go:123
 msgid "Run setup command in the container"
 msgstr "在容器中运行设置命令"
 
-#: mgradm/cmd/install/podman/utils.go:122 mgradm/shared/podman/podman.go:678
+#: mgradm/cmd/install/podman/utils.go:132 mgradm/shared/podman/podman.go:687
 msgid "cannot wait for system start"
 msgstr "无法等待系统启动"
 
-#: mgradm/cmd/install/podman/utils.go:125
+#: mgradm/cmd/install/podman/utils.go:135
 msgid "failed to add SSL CA certificate to host trusted certificates"
 msgstr "无法将 SSL CA 证书添加到主机信任的证书列表中"
 
-#: mgradm/cmd/install/podman/utils.go:132
+#: mgradm/cmd/install/podman/utils.go:142
 msgid "failed to extract payg data"
 msgstr "无法提取 payg 数据"
 
-#: mgradm/cmd/install/podman/utils.go:136
+#: mgradm/cmd/install/podman/utils.go:146
 msgid "cannot enable podman socket"
 msgstr "无法启用 podman 套接字"
 
-#: mgradm/cmd/install/podman/utils.go:203
+#: mgradm/cmd/install/podman/utils.go:213
 msgid "server setup failed"
 msgstr "服务器安装失败"
 
-#: mgradm/cmd/install/podman/utils.go:206
+#: mgradm/cmd/install/podman/utils.go:216
 msgid "Server set up, login on https://%[1]s with %[2]s user"
 msgstr "服务器设置，以 %[2]s 用户身份在 https://%[1]s 上登录"
 
@@ -1130,13 +1288,13 @@ msgstr "无法读取 SSH known_hosts 文件 %s"
 msgid "failed to create the SSH migration ConfigMap"
 msgstr "无法创建 SSH 迁移配置映射"
 
-#: mgradm/cmd/migrate/kubernetes/utils.go:44 mgradm/shared/coco/coco.go:77
+#: mgradm/cmd/migrate/kubernetes/utils.go:44 mgradm/shared/coco/coco.go:78
 #: mgradm/shared/hub/xmlrpcapi.go:44
 #: mgradm/shared/kubernetes/dbUpgradeJob.go:44
 #: mgradm/shared/kubernetes/reconcile.go:38
-#: mgradm/shared/kubernetes/reconcile.go:305 mgradm/shared/pgsql/pgsql.go:28
-#: mgradm/shared/podman/podman.go:285 mgradm/shared/podman/podman.go:290
-#: mgradm/shared/saline/saline.go:69
+#: mgradm/shared/kubernetes/reconcile.go:305 mgradm/shared/pgsql/pgsql.go:30
+#: mgradm/shared/podman/podman.go:286 mgradm/shared/podman/podman.go:291
+#: mgradm/shared/saline/saline.go:72
 msgid "failed to compute image URL"
 msgstr "无法计算映像 URL"
 
@@ -1287,7 +1445,7 @@ msgstr ""
 "重命名期间会停止 uyuni-server 容器，\n"
 "并触发所有已注册系统的 Pillar 信息刷新。\n"
 
-#: mgradm/cmd/server/rename/rename.go:47 mgradm/shared/utils/cmd_utils.go:295
+#: mgradm/cmd/server/rename/rename.go:47 mgradm/shared/utils/cmd_utils.go:298
 msgid "Password for the CA key to generate"
 msgstr "要生成的 CA 密钥的口令"
 
@@ -1582,18 +1740,24 @@ msgstr "无法解组配置"
 msgid "Upgrade local server"
 msgstr "升级本地服务器"
 
-#: mgradm/shared/coco/coco.go:95
+#: mgradm/shared/coco/coco.go:28
+#, fuzzy
+#| msgid "error upgrading confidential computing service."
+msgid "Not altering the confidential computing service"
+msgstr "升级机密计算服务时出错。"
+
+#: mgradm/shared/coco/coco.go:96
 msgid "Setting up confidential computing attestation service"
 msgstr "设置机密计算认证服务"
 
-#: mgradm/shared/coco/coco.go:99 mgradm/shared/hub/xmlrpcapi.go:117
-#: mgradm/shared/pgsql/pgsql.go:117 mgradm/shared/podman/podman.go:76
-#: mgradm/shared/saline/saline.go:90
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
+#: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr "无法生成 systemd 服务单元文件"
 
-#: mgradm/shared/coco/coco.go:109 mgradm/shared/hub/xmlrpcapi.go:124
-#: mgradm/shared/podman/podman.go:104 mgradm/shared/saline/saline.go:98
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "无法生成 systemd 配置文件"
 
@@ -1602,8 +1766,8 @@ msgstr "无法生成 systemd 配置文件"
 msgid "No changes requested for hub. Keep %d replicas."
 msgstr "未针对 Hub 请求更改。保留 %d 个复本。"
 
-#: mgradm/shared/hub/xmlrpcapi.go:53 mgradm/shared/pgsql/pgsql.go:44
-#: mgradm/shared/pgsql/pgsql.go:67
+#: mgradm/shared/hub/xmlrpcapi.go:53 mgradm/shared/pgsql/pgsql.go:46
+#: mgradm/shared/pgsql/pgsql.go:69
 msgid "cannot generate systemd service"
 msgstr "无法生成 systemd 服务"
 
@@ -1611,10 +1775,16 @@ msgstr "无法生成 systemd 服务"
 msgid "Multiple Hub XML-RPC container replicas are not currently supported, setting up only one."
 msgstr "目前不支持多个 Hub XML-RPC 容器复本，将仅设置一个复本。"
 
-#: mgradm/shared/hub/xmlrpcapi.go:72 mgradm/shared/podman/podman.go:543
-#: mgradm/shared/saline/saline.go:140
+#: mgradm/shared/hub/xmlrpcapi.go:72 mgradm/shared/podman/podman.go:544
+#: mgradm/shared/saline/saline.go:143
 msgid "cannot enable service"
 msgstr "无法启用服务"
+
+#: mgradm/shared/hub/xmlrpcapi.go:87
+#, fuzzy
+#| msgid "Not starting Hub XML-RPC API service"
+msgid "Not altering the hub XML-RPC API service"
+msgstr "不启动 Hub XML-RPC API 服务"
 
 #: mgradm/shared/kubernetes/certificates.go:51
 msgid "Database SSL certificate and key have to be defined"
@@ -1711,7 +1881,7 @@ msgid "Upgrading PostgreSQL database from %[1]s to %[2]s…"
 msgstr "正在将 PostgreSQL 数据库从 %[1]s 升级到 %[2]s…"
 
 #: mgradm/shared/kubernetes/dbUpgradeJob.go:47
-#: mgradm/shared/podman/podman.go:299
+#: mgradm/shared/podman/podman.go:300
 #, javascript-format
 msgid "Using database upgrade image %s"
 msgstr "正在使用数据库升级映像 %s"
@@ -1802,173 +1972,185 @@ msgstr "无法创建 Traefik 中间件和路由"
 msgid "failed to write traefik routes to file"
 msgstr "无法向文件写入 Traefik 路由"
 
-#: mgradm/shared/pgsql/pgsql.go:55 mgradm/shared/pgsql/pgsql.go:84
+#: mgradm/shared/pgsql/pgsql.go:57 mgradm/shared/pgsql/pgsql.go:86
 #, javascript-format
 msgid "%s fails healtcheck"
 msgstr "%s 健康检查失败"
 
-#: mgradm/shared/pgsql/pgsql.go:123
+#: mgradm/shared/pgsql/pgsql.go:125 mgradm/shared/pgsql/pgsql.go:142
 msgid "cannot generate systemd configuration file"
 msgstr "无法生成 systemd 配置文件"
 
-#: mgradm/shared/podman/podman.go:96
+#: mgradm/shared/podman/podman.go:97
 msgid "Enabling system service"
 msgstr "正在启用系统服务"
 
-#: mgradm/shared/podman/podman.go:112 mgradm/shared/saline/saline.go:106
+#: mgradm/shared/podman/podman.go:113 mgradm/shared/saline/saline.go:109
 msgid "cannot generate systemd user configuration file"
 msgstr "无法生成 systemd 用户配置文件"
 
-#: mgradm/shared/podman/podman.go:139
+#: mgradm/shared/podman/podman.go:140
 msgid "failed to generate SSL migration script"
 msgstr "SSL 迁移脚本生成失败"
 
-#: mgradm/shared/podman/podman.go:159
+#: mgradm/shared/podman/podman.go:160
 #, javascript-format
 msgid "Migrating SSL certificates from the source server %s"
 msgstr "正在从源服务器 %s 迁移 SSL 证书"
 
-#: mgradm/shared/podman/podman.go:162
+#: mgradm/shared/podman/podman.go:163
 msgid "cannot run uyuni SSL migration container"
 msgstr "无法运行 uyuni SSL 迁移容器"
 
-#: mgradm/shared/podman/podman.go:173
+#: mgradm/shared/podman/podman.go:174
 #, javascript-format
 msgid "Failed to read file %s"
 msgstr "无法读取文件 %s"
 
-#: mgradm/shared/podman/podman.go:179
+#: mgradm/shared/podman/podman.go:180
 msgid "cannot read extracted data"
 msgstr "无法读取提取的数据"
 
-#: mgradm/shared/podman/podman.go:209
+#: mgradm/shared/podman/podman.go:210
 msgid "cannot generate migration script"
 msgstr "无法生成迁移脚本"
 
-#: mgradm/shared/podman/podman.go:227 mgradm/shared/utils/exec.go:102
+#: mgradm/shared/podman/podman.go:228 mgradm/shared/utils/exec.go:102
 msgid "Migrating server"
 msgstr "正在迁移服务器"
 
-#: mgradm/shared/podman/podman.go:230
+#: mgradm/shared/podman/podman.go:231
 msgid "cannot run uyuni migration container"
 msgstr "无法运行 uyuni 迁移容器"
 
-#: mgradm/shared/podman/podman.go:246
+#: mgradm/shared/podman/podman.go:247
 #, javascript-format
 msgid "cannot inspect volume %s"
 msgstr "无法检查卷 %s"
 
-#: mgradm/shared/podman/podman.go:249
+#: mgradm/shared/podman/podman.go:250
 #, javascript-format
 msgid "cannot restore %s SELinux permissions"
 msgstr "无法恢复 %s SELinux 权限"
 
-#: mgradm/shared/podman/podman.go:268
+#: mgradm/shared/podman/podman.go:269
 msgid "Previous PostgreSQL is %[1]s, new one is %[2]s. Performing a DB version upgrade…"
 msgstr "旧 PostgreSQL 版本为 %[1]s，新版本为 %[2]s。正在执行数据库版本升级…"
 
-#: mgradm/shared/podman/podman.go:309
+#: mgradm/shared/podman/podman.go:310
 msgid "cannot generate PostgreSQL database version upgrade script"
 msgstr "无法生成 PostgreSQL 数据库版本升级脚本"
 
-#: mgradm/shared/podman/podman.go:324
+#: mgradm/shared/podman/podman.go:325
 msgid "No need to run database finalization script"
 msgstr "无需运行数据库完成脚本"
 
-#: mgradm/shared/podman/podman.go:335 mgradm/shared/podman/podman.go:349
+#: mgradm/shared/podman/podman.go:336 mgradm/shared/podman/podman.go:350
 msgid "cannot generate PostgreSQL finalization script"
 msgstr "无法生成 PostgreSQL 完成脚本"
 
-#: mgradm/shared/podman/podman.go:402 mgradm/shared/podman/podman.go:410
-#: mgradm/shared/podman/podman.go:714
+#: mgradm/shared/podman/podman.go:403 mgradm/shared/podman/podman.go:411
+#: mgradm/shared/podman/podman.go:729
 msgid "cannot stop service"
 msgstr "无法停止服务"
 
-#: mgradm/shared/podman/podman.go:423 mgradm/shared/podman/podman.go:636
+#: mgradm/shared/podman/podman.go:424 mgradm/shared/podman/podman.go:637
 msgid "Configuring split PostgreSQL container. Image version: %[1]d, not migrated version: %[2]d"
 msgstr "正在配置分离式 PostgreSQL 容器。映像版本：%[1]d，未迁移版本：%[2]d"
 
-#: mgradm/shared/podman/podman.go:432 mgradm/shared/podman/podman.go:651
+#: mgradm/shared/podman/podman.go:433 mgradm/shared/podman/podman.go:652
 msgid "cannot configure db container"
 msgstr "无法配置数据库容器"
 
-#: mgradm/shared/podman/podman.go:441 mgradm/shared/podman/podman.go:887
+#: mgradm/shared/podman/podman.go:442 mgradm/shared/podman/podman.go:902
 msgid "cannot run PostgreSQL version upgrade script"
 msgstr "无法运行 PostgreSQL 版本升级脚本"
 
-#: mgradm/shared/podman/podman.go:444 mgradm/shared/podman/podman.go:890
+#: mgradm/shared/podman/podman.go:445 mgradm/shared/podman/podman.go:905
 msgid "Upgrading without changing PostgreSQL version"
 msgstr "正在升级，PostgreSQL 版本将不更改"
 
-#: mgradm/shared/podman/podman.go:447 mgradm/shared/podman/podman.go:893
+#: mgradm/shared/podman/podman.go:448 mgradm/shared/podman/podman.go:908
 msgid "trying to downgrade PostgreSQL from %[1]s to %[2]s"
 msgstr "正在尝试将 PostgreSQL 从 %[1]s 降级到 %[2]s"
 
-#: mgradm/shared/podman/podman.go:459 mgradm/shared/podman/podman.go:667
+#: mgradm/shared/podman/podman.go:460 mgradm/shared/podman/podman.go:676
 msgid "cannot run PostgreSQL finalize script"
 msgstr "无法运行 PostgreSQL 完成脚本"
 
-#: mgradm/shared/podman/podman.go:463 mgradm/shared/podman/podman.go:671
+#: mgradm/shared/podman/podman.go:464 mgradm/shared/podman/podman.go:680
 msgid "cannot run post upgrade script"
 msgstr "无法运行升级后脚本"
 
-#: mgradm/shared/podman/podman.go:488 mgradm/shared/podman/podman.go:541
+#: mgradm/shared/podman/podman.go:489 mgradm/shared/podman/podman.go:542
 msgid "Waiting for the server to start…"
 msgstr "正在等待服务器启动…"
 
-#: mgradm/shared/podman/podman.go:491
+#: mgradm/shared/podman/podman.go:492
 msgid "cannot start service"
 msgstr "无法启动服务"
 
-#: mgradm/shared/podman/podman.go:509 mgradm/shared/podman/podman.go:691
+#: mgradm/shared/podman/podman.go:510 mgradm/shared/podman/podman.go:700
 msgid "error upgrading confidential computing service."
 msgstr "升级机密计算服务时出错。"
 
-#: mgradm/shared/podman/podman.go:519 mgradm/shared/podman/podman.go:705
+#: mgradm/shared/podman/podman.go:520 mgradm/shared/podman/podman.go:714
 msgid "error upgrading saline service."
 msgstr "升级 Saline 服务时出错。"
 
-#: mgradm/shared/podman/podman.go:606
+#: mgradm/shared/podman/podman.go:607
 msgid "cannot run SSL migration script"
 msgstr "无法运行 SSL 迁移脚本"
 
-#: mgradm/shared/podman/podman.go:618
+#: mgradm/shared/podman/podman.go:619
 msgid "cannot run migration script"
 msgstr "无法运行迁移脚本"
 
-#: mgradm/shared/podman/podman.go:621
+#: mgradm/shared/podman/podman.go:622
 msgid "Migration prepared. Run the 'migrate' command without '--prepare' to finish the migration."
 msgstr "已完成迁移准备。请运行不含 '--prepare' 的 'migrate' 命令完成迁移。"
 
-#: mgradm/shared/podman/podman.go:629
+#: mgradm/shared/podman/podman.go:630
 msgid "failed to inspect database container image"
 msgstr "无法检查数据库容器映像"
 
-#: mgradm/shared/podman/podman.go:656
+#: mgradm/shared/podman/podman.go:657
 msgid "cannot remove temporary etc-tls volume"
 msgstr "无法去除临时 etc-tls 卷"
 
-#: mgradm/shared/podman/podman.go:758
+#: mgradm/shared/podman/podman.go:665
+#, fuzzy
+#| msgid "failed to unmarshall configuration"
+msgid "failed to prepare backup volume configuration"
+msgstr "无法解组配置"
+
+#: mgradm/shared/podman/podman.go:719
+#, fuzzy
+#| msgid "Unable to encode secrets backup"
+msgid "failed to enable coninuous backup."
+msgstr "无法对机密备份进行编码"
+
+#: mgradm/shared/podman/podman.go:773
 msgid "failed to generate postgresql migration script"
 msgstr "无法生成 postgresql 迁移脚本"
 
-#: mgradm/shared/podman/podman.go:794
+#: mgradm/shared/podman/podman.go:809
 msgid "The above error is only relevant if using a public cloud provider registry"
 msgstr "仅当使用公有云提供商仓库时，才会出现上述错误"
 
-#: mgradm/shared/podman/podman.go:824
+#: mgradm/shared/podman/podman.go:839
 msgid "SSH_AUTH_SOCK is not defined, start an SSH agent and try again"
 msgstr "未定义 SSH_AUTH_SOCK，请启动 SSH 代理，然后重试"
 
-#: mgradm/shared/podman/podman.go:834
+#: mgradm/shared/podman/podman.go:849
 msgid "Failed to find home directory to look for SSH config"
 msgstr "找不到可查找 SSH 配置的主目录"
 
-#: mgradm/shared/podman/podman.go:856
+#: mgradm/shared/podman/podman.go:871
 msgid "cannot inspect podman values"
 msgstr "无法检查 podman 值"
 
-#: mgradm/shared/podman/podman.go:908
+#: mgradm/shared/podman/podman.go:923
 msgid "PostgreSQL migration failure"
 msgstr "PostgreSQL 迁移失败"
 
@@ -2083,11 +2265,17 @@ msgstr "数据库 SSL 证书生成失败"
 msgid "Database SSL certificate generated"
 msgstr "已生成数据库 SSL 证书"
 
-#: mgradm/shared/saline/saline.go:63 mgradm/shared/saline/saline.go:134
+#: mgradm/shared/saline/saline.go:50
+#, fuzzy
+#| msgid "Setting up Saline service"
+msgid "Not altering the Saline service"
+msgstr "正在设置 Saline 服务"
+
+#: mgradm/shared/saline/saline.go:66 mgradm/shared/saline/saline.go:137
 msgid "Multiple Saline container replicas are not currently supported, setting up only one."
 msgstr "目前不支持多个 Saline 容器复本，将仅设置一个复本。"
 
-#: mgradm/shared/saline/saline.go:86
+#: mgradm/shared/saline/saline.go:89
 msgid "Setting up Saline service"
 msgstr "正在设置 Saline 服务"
 
@@ -2234,10 +2422,14 @@ msgid "External database provider. Possible values 'aws'"
 msgstr "外部数据库提供商。可能的值为 \"aws\""
 
 #: mgradm/shared/utils/cmd_utils.go:165
+msgid "Setup continuous WAL backup"
+msgstr ""
+
+#: mgradm/shared/utils/cmd_utils.go:167
 msgid "Database Flags"
 msgstr "数据库标志"
 
-#: mgradm/shared/utils/cmd_utils.go:178
+#: mgradm/shared/utils/cmd_utils.go:181
 msgid ""
 "SUSE Customer Center username.\n"
 "It will be used as SCC credentials for products synchronization and to pull images from SCC registry"
@@ -2245,7 +2437,7 @@ msgstr ""
 "SUSE Customer Center 用户名。\n"
 "将用作 SCC 身份凭证进行产品同步以及从 SCC 仓库拉取映像"
 
-#: mgradm/shared/utils/cmd_utils.go:180
+#: mgradm/shared/utils/cmd_utils.go:183
 msgid ""
 "SUSE Customer Center password.\n"
 "It will be used as SCC credentials for products synchronization and to pull images from SCC registry"
@@ -2253,51 +2445,51 @@ msgstr ""
 "SUSE Customer Center 口令。\n"
 "将用作 SCC 身份凭证进行产品同步以及从 SCC 仓库拉取映像"
 
-#: mgradm/shared/utils/cmd_utils.go:182
+#: mgradm/shared/utils/cmd_utils.go:185
 msgid "SUSE Customer Center Flags"
 msgstr "SUSE Customer Center 标志"
 
-#: mgradm/shared/utils/cmd_utils.go:189
+#: mgradm/shared/utils/cmd_utils.go:192
 msgid "Image"
 msgstr "映像"
 
-#: mgradm/shared/utils/cmd_utils.go:190
+#: mgradm/shared/utils/cmd_utils.go:193
 msgid "Tag Image"
 msgstr "标记映像"
 
-#: mgradm/shared/utils/cmd_utils.go:195
+#: mgradm/shared/utils/cmd_utils.go:198
 msgid "Image Flags"
 msgstr "映像标志"
 
-#: mgradm/shared/utils/cmd_utils.go:205
+#: mgradm/shared/utils/cmd_utils.go:208
 msgid "Database upgrade image"
 msgstr "数据库升级映像"
 
-#: mgradm/shared/utils/cmd_utils.go:206
+#: mgradm/shared/utils/cmd_utils.go:209
 msgid "Database upgrade image tag, overrides the default value if set"
 msgstr "数据库升级映像标记，如果设置将覆盖默认值"
 
-#: mgradm/shared/utils/cmd_utils.go:208
+#: mgradm/shared/utils/cmd_utils.go:211
 msgid "Database Upgrade Image Flags"
 msgstr "数据库升级映像标志"
 
-#: mgradm/shared/utils/cmd_utils.go:215
+#: mgradm/shared/utils/cmd_utils.go:218
 msgid "Path to mirrored packages mounted on the host"
 msgstr "主机上所挂载的已镜像软件包的路径"
 
-#: mgradm/shared/utils/cmd_utils.go:220 mgradm/shared/utils/cmd_utils.go:228
+#: mgradm/shared/utils/cmd_utils.go:223 mgradm/shared/utils/cmd_utils.go:231
 msgid "Confidential Computing Flags"
 msgstr "机密计算标志"
 
-#: mgradm/shared/utils/cmd_utils.go:221 mgradm/shared/utils/cmd_utils.go:229
+#: mgradm/shared/utils/cmd_utils.go:224 mgradm/shared/utils/cmd_utils.go:232
 msgid "Confidential computing attestation"
 msgstr "机密计算认证"
 
-#: mgradm/shared/utils/cmd_utils.go:222
+#: mgradm/shared/utils/cmd_utils.go:225
 msgid "How many replicas of the confidential computing container should be started"
 msgstr "应启动机密计算容器的多少复本"
 
-#: mgradm/shared/utils/cmd_utils.go:230
+#: mgradm/shared/utils/cmd_utils.go:233
 msgid ""
 "How many replicas of the confidential computing container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas."
@@ -2305,16 +2497,16 @@ msgstr ""
 "应启动机密计算容器的多少复本。\n"
 "如果您希望保留之前的复本数，请勿设置该项。"
 
-#: mgradm/shared/utils/cmd_utils.go:237 mgradm/shared/utils/cmd_utils.go:238
-#: mgradm/shared/utils/cmd_utils.go:247 mgradm/shared/utils/cmd_utils.go:248
+#: mgradm/shared/utils/cmd_utils.go:240 mgradm/shared/utils/cmd_utils.go:241
+#: mgradm/shared/utils/cmd_utils.go:250 mgradm/shared/utils/cmd_utils.go:251
 msgid "Hub XML-RPC API"
 msgstr "Hub XML-RPC API"
 
-#: mgradm/shared/utils/cmd_utils.go:240
+#: mgradm/shared/utils/cmd_utils.go:243
 msgid "How many replicas of the Hub XML-RPC API service container should be started."
 msgstr "应启动 Hub XML-RPC API 服务容器的多少复本。"
 
-#: mgradm/shared/utils/cmd_utils.go:250
+#: mgradm/shared/utils/cmd_utils.go:253
 msgid ""
 "How many replicas of the Hub XML-RPC API service container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas."
@@ -2322,15 +2514,15 @@ msgstr ""
 "应启动 Hub XML-RPC API 服务容器的多少复本。\n"
 "如果您希望保留之前的复本数，请勿设置该项。"
 
-#: mgradm/shared/utils/cmd_utils.go:257 mgradm/shared/utils/cmd_utils.go:268
+#: mgradm/shared/utils/cmd_utils.go:260 mgradm/shared/utils/cmd_utils.go:271
 msgid "Saline Flags"
 msgstr "Saline 标志"
 
-#: mgradm/shared/utils/cmd_utils.go:258 mgradm/shared/utils/cmd_utils.go:269
+#: mgradm/shared/utils/cmd_utils.go:261 mgradm/shared/utils/cmd_utils.go:272
 msgid "Saline"
 msgstr "Saline"
 
-#: mgradm/shared/utils/cmd_utils.go:259
+#: mgradm/shared/utils/cmd_utils.go:262
 msgid ""
 "How many replicas of the Saline container should be started\n"
 "(only 0 or 1 supported for now)"
@@ -2338,11 +2530,11 @@ msgstr ""
 "应启动 Saline 容器的多少复本\n"
 "（目前仅支持 0 或 1 个）"
 
-#: mgradm/shared/utils/cmd_utils.go:261 mgradm/shared/utils/cmd_utils.go:273
+#: mgradm/shared/utils/cmd_utils.go:264 mgradm/shared/utils/cmd_utils.go:276
 msgid "Saline port"
 msgstr "Saline 端口"
 
-#: mgradm/shared/utils/cmd_utils.go:270
+#: mgradm/shared/utils/cmd_utils.go:273
 msgid ""
 "How many replicas of the Saline container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas.\n"
@@ -2352,11 +2544,11 @@ msgstr ""
 "如果您希望保留之前的复本数，请勿设置该项。\n"
 "（目前仅支持 0 或 1 个）"
 
-#: mgradm/shared/utils/cmd_utils.go:280
+#: mgradm/shared/utils/cmd_utils.go:283
 msgid "PostgreSQL Database Container Flags"
 msgstr "PostgreSQL 数据库容器标志"
 
-#: mgradm/shared/utils/cmd_utils.go:281
+#: mgradm/shared/utils/cmd_utils.go:284
 msgid "PostgreSQL Database"
 msgstr "PostgreSQL 数据库"
 
@@ -2402,17 +2594,61 @@ msgstr "无法从服务器映像提取版本信息"
 msgid "cannot downgrade from version %[1]s to %[2]s"
 msgstr "无法从版本 %[1]s 降级到 %[2]s"
 
-#: mgradm/shared/utils/flags.go:155
+#: mgradm/shared/utils/flags.go:156
 msgid "Can only contain letters, digits . _ and -"
 msgstr "只能包含字母、数字 . _ 和 -"
 
-#: mgradm/shared/utils/flags.go:163
+#: mgradm/shared/utils/flags.go:164
 msgid "Not a valid email address"
 msgstr "不是有效的电子邮件地址"
 
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "无法显示设置脚本"
+
+#~ msgid "Hub management"
+#~ msgstr "Hub 管理"
+
+#~ msgid "Tools and utilities for Hub management"
+#~ msgstr "用于进行 Hub 管理的工具和实用程序"
+
+#~ msgid "Register"
+#~ msgstr "注册"
+
+#~ msgid "Register this peripheral server to Hub API"
+#~ msgstr "将此外设服务器注册到 Hub API"
+
+#, javascript-format
+#~ msgid "invalid line format: %s"
+#~ msgstr "命令行格式无效：%s"
+
+#, javascript-format
+#~ msgid "mandatory %s entry missing in config"
+#~ msgstr "配置中缺少必需的 %s 项"
+
+#, javascript-format
+#~ msgid "Hub API server: %s"
+#~ msgstr "Hub API 服务器：%s"
+
+#~ msgid "failed to connect to the Hub server"
+#~ msgstr "无法连接到 Hub 服务器"
+
+#~ msgid "failed to register this peripheral server"
+#~ msgstr "无法注册此外设服务器"
+
+#, javascript-format
+#~ msgid "failed to register this peripheral server: %s"
+#~ msgstr "无法注册此外设服务器：%s"
+
+#~ msgid "failed to update peripheral server info"
+#~ msgstr "无法更新外设服务器信息"
+
+#, javascript-format
+#~ msgid "failed to update peripheral server info: %s"
+#~ msgstr "无法更新外设服务器信息：%s"
+
+#~ msgid "Registered peripheral server: %[1]s, ID: %[2]d"
+#~ msgstr "已注册外设服务器：%[1]s，ID：%[2]d"
 
 #~ msgid "unable to get random file prefix"
 #~ msgstr "无法获取随机文件前缀"
@@ -2683,9 +2919,6 @@ msgstr "无法显示设置脚本"
 #, fuzzy
 #~ msgid "cannot find either /etc/uyuni-release or /etc/susemanagere-release"
 #~ msgstr "找不到 /etc/uyuni-release 和 /etc/susemanagere-release"
-
-#~ msgid "Not starting Hub XML-RPC API service"
-#~ msgstr "不启动 Hub XML-RPC API 服务"
 
 #, javascript-format
 #~ msgid "unable to remove temporary directory, leaving %s intact"

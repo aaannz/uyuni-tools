@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-18 13:47+0100\n"
 "PO-Revision-Date: 2025-06-18 10:59+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgrpxy/ca/>\n"
@@ -149,7 +149,7 @@ msgstr ""
 "NOTA: per ara no s'admet la instal·lació en un podman remot!\n"
 
 #: mgrpxy/cmd/install/podman/utils.go:30
-#: mgrpxy/cmd/support/ptf/podman/utils.go:30 mgrpxy/shared/podman/podman.go:308
+#: mgrpxy/cmd/support/ptf/podman/utils.go:30 mgrpxy/shared/podman/podman.go:317
 msgid "install podman before running this command"
 msgstr "instal·la podman abans d'executar aquesta ordre"
 
@@ -157,7 +157,7 @@ msgstr "instal·la podman abans d'executar aquesta ordre"
 msgid "failed to retrieve proxy config files"
 msgstr "no s'han pogut recuperar els fitxers de configuració del servidor intermediari"
 
-#: mgrpxy/cmd/install/podman/utils.go:49 mgrpxy/shared/podman/podman.go:324
+#: mgrpxy/cmd/install/podman/utils.go:49 mgrpxy/shared/podman/podman.go:333
 #, fuzzy
 #| msgid "cannot generate systemd conf user configuration file"
 msgid "Unable to fetch up to date systemid, using one from the provided configuration file"
@@ -514,60 +514,60 @@ msgstr "no s'ha pogut generar el fitxer conf del systemd"
 msgid "cannot generate systemd conf user configuration file"
 msgstr "no s'ha pogut generar el fitxer de configuració de l'usuari «systemd conf»"
 
-#: mgrpxy/shared/podman/podman.go:257
+#: mgrpxy/shared/podman/podman.go:261
 #, javascript-format
 msgid "Setting up proxy with configuration %s"
 msgstr "S'està configurant el servidor intermediari amb configuració %s"
 
-#: mgrpxy/shared/podman/podman.go:259
+#: mgrpxy/shared/podman/podman.go:263
 #, javascript-format
 msgid "failed to extract proxy config from %s file"
 msgstr "no s'ha pogut extreure la configuració del servidor intermediari del fitxer %s"
 
-#: mgrpxy/shared/podman/podman.go:262
+#: mgrpxy/shared/podman/podman.go:266
 msgid "No tarball provided. Will check existing configuration files."
 msgstr "No s'ha proporcionat cap tarball. Comprovarà els fitxers de configuració existents."
 
-#: mgrpxy/shared/podman/podman.go:276
+#: mgrpxy/shared/podman/podman.go:285
 #, javascript-format
 msgid "%s directory has no required permissions. Check your umask settings"
 msgstr "El directori %s no té permisos necessaris. Comproveu la configuració de l'umask"
 
-#: mgrpxy/shared/podman/podman.go:278
+#: mgrpxy/shared/podman/podman.go:287
 #, javascript-format
 msgid "%s file has no required permissions. Check your umask settings"
 msgstr "El fitxer %s no té permisos necessaris. Comproveu la configuració de l'umask"
 
-#: mgrpxy/shared/podman/podman.go:291
+#: mgrpxy/shared/podman/podman.go:300
 #, javascript-format
 msgid "missing required configuration file: %s"
 msgstr "falta el fitxer de configuració requerit: %s"
 
-#: mgrpxy/shared/podman/podman.go:336
+#: mgrpxy/shared/podman/podman.go:345
 msgid "cannot find httpd image: it will no be upgraded"
 msgstr "no es pot trobar la imatge httpd: no s'actualitzarà"
 
-#: mgrpxy/shared/podman/podman.go:340
+#: mgrpxy/shared/podman/podman.go:349
 msgid "cannot find salt-broker image: it will no be upgraded"
 msgstr "no es pot trobar la imatge salt-broker: no es millorarà"
 
-#: mgrpxy/shared/podman/podman.go:344
+#: mgrpxy/shared/podman/podman.go:353
 msgid "cannot find squid image: it will no be upgraded"
 msgstr "no s'ha pogut trobar la imatge del calamar: no s'actualitzarà"
 
-#: mgrpxy/shared/podman/podman.go:348
+#: mgrpxy/shared/podman/podman.go:357
 msgid "cannot find ssh image: it will no be upgraded"
 msgstr "no es pot trobar la imatge ssh: no s'actualitzarà"
 
-#: mgrpxy/shared/podman/podman.go:352
+#: mgrpxy/shared/podman/podman.go:361
 msgid "cannot find tftpd image: it will no be upgraded"
 msgstr "no es pot trobar la imatge tftpd: no s'actualitzarà"
 
-#: mgrpxy/shared/podman/podman.go:424
+#: mgrpxy/shared/podman/podman.go:433
 msgid "Not a system id event"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:433
+#: mgrpxy/shared/podman/podman.go:442
 msgid "System id not found in returned event"
 msgstr ""
 
