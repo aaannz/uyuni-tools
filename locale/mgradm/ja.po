@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 11:22+0100\n"
+"POT-Creation-Date: 2026-03-18 13:47+0100\n"
 "PO-Revision-Date: 2026-01-19 09:04+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ja/>\n"
@@ -18,108 +18,108 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.15.2\n"
 
-#: mgradm/cmd/backup/backup.go:28
+#: mgradm/cmd/backup/backup.go:29
 msgid "Create backup"
 msgstr "バックアップの作成"
 
-#: mgradm/cmd/backup/backup.go:29
+#: mgradm/cmd/backup/backup.go:30
 msgid "Create backup of the already configured Uyuni system"
 msgstr "すでに設定されているUyuniシステムのバックアップを作成する"
 
-#: mgradm/cmd/backup/backup.go:35
+#: mgradm/cmd/backup/backup.go:36
 msgid "Skip backup of selected volumes"
 msgstr "選択したボリュームのバックアップをスキップする"
 
-#: mgradm/cmd/backup/backup.go:36
+#: mgradm/cmd/backup/backup.go:37
 msgid "Backup additional volumes to the build-in ones"
 msgstr "内蔵ボリュームに追加ボリュームをバックアップする"
 
-#: mgradm/cmd/backup/backup.go:37
+#: mgradm/cmd/backup/backup.go:38
 msgid "Do not backup database volume, allow online backup."
 msgstr "データベースボリュームをバックアップせず、オンラインバックアップを許可します。"
 
-#: mgradm/cmd/backup/backup.go:38
+#: mgradm/cmd/backup/backup.go:39
 msgid "Do not backup container images"
 msgstr "コンテナイメージをバックアップしないでください"
 
-#: mgradm/cmd/backup/backup.go:39
+#: mgradm/cmd/backup/backup.go:40
 msgid "Do not backup podman configuration. On restore defaults will be used"
 msgstr "podmanの設定をバックアップしないでください。復元時にはデフォルトが使用されます"
 
-#: mgradm/cmd/backup/backup.go:40
+#: mgradm/cmd/backup/backup.go:41
 msgid "Do not restart services after backup is done"
 msgstr "バックアップが完了したらサービスを再起動しないでください"
 
-#: mgradm/cmd/backup/backup.go:41 mgradm/cmd/backup/backup.go:64
+#: mgradm/cmd/backup/backup.go:42 mgradm/cmd/backup/backup.go:65
 msgid "Print expected actions, but no action is done"
 msgstr "予期されるアクションをプリントしますが、アクションは実行されません"
 
-#: mgradm/cmd/backup/backup.go:52
+#: mgradm/cmd/backup/backup.go:53
 msgid "Restore backup from the directory"
 msgstr "ディレクトリからバックアップを復元する"
 
-#: mgradm/cmd/backup/backup.go:53
+#: mgradm/cmd/backup/backup.go:54
 msgid "Restore backup of the previously configured Uyuni system from a specified directory"
 msgstr "指定されたディレクトリから、以前に設定されたUyuniシステムのバックアップを復元する"
 
-#: mgradm/cmd/backup/backup.go:59
+#: mgradm/cmd/backup/backup.go:60
 msgid "Skip restore of selected volumes"
 msgstr "選択したボリュームの復元をスキップする"
 
-#: mgradm/cmd/backup/backup.go:60
+#: mgradm/cmd/backup/backup.go:61
 msgid "Do not restore database volume"
 msgstr "データベースボリュームを復元しないでください"
 
-#: mgradm/cmd/backup/backup.go:61
+#: mgradm/cmd/backup/backup.go:62
 msgid "Skip restore of container images"
 msgstr "コンテナイメージの復元をスキップする"
 
-#: mgradm/cmd/backup/backup.go:62
+#: mgradm/cmd/backup/backup.go:63
 msgid "Do not restore podman configuration. Defaults will be used"
 msgstr "podmanの設定を復元しないでください。デフォルトが使用されます"
 
-#: mgradm/cmd/backup/backup.go:63
+#: mgradm/cmd/backup/backup.go:64
 msgid "Restart service after restore is done"
 msgstr "復元が完了したらサービスを再起動する"
 
-#: mgradm/cmd/backup/backup.go:65
+#: mgradm/cmd/backup/backup.go:66
 msgid "Force overwrite of existing items"
 msgstr "既存の項目を強制的に上書きする"
 
-#: mgradm/cmd/backup/backup.go:66
+#: mgradm/cmd/backup/backup.go:67
 msgid "Skip existing items and restore the rest"
 msgstr "既存の項目をスキップして残りを復元する"
 
-#: mgradm/cmd/backup/backup.go:67
+#: mgradm/cmd/backup/backup.go:68
 msgid "Skip verification of the backup files"
 msgstr "バックアップファイルの検証をスキップする"
 
-#: mgradm/cmd/backup/backup.go:77
+#: mgradm/cmd/backup/backup.go:78
 msgid "Backup solution"
 msgstr "バックアップソリューション"
 
-#: mgradm/cmd/backup/backup.go:78
+#: mgradm/cmd/backup/backup.go:79
 msgid "Tools for local backup management"
 msgstr "ローカルバックアップ管理用ツール"
 
-#: mgradm/cmd/backup/backup.go:101
+#: mgradm/cmd/backup/backup.go:103
 #, javascript-format
 msgid "Backup aborted, partially backed up files remains in '%s'"
 msgstr "バックアップが中止されました。部分的にバックアップされたファイルが「%s」に残っています"
 
-#: mgradm/cmd/backup/backup.go:105
+#: mgradm/cmd/backup/backup.go:107
 msgid "Important data were backed up successfully, but errors were present. Restore will use default values where needed"
 msgstr "重要なデータは正常にバックアップされましたが、エラーが発生しました。復元では必要に応じてデフォルト値が使用されます"
 
-#: mgradm/cmd/backup/backup.go:125
+#: mgradm/cmd/backup/backup.go:127
 msgid "Encountered problems:"
 msgstr "発生した問題:"
 
-#: mgradm/cmd/backup/backup.go:127
+#: mgradm/cmd/backup/backup.go:129
 msgid "Restore aborted with partially restored files. Resolve the error and try again"
 msgstr "復元が中止され、一部のファイルが復元されました。エラーを解決して再試行してください"
 
-#: mgradm/cmd/backup/backup.go:130
+#: mgradm/cmd/backup/backup.go:132
 msgid "Important data were restored successfully, but with warnings"
 msgstr "重要なデータは正常に復元されましたが、警告が発生しました"
 
@@ -231,6 +231,221 @@ msgstr "%s をバックアップします"
 #: mgradm/cmd/backup/create/systemd_utils.go:35
 msgid "failed to create Systemd backup tarball: %w"
 msgstr "Systemdのバックアップtarballの作成に失敗しました: %w"
+
+#: mgradm/cmd/backup/db/cmd.go:19
+#, fuzzy
+#| msgid "Database name"
+msgid "Database backup management"
+msgstr "データベース名"
+
+#: mgradm/cmd/backup/db/cmd.go:20
+#, fuzzy
+#| msgid "Tools for local backup management"
+msgid "Tools for online database backup management"
+msgstr "ローカルバックアップ管理用ツール"
+
+#: mgradm/cmd/backup/db/cmd.go:34
+msgid "Enable continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:39
+msgid "Reconfigure already configured backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:48
+msgid "Rebase continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:61
+msgid "Disable continuous archiving backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:66
+msgid "Don't ask for confirmation when purging volume"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:67
+#, fuzzy
+#| msgid "Failed to remove volume %s"
+msgid "Also remove the volume"
+msgstr "ボリューム %s の削除に失敗しました"
+
+#: mgradm/cmd/backup/db/cmd.go:76
+msgid "Check WAL based database backup status"
+msgstr ""
+
+#: mgradm/cmd/backup/db/cmd.go:88
+#, fuzzy
+#| msgid "Report database name"
+msgid "Restore database backup"
+msgstr "レポートデータベース名"
+
+#: mgradm/cmd/backup/db/cmd.go:93
+#, fuzzy
+#| msgid "Import without asking confirmation"
+msgid "Don't ask for confirmation"
+msgstr "確認を求めずにインポートする"
+
+#: mgradm/cmd/backup/db/disable.go:17
+msgid "Disabling DB backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:24 mgradm/cmd/backup/db/enable.go:34
+msgid "Database service needs to be restarted to reload backup configurations, continue"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:26
+#, fuzzy
+#| msgid "Backing up podman configuration"
+msgid "Backup reconfiguration aborted"
+msgstr "podman設定のバックアップ"
+
+#: mgradm/cmd/backup/db/disable.go:45
+msgid "Backup volume will be removed, continue?"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:47
+msgid "Aborting volume purge"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:54
+#, javascript-format
+msgid "Backup volume '%s' removed"
+msgstr ""
+
+#: mgradm/cmd/backup/db/disable.go:58 mgradm/cmd/backup/db/enable.go:66
+#: mgradm/cmd/backup/db/rebase.go:28
+#, fuzzy
+#| msgid "Starting %s"
+msgid "Starting database…"
+msgstr "%s を開始しています"
+
+#: mgradm/cmd/backup/db/enable.go:22
+#, fuzzy
+#| msgid "Create backup"
+msgid "Enable DB backup"
+msgstr "バックアップの作成"
+
+#: mgradm/cmd/backup/db/enable.go:25
+#, fuzzy
+#| msgid "server is already initialized. Use force to overwrite"
+msgid "backup is already configured. Use --force to reconfigure"
+msgstr "サーバはすでに初期化されています。強制的に上書きしてください"
+
+#: mgradm/cmd/backup/db/enable.go:36
+#, fuzzy
+#| msgid "Backing up podman configuration"
+msgid "Backup configuration aborted"
+msgstr "podman設定のバックアップ"
+
+#: mgradm/cmd/backup/db/enable.go:85
+#, javascript-format
+msgid "Continuous Archiving backup configured. Backup target volume is '%s'"
+msgstr ""
+
+#: mgradm/cmd/backup/db/enable.go:98
+#, fuzzy
+#| msgid "failed to generate postgresql migration script"
+msgid "failed to generate postgresql backup script"
+msgstr "postgresql移行スクリプトの生成に失敗しました"
+
+#: mgradm/cmd/backup/db/rebase.go:17
+msgid "Rebasing postgres WAL backup to new basebackup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/rebase.go:20
+msgid "database backup is not correctly configured: %w"
+msgstr ""
+
+#: mgradm/cmd/backup/db/rebase.go:42
+#, fuzzy
+#| msgid "Skipping database volume %s"
+msgid "Stopping database…"
+msgstr "データベースボリューム %s をスキップしています"
+
+#: mgradm/cmd/backup/db/restore.go:25
+msgid "Restoring DB backup"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:28
+msgid "Restoring from backup is a destructive operation. Proceed"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:29
+msgid "Aborting"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:33
+#, fuzzy
+#| msgid "Stopping server service"
+msgid "Stopping database service…"
+msgstr "サーバサービスの停止"
+
+#: mgradm/cmd/backup/db/restore.go:40
+#, fuzzy
+#| msgid "failed to determine server image"
+msgid "failed to determine database image"
+msgstr "サーバイメージの決定に失敗しました"
+
+#: mgradm/cmd/backup/db/restore.go:56
+#, fuzzy
+#| msgid "failed to generate postgresql migration script"
+msgid "failed to generate postgresql restore script"
+msgstr "postgresql移行スクリプトの生成に失敗しました"
+
+#: mgradm/cmd/backup/db/restore.go:59
+msgid "Restoring base backup…"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:73
+#, fuzzy
+#| msgid "Generating the database certificate…"
+msgid "Starting database service…"
+msgstr "データベース証明書を生成しています…"
+
+#: mgradm/cmd/backup/db/restore.go:78
+msgid "Base backup restore complete. Database is recovering."
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:88 mgradm/cmd/backup/db/restore.go:101
+#, fuzzy
+#| msgid "Database user"
+msgid "Database is restored."
+msgstr "データベースユーザ"
+
+#: mgradm/cmd/backup/db/restore.go:91
+#, fuzzy
+#| msgid "failed to inspect database container image"
+msgid "failed to check database recovery status"
+msgstr "データベースコンテナイメージの検査に失敗しました"
+
+#: mgradm/cmd/backup/db/restore.go:95
+msgid " Database is recovering… (use Ctrl-C to interrupt waiting)"
+msgstr ""
+
+#: mgradm/cmd/backup/db/restore.go:104
+msgid "error while waiting for database recovery to complete, check database logs"
+msgstr ""
+
+#: mgradm/cmd/backup/db/status.go:24
+msgid "Checking DB backup status"
+msgstr ""
+
+#: mgradm/cmd/backup/db/status.go:40
+msgid "Database continuous backup is %[1]s. Backup volume is %[2]s"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:24
+msgid "archive_mode is off"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:25
+msgid "archive_command is misconfigured"
+msgstr ""
+
+#: mgradm/cmd/backup/db/types.go:26
+msgid "archive volume is not configured correctly"
+msgstr ""
 
 #: mgradm/cmd/backup/restore/podman_utils.go:47
 #, javascript-format
@@ -430,41 +645,41 @@ msgstr "ターゲット %s のストレージサイズを決定できません"
 msgid "insufficient space on target device"
 msgstr "ターゲットデバイスの空き容量が不足しています"
 
-#: mgradm/cmd/backup/shared/utils.go:68 mgradm/cmd/install/podman/utils.go:44
+#: mgradm/cmd/backup/shared/utils.go:68 mgradm/cmd/install/podman/utils.go:45
 #: mgradm/cmd/migrate/podman/utils.go:40 mgradm/cmd/upgrade/podman/utils.go:34
 msgid "install podman before running this command"
 msgstr "このコマンドを実行する前にpodmanをインストールする"
 
-#: mgradm/cmd/cmd.go:43
+#: mgradm/cmd/cmd.go:42
 msgid "Uyuni administration tool"
 msgstr "Uyuni管理ツール"
 
-#: mgradm/cmd/cmd.go:44
+#: mgradm/cmd/cmd.go:43
 msgid "Tool to help administering Uyuni servers in containers"
 msgstr "Uyuniサーバのコンテナ管理を支援するツール"
 
-#: mgradm/cmd/cmd.go:51
+#: mgradm/cmd/cmd.go:50
 msgid "Server Deployment:"
 msgstr "サーバ配備:"
 
-#: mgradm/cmd/cmd.go:55
+#: mgradm/cmd/cmd.go:54
 msgid "Server Management:"
 msgstr "サーバ管理:"
 
-#: mgradm/cmd/cmd.go:59
+#: mgradm/cmd/cmd.go:58
 msgid "Administrator tools:"
 msgstr "管理者ツール:"
 
-#: mgradm/cmd/cmd.go:69
+#: mgradm/cmd/cmd.go:68
 #, javascript-format
 msgid "Starting %s"
 msgstr "%s を開始しています"
 
-#: mgradm/cmd/cmd.go:70
+#: mgradm/cmd/cmd.go:69
 msgid "Use of this software implies acceptance of the End User License Agreement."
 msgstr "このソフトウェアを使用すると、エンドユーザライセンス契約に同意したことになります。"
 
-#: mgradm/cmd/cmd.go:74
+#: mgradm/cmd/cmd.go:73
 msgid "configuration file path"
 msgstr "設定ファイルパス"
 
@@ -740,63 +955,6 @@ msgstr "システムキーリングからのキーを一覧にする"
 msgid "failed to list keys in selected keyring"
 msgstr "選択したキーリングのキーを一覧にできませんでした"
 
-#: mgradm/cmd/hub/hub.go:19
-msgid "Hub management"
-msgstr "ハブ管理"
-
-#: mgradm/cmd/hub/hub.go:20
-msgid "Tools and utilities for Hub management"
-msgstr "ハブ管理用ツールとユーティリティ"
-
-#: mgradm/cmd/hub/register/register.go:30
-msgid "Register"
-msgstr "登録"
-
-#: mgradm/cmd/hub/register/register.go:31
-msgid "Register this peripheral server to Hub API"
-msgstr "この周辺機器サーバをハブAPIに登録する"
-
-#: mgradm/cmd/hub/register/register.go:81
-#, javascript-format
-msgid "invalid line format: %s"
-msgstr "無効な行のフォーマット: %s"
-
-#: mgradm/cmd/hub/register/register.go:96
-#, javascript-format
-msgid "mandatory %s entry missing in config"
-msgstr "configに必須 %s エントリがありません"
-
-#: mgradm/cmd/hub/register/register.go:99
-#, javascript-format
-msgid "Hub API server: %s"
-msgstr "ハブAPIサーバ: %s"
-
-#: mgradm/cmd/hub/register/register.go:105
-msgid "failed to connect to the Hub server"
-msgstr "ハブサーバへの接続に失敗しました"
-
-#: mgradm/cmd/hub/register/register.go:114
-msgid "failed to register this peripheral server"
-msgstr "この周辺機器サーバの登録に失敗しました"
-
-#: mgradm/cmd/hub/register/register.go:117
-#, javascript-format
-msgid "failed to register this peripheral server: %s"
-msgstr "この周辺機器サーバの登録に失敗しました: %s"
-
-#: mgradm/cmd/hub/register/register.go:131
-msgid "failed to update peripheral server info"
-msgstr "周辺機器サーバ情報の更新に失敗しました"
-
-#: mgradm/cmd/hub/register/register.go:135
-#, javascript-format
-msgid "failed to update peripheral server info: %s"
-msgstr "周辺機器サーバ情報の更新に失敗しました: %s"
-
-#: mgradm/cmd/hub/register/register.go:137
-msgid "Registered peripheral server: %[1]s, ID: %[2]d"
-msgstr "登録された周辺機器サーバ: %[1]s、ID: %[2]d"
-
 #: mgradm/cmd/inspect/inspect.go:28
 msgid "Inspect"
 msgstr "検査"
@@ -897,55 +1055,55 @@ msgstr ""
 "\n"
 "メモ: リモートのpodmanへのインストールはまだサポートされていません。\n"
 
-#: mgradm/cmd/install/podman/utils.go:55
+#: mgradm/cmd/install/podman/utils.go:56
 msgid "Server is already initialized! Uninstall before attempting new installation or use upgrade command"
 msgstr "サーバはすでに初期化されています。新規インストールを試みる前、またはアップグレードコマンドを使用する前にアンインストールします"
 
-#: mgradm/cmd/install/podman/utils.go:62
+#: mgradm/cmd/install/podman/utils.go:63
 #, javascript-format
 msgid "Setting up the server with the FQDN '%s'"
 msgstr "FQDN「%s」を使用してサーバを設定しています"
 
-#: mgradm/cmd/install/podman/utils.go:66 mgradm/shared/podman/podman.go:392
-#: mgradm/shared/podman/podman.go:592
+#: mgradm/cmd/install/podman/utils.go:67 mgradm/shared/podman/podman.go:393
+#: mgradm/shared/podman/podman.go:593
 msgid "cannot prepare images"
 msgstr "イメージを準備できません"
 
-#: mgradm/cmd/install/podman/utils.go:70 mgradm/shared/podman/podman.go:93
-#: mgradm/shared/podman/podman.go:382 mgradm/shared/podman/podman.go:584
+#: mgradm/cmd/install/podman/utils.go:71 mgradm/shared/podman/podman.go:94
+#: mgradm/shared/podman/podman.go:383 mgradm/shared/podman/podman.go:585
 msgid "cannot setup network"
 msgstr "ネットワークを設定できません"
 
-#: mgradm/cmd/install/podman/utils.go:108 mgradm/shared/podman/podman.go:941
+#: mgradm/cmd/install/podman/utils.go:118 mgradm/shared/podman/podman.go:956
 #, javascript-format
 msgid "Skipped database container setup to use external database %s"
 msgstr "外部データベース %s を使用するためにデータベースコンテナのセットアップをスキップしました"
 
-#: mgradm/cmd/install/podman/utils.go:113
+#: mgradm/cmd/install/podman/utils.go:123
 msgid "Run setup command in the container"
 msgstr "コンテナ内でsetupコマンドを実行する"
 
-#: mgradm/cmd/install/podman/utils.go:122 mgradm/shared/podman/podman.go:678
+#: mgradm/cmd/install/podman/utils.go:132 mgradm/shared/podman/podman.go:687
 msgid "cannot wait for system start"
 msgstr "システムの起動を待機できません"
 
-#: mgradm/cmd/install/podman/utils.go:125
+#: mgradm/cmd/install/podman/utils.go:135
 msgid "failed to add SSL CA certificate to host trusted certificates"
 msgstr "SSL CA証明書をホストの信頼済み証明書に追加できませんでした"
 
-#: mgradm/cmd/install/podman/utils.go:132
+#: mgradm/cmd/install/podman/utils.go:142
 msgid "failed to extract payg data"
 msgstr "paygデータの抽出に失敗しました"
 
-#: mgradm/cmd/install/podman/utils.go:136
+#: mgradm/cmd/install/podman/utils.go:146
 msgid "cannot enable podman socket"
 msgstr "podmanソケットを有効にできません"
 
-#: mgradm/cmd/install/podman/utils.go:203
+#: mgradm/cmd/install/podman/utils.go:213
 msgid "server setup failed"
 msgstr "サーバの設定に失敗しました"
 
-#: mgradm/cmd/install/podman/utils.go:206
+#: mgradm/cmd/install/podman/utils.go:216
 msgid "Server set up, login on https://%[1]s with %[2]s user"
 msgstr "サーバ設定、%[2]s ユーザでhttps://%[1]s にログイン"
 
@@ -1130,13 +1288,13 @@ msgstr "SSH known_hostsファイル %s の読み込みに失敗しました"
 msgid "failed to create the SSH migration ConfigMap"
 msgstr "SSH移行ConfigMapの作成に失敗しました"
 
-#: mgradm/cmd/migrate/kubernetes/utils.go:44 mgradm/shared/coco/coco.go:77
+#: mgradm/cmd/migrate/kubernetes/utils.go:44 mgradm/shared/coco/coco.go:78
 #: mgradm/shared/hub/xmlrpcapi.go:44
 #: mgradm/shared/kubernetes/dbUpgradeJob.go:44
 #: mgradm/shared/kubernetes/reconcile.go:38
-#: mgradm/shared/kubernetes/reconcile.go:305 mgradm/shared/pgsql/pgsql.go:28
-#: mgradm/shared/podman/podman.go:285 mgradm/shared/podman/podman.go:290
-#: mgradm/shared/saline/saline.go:69
+#: mgradm/shared/kubernetes/reconcile.go:305 mgradm/shared/pgsql/pgsql.go:30
+#: mgradm/shared/podman/podman.go:286 mgradm/shared/podman/podman.go:291
+#: mgradm/shared/saline/saline.go:72
 msgid "failed to compute image URL"
 msgstr "イメージURLの計算に失敗しました"
 
@@ -1287,7 +1445,7 @@ msgstr ""
 "名前変更中にuyuni-serverコンテナは停止され、\n"
 "各登録済みシステムのピラー更新がトリガされます。\n"
 
-#: mgradm/cmd/server/rename/rename.go:47 mgradm/shared/utils/cmd_utils.go:295
+#: mgradm/cmd/server/rename/rename.go:47 mgradm/shared/utils/cmd_utils.go:298
 msgid "Password for the CA key to generate"
 msgstr "生成するCAキーのパスワード"
 
@@ -1582,18 +1740,24 @@ msgstr "設定のアンマーシャルに失敗しました"
 msgid "Upgrade local server"
 msgstr "ローカルサーバのアップグレード"
 
-#: mgradm/shared/coco/coco.go:95
+#: mgradm/shared/coco/coco.go:28
+#, fuzzy
+#| msgid "error upgrading confidential computing service."
+msgid "Not altering the confidential computing service"
+msgstr "コンフィデンシャルコンピューティングサービスのアップグレード時のエラー"
+
+#: mgradm/shared/coco/coco.go:96
 msgid "Setting up confidential computing attestation service"
 msgstr "コンフィデンシャルコンピューティング検証サービスの設定"
 
-#: mgradm/shared/coco/coco.go:99 mgradm/shared/hub/xmlrpcapi.go:117
-#: mgradm/shared/pgsql/pgsql.go:117 mgradm/shared/podman/podman.go:76
-#: mgradm/shared/saline/saline.go:90
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
+#: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr "systemdサービスユニットファイルの生成に失敗しました"
 
-#: mgradm/shared/coco/coco.go:109 mgradm/shared/hub/xmlrpcapi.go:124
-#: mgradm/shared/podman/podman.go:104 mgradm/shared/saline/saline.go:98
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "systemd confファイルを生成できません"
 
@@ -1602,8 +1766,8 @@ msgstr "systemd confファイルを生成できません"
 msgid "No changes requested for hub. Keep %d replicas."
 msgstr "ハブに対する変更は要求されていません。%d レプリカを維持します。"
 
-#: mgradm/shared/hub/xmlrpcapi.go:53 mgradm/shared/pgsql/pgsql.go:44
-#: mgradm/shared/pgsql/pgsql.go:67
+#: mgradm/shared/hub/xmlrpcapi.go:53 mgradm/shared/pgsql/pgsql.go:46
+#: mgradm/shared/pgsql/pgsql.go:69
 msgid "cannot generate systemd service"
 msgstr "systemdサービスを生成できません"
 
@@ -1611,10 +1775,16 @@ msgstr "systemdサービスを生成できません"
 msgid "Multiple Hub XML-RPC container replicas are not currently supported, setting up only one."
 msgstr "現在、複数のHub XML-RPCコンテナレプリカはサポートされておらず、1つだけ設定できます。"
 
-#: mgradm/shared/hub/xmlrpcapi.go:72 mgradm/shared/podman/podman.go:543
-#: mgradm/shared/saline/saline.go:140
+#: mgradm/shared/hub/xmlrpcapi.go:72 mgradm/shared/podman/podman.go:544
+#: mgradm/shared/saline/saline.go:143
 msgid "cannot enable service"
 msgstr "サービスを有効にできません"
+
+#: mgradm/shared/hub/xmlrpcapi.go:87
+#, fuzzy
+#| msgid "Not starting Hub XML-RPC API service"
+msgid "Not altering the hub XML-RPC API service"
+msgstr "Hub XML-RPC APIサービスが起動しません"
 
 #: mgradm/shared/kubernetes/certificates.go:51
 msgid "Database SSL certificate and key have to be defined"
@@ -1711,7 +1881,7 @@ msgid "Upgrading PostgreSQL database from %[1]s to %[2]s…"
 msgstr "PostgreSQLデータベースを %[1]s から %[2]s にアップグレードしています…"
 
 #: mgradm/shared/kubernetes/dbUpgradeJob.go:47
-#: mgradm/shared/podman/podman.go:299
+#: mgradm/shared/podman/podman.go:300
 #, javascript-format
 msgid "Using database upgrade image %s"
 msgstr "データベースのアップグレードイメージ %s を使用しています"
@@ -1802,173 +1972,185 @@ msgstr "traefikミドルウェアとルートの作成に失敗しました"
 msgid "failed to write traefik routes to file"
 msgstr "traefikルートをファイルに書き込めませんでした"
 
-#: mgradm/shared/pgsql/pgsql.go:55 mgradm/shared/pgsql/pgsql.go:84
+#: mgradm/shared/pgsql/pgsql.go:57 mgradm/shared/pgsql/pgsql.go:86
 #, javascript-format
 msgid "%s fails healtcheck"
 msgstr "%s はヘルスチェックに失敗しました"
 
-#: mgradm/shared/pgsql/pgsql.go:123
+#: mgradm/shared/pgsql/pgsql.go:125 mgradm/shared/pgsql/pgsql.go:142
 msgid "cannot generate systemd configuration file"
 msgstr "systemd設定ファイルを生成できません"
 
-#: mgradm/shared/podman/podman.go:96
+#: mgradm/shared/podman/podman.go:97
 msgid "Enabling system service"
 msgstr "システムサービスの有効化"
 
-#: mgradm/shared/podman/podman.go:112 mgradm/shared/saline/saline.go:106
+#: mgradm/shared/podman/podman.go:113 mgradm/shared/saline/saline.go:109
 msgid "cannot generate systemd user configuration file"
 msgstr "systemdユーザ設定ファイルを生成できません"
 
-#: mgradm/shared/podman/podman.go:139
+#: mgradm/shared/podman/podman.go:140
 msgid "failed to generate SSL migration script"
 msgstr "SSL移行スクリプトの生成に失敗しました"
 
-#: mgradm/shared/podman/podman.go:159
+#: mgradm/shared/podman/podman.go:160
 #, javascript-format
 msgid "Migrating SSL certificates from the source server %s"
 msgstr "ソースサーバ %s からSSL証明書を移行しています"
 
-#: mgradm/shared/podman/podman.go:162
+#: mgradm/shared/podman/podman.go:163
 msgid "cannot run uyuni SSL migration container"
 msgstr "uyuni SSL移行コンテナを実行できません"
 
-#: mgradm/shared/podman/podman.go:173
+#: mgradm/shared/podman/podman.go:174
 #, javascript-format
 msgid "Failed to read file %s"
 msgstr "ファイル %s の読み込みに失敗しました"
 
-#: mgradm/shared/podman/podman.go:179
+#: mgradm/shared/podman/podman.go:180
 msgid "cannot read extracted data"
 msgstr "抽出されたデータを読み込めません"
 
-#: mgradm/shared/podman/podman.go:209
+#: mgradm/shared/podman/podman.go:210
 msgid "cannot generate migration script"
 msgstr "移行スクリプトを生成できません"
 
-#: mgradm/shared/podman/podman.go:227 mgradm/shared/utils/exec.go:102
+#: mgradm/shared/podman/podman.go:228 mgradm/shared/utils/exec.go:102
 msgid "Migrating server"
 msgstr "サーバの移行"
 
-#: mgradm/shared/podman/podman.go:230
+#: mgradm/shared/podman/podman.go:231
 msgid "cannot run uyuni migration container"
 msgstr "uyuni移行コンテナを実行できません"
 
-#: mgradm/shared/podman/podman.go:246
+#: mgradm/shared/podman/podman.go:247
 #, javascript-format
 msgid "cannot inspect volume %s"
 msgstr "ボリューム %s を検査できません"
 
-#: mgradm/shared/podman/podman.go:249
+#: mgradm/shared/podman/podman.go:250
 #, javascript-format
 msgid "cannot restore %s SELinux permissions"
 msgstr "%s SELinuxパーミッションを復元できません"
 
-#: mgradm/shared/podman/podman.go:268
+#: mgradm/shared/podman/podman.go:269
 msgid "Previous PostgreSQL is %[1]s, new one is %[2]s. Performing a DB version upgrade…"
 msgstr "以前のPostgreSQLは %[1]s、新しいPostgreSQLは %[2]s です。DBバージョンのアップグレードを実行中…"
 
-#: mgradm/shared/podman/podman.go:309
+#: mgradm/shared/podman/podman.go:310
 msgid "cannot generate PostgreSQL database version upgrade script"
 msgstr "PostgreSQLデータベースのバージョンアップグレードスクリプトを生成できません"
 
-#: mgradm/shared/podman/podman.go:324
+#: mgradm/shared/podman/podman.go:325
 msgid "No need to run database finalization script"
 msgstr "データベースの最終処理スクリプトを実行する必要はありません"
 
-#: mgradm/shared/podman/podman.go:335 mgradm/shared/podman/podman.go:349
+#: mgradm/shared/podman/podman.go:336 mgradm/shared/podman/podman.go:350
 msgid "cannot generate PostgreSQL finalization script"
 msgstr "PostgreSQL終了処理スクリプトを生成できません"
 
-#: mgradm/shared/podman/podman.go:402 mgradm/shared/podman/podman.go:410
-#: mgradm/shared/podman/podman.go:714
+#: mgradm/shared/podman/podman.go:403 mgradm/shared/podman/podman.go:411
+#: mgradm/shared/podman/podman.go:729
 msgid "cannot stop service"
 msgstr "サービスを停止できません"
 
-#: mgradm/shared/podman/podman.go:423 mgradm/shared/podman/podman.go:636
+#: mgradm/shared/podman/podman.go:424 mgradm/shared/podman/podman.go:637
 msgid "Configuring split PostgreSQL container. Image version: %[1]d, not migrated version: %[2]d"
 msgstr "分割されたPostgreSQLコンテナを設定しています。イメージバージョン: %[1]d、移行されていないバージョン: %[2]d"
 
-#: mgradm/shared/podman/podman.go:432 mgradm/shared/podman/podman.go:651
+#: mgradm/shared/podman/podman.go:433 mgradm/shared/podman/podman.go:652
 msgid "cannot configure db container"
 msgstr "dbコンテナを設定できません"
 
-#: mgradm/shared/podman/podman.go:441 mgradm/shared/podman/podman.go:887
+#: mgradm/shared/podman/podman.go:442 mgradm/shared/podman/podman.go:902
 msgid "cannot run PostgreSQL version upgrade script"
 msgstr "PostgreSQLバージョンアップグレードスクリプトを実行できません"
 
-#: mgradm/shared/podman/podman.go:444 mgradm/shared/podman/podman.go:890
+#: mgradm/shared/podman/podman.go:445 mgradm/shared/podman/podman.go:905
 msgid "Upgrading without changing PostgreSQL version"
 msgstr "PostgreSQLバージョンを変更せずにアップグレードしています"
 
-#: mgradm/shared/podman/podman.go:447 mgradm/shared/podman/podman.go:893
+#: mgradm/shared/podman/podman.go:448 mgradm/shared/podman/podman.go:908
 msgid "trying to downgrade PostgreSQL from %[1]s to %[2]s"
 msgstr "PostgreSQLを %[1]s から %[2]s にダウングレードしようとしています"
 
-#: mgradm/shared/podman/podman.go:459 mgradm/shared/podman/podman.go:667
+#: mgradm/shared/podman/podman.go:460 mgradm/shared/podman/podman.go:676
 msgid "cannot run PostgreSQL finalize script"
 msgstr "PostgreSQL終了処理スクリプトを実行できません"
 
-#: mgradm/shared/podman/podman.go:463 mgradm/shared/podman/podman.go:671
+#: mgradm/shared/podman/podman.go:464 mgradm/shared/podman/podman.go:680
 msgid "cannot run post upgrade script"
 msgstr "アップグレード後のスクリプトを実行できません"
 
-#: mgradm/shared/podman/podman.go:488 mgradm/shared/podman/podman.go:541
+#: mgradm/shared/podman/podman.go:489 mgradm/shared/podman/podman.go:542
 msgid "Waiting for the server to start…"
 msgstr "サーバが起動するのを待機中…"
 
-#: mgradm/shared/podman/podman.go:491
+#: mgradm/shared/podman/podman.go:492
 msgid "cannot start service"
 msgstr "サービスを開始できません"
 
-#: mgradm/shared/podman/podman.go:509 mgradm/shared/podman/podman.go:691
+#: mgradm/shared/podman/podman.go:510 mgradm/shared/podman/podman.go:700
 msgid "error upgrading confidential computing service."
 msgstr "コンフィデンシャルコンピューティングサービスのアップグレード時のエラー"
 
-#: mgradm/shared/podman/podman.go:519 mgradm/shared/podman/podman.go:705
+#: mgradm/shared/podman/podman.go:520 mgradm/shared/podman/podman.go:714
 msgid "error upgrading saline service."
 msgstr "salineサービスのアップグレード時のエラー。"
 
-#: mgradm/shared/podman/podman.go:606
+#: mgradm/shared/podman/podman.go:607
 msgid "cannot run SSL migration script"
 msgstr "SSL移行スクリプトを実行できません"
 
-#: mgradm/shared/podman/podman.go:618
+#: mgradm/shared/podman/podman.go:619
 msgid "cannot run migration script"
 msgstr "移行スクリプトを実行できません"
 
-#: mgradm/shared/podman/podman.go:621
+#: mgradm/shared/podman/podman.go:622
 msgid "Migration prepared. Run the 'migrate' command without '--prepare' to finish the migration."
 msgstr "移行の準備ができました。移行を完了するには、「--prepare」を指定せずに「migrate」コマンドを実行します。"
 
-#: mgradm/shared/podman/podman.go:629
+#: mgradm/shared/podman/podman.go:630
 msgid "failed to inspect database container image"
 msgstr "データベースコンテナイメージの検査に失敗しました"
 
-#: mgradm/shared/podman/podman.go:656
+#: mgradm/shared/podman/podman.go:657
 msgid "cannot remove temporary etc-tls volume"
 msgstr "一時的なetc-tlsボリュームを削除できません"
 
-#: mgradm/shared/podman/podman.go:758
+#: mgradm/shared/podman/podman.go:665
+#, fuzzy
+#| msgid "failed to unmarshall configuration"
+msgid "failed to prepare backup volume configuration"
+msgstr "設定のアンマーシャルに失敗しました"
+
+#: mgradm/shared/podman/podman.go:719
+#, fuzzy
+#| msgid "Unable to encode secrets backup"
+msgid "failed to enable coninuous backup."
+msgstr "シークレットのバックアップをエンコードできません"
+
+#: mgradm/shared/podman/podman.go:773
 msgid "failed to generate postgresql migration script"
 msgstr "postgresql移行スクリプトの生成に失敗しました"
 
-#: mgradm/shared/podman/podman.go:794
+#: mgradm/shared/podman/podman.go:809
 msgid "The above error is only relevant if using a public cloud provider registry"
 msgstr "上記のエラーは、パブリッククラウドプロバイダのレジストリを使用している場合のみ関係します"
 
-#: mgradm/shared/podman/podman.go:824
+#: mgradm/shared/podman/podman.go:839
 msgid "SSH_AUTH_SOCK is not defined, start an SSH agent and try again"
 msgstr "SSH_AUTH_SOCKが定義されていません。SSHエージェントを起動して再試行してください"
 
-#: mgradm/shared/podman/podman.go:834
+#: mgradm/shared/podman/podman.go:849
 msgid "Failed to find home directory to look for SSH config"
 msgstr "SSH設定を検索するホームディレクトリが見つかりませんでした"
 
-#: mgradm/shared/podman/podman.go:856
+#: mgradm/shared/podman/podman.go:871
 msgid "cannot inspect podman values"
 msgstr "podman値を検査できません"
 
-#: mgradm/shared/podman/podman.go:908
+#: mgradm/shared/podman/podman.go:923
 msgid "PostgreSQL migration failure"
 msgstr "PostgreSQL移行の失敗"
 
@@ -2083,11 +2265,17 @@ msgstr "データベースSSL証明書を生成できませんでした"
 msgid "Database SSL certificate generated"
 msgstr "データベースSSL証明書が生成されました"
 
-#: mgradm/shared/saline/saline.go:63 mgradm/shared/saline/saline.go:134
+#: mgradm/shared/saline/saline.go:50
+#, fuzzy
+#| msgid "Setting up Saline service"
+msgid "Not altering the Saline service"
+msgstr "Salineサービスを設定しています"
+
+#: mgradm/shared/saline/saline.go:66 mgradm/shared/saline/saline.go:137
 msgid "Multiple Saline container replicas are not currently supported, setting up only one."
 msgstr "現在、複数のSalineコンテナレプリカはサポートされておらず、1つだけ設定できます。"
 
-#: mgradm/shared/saline/saline.go:86
+#: mgradm/shared/saline/saline.go:89
 msgid "Setting up Saline service"
 msgstr "Salineサービスを設定しています"
 
@@ -2234,10 +2422,14 @@ msgid "External database provider. Possible values 'aws'"
 msgstr "外部データベースプロバイダ。指定可能な値「 aws」"
 
 #: mgradm/shared/utils/cmd_utils.go:165
+msgid "Setup continuous WAL backup"
+msgstr ""
+
+#: mgradm/shared/utils/cmd_utils.go:167
 msgid "Database Flags"
 msgstr "データベースフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:178
+#: mgradm/shared/utils/cmd_utils.go:181
 msgid ""
 "SUSE Customer Center username.\n"
 "It will be used as SCC credentials for products synchronization and to pull images from SCC registry"
@@ -2245,7 +2437,7 @@ msgstr ""
 "SUSEカスタマーセンターのユーザ名。 \n"
 "これは、製品の同期とSCCレジストリからのイメージの取得のためにSCC資格情報として使用されます"
 
-#: mgradm/shared/utils/cmd_utils.go:180
+#: mgradm/shared/utils/cmd_utils.go:183
 msgid ""
 "SUSE Customer Center password.\n"
 "It will be used as SCC credentials for products synchronization and to pull images from SCC registry"
@@ -2253,51 +2445,51 @@ msgstr ""
 "SUSEカスタマーセンターのパスワード。 \n"
 "これは、製品の同期とSCCレジストリからのイメージの取得のためにSCC資格情報として使用されます"
 
-#: mgradm/shared/utils/cmd_utils.go:182
+#: mgradm/shared/utils/cmd_utils.go:185
 msgid "SUSE Customer Center Flags"
 msgstr "SUSEカスタマーセンターのフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:189
+#: mgradm/shared/utils/cmd_utils.go:192
 msgid "Image"
 msgstr "イメージ"
 
-#: mgradm/shared/utils/cmd_utils.go:190
+#: mgradm/shared/utils/cmd_utils.go:193
 msgid "Tag Image"
 msgstr "タグイメージ"
 
-#: mgradm/shared/utils/cmd_utils.go:195
+#: mgradm/shared/utils/cmd_utils.go:198
 msgid "Image Flags"
 msgstr "イメージフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:205
+#: mgradm/shared/utils/cmd_utils.go:208
 msgid "Database upgrade image"
 msgstr "データベースのアップグレードイメージ"
 
-#: mgradm/shared/utils/cmd_utils.go:206
+#: mgradm/shared/utils/cmd_utils.go:209
 msgid "Database upgrade image tag, overrides the default value if set"
 msgstr "データベースアップグレードイメージタグ。設定されている場合はデフォルト値を上書きします"
 
-#: mgradm/shared/utils/cmd_utils.go:208
+#: mgradm/shared/utils/cmd_utils.go:211
 msgid "Database Upgrade Image Flags"
 msgstr "データベースアップグレードイメージのフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:215
+#: mgradm/shared/utils/cmd_utils.go:218
 msgid "Path to mirrored packages mounted on the host"
 msgstr "ホストにマウントされたミラーパッケージへのパス"
 
-#: mgradm/shared/utils/cmd_utils.go:220 mgradm/shared/utils/cmd_utils.go:228
+#: mgradm/shared/utils/cmd_utils.go:223 mgradm/shared/utils/cmd_utils.go:231
 msgid "Confidential Computing Flags"
 msgstr "コンフィデンシャルコンピューティングのフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:221 mgradm/shared/utils/cmd_utils.go:229
+#: mgradm/shared/utils/cmd_utils.go:224 mgradm/shared/utils/cmd_utils.go:232
 msgid "Confidential computing attestation"
 msgstr "コンフィデンシャルコンピューティング認証"
 
-#: mgradm/shared/utils/cmd_utils.go:222
+#: mgradm/shared/utils/cmd_utils.go:225
 msgid "How many replicas of the confidential computing container should be started"
 msgstr "コンフィデンシャルコンピューティングコンテナのレプリカをいくつ起動する必要があるか"
 
-#: mgradm/shared/utils/cmd_utils.go:230
+#: mgradm/shared/utils/cmd_utils.go:233
 msgid ""
 "How many replicas of the confidential computing container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas."
@@ -2305,16 +2497,16 @@ msgstr ""
 "コンフィデンシャルコンピューティングコンテナのレプリカをいくつ起動する必要があるか。\n"
 "以前のレプリカ数を維持する場合は、未設定のままにしておきます。"
 
-#: mgradm/shared/utils/cmd_utils.go:237 mgradm/shared/utils/cmd_utils.go:238
-#: mgradm/shared/utils/cmd_utils.go:247 mgradm/shared/utils/cmd_utils.go:248
+#: mgradm/shared/utils/cmd_utils.go:240 mgradm/shared/utils/cmd_utils.go:241
+#: mgradm/shared/utils/cmd_utils.go:250 mgradm/shared/utils/cmd_utils.go:251
 msgid "Hub XML-RPC API"
 msgstr "Hub XML-RPC API"
 
-#: mgradm/shared/utils/cmd_utils.go:240
+#: mgradm/shared/utils/cmd_utils.go:243
 msgid "How many replicas of the Hub XML-RPC API service container should be started."
 msgstr "Hub XML-RPC APIサービスコンテナのレプリカをいくつ起動する必要があるか。"
 
-#: mgradm/shared/utils/cmd_utils.go:250
+#: mgradm/shared/utils/cmd_utils.go:253
 msgid ""
 "How many replicas of the Hub XML-RPC API service container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas."
@@ -2322,15 +2514,15 @@ msgstr ""
 "Hub XML-RPC APIサービスコンテナのレプリカをいくつ起動する必要があるか。\n"
 "以前のレプリカ数を維持する場合は、未設定のままにしておきます。"
 
-#: mgradm/shared/utils/cmd_utils.go:257 mgradm/shared/utils/cmd_utils.go:268
+#: mgradm/shared/utils/cmd_utils.go:260 mgradm/shared/utils/cmd_utils.go:271
 msgid "Saline Flags"
 msgstr "Salineフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:258 mgradm/shared/utils/cmd_utils.go:269
+#: mgradm/shared/utils/cmd_utils.go:261 mgradm/shared/utils/cmd_utils.go:272
 msgid "Saline"
 msgstr "Saline"
 
-#: mgradm/shared/utils/cmd_utils.go:259
+#: mgradm/shared/utils/cmd_utils.go:262
 msgid ""
 "How many replicas of the Saline container should be started\n"
 "(only 0 or 1 supported for now)"
@@ -2338,11 +2530,11 @@ msgstr ""
 "Salineコンテナのレプリカをいくつ起動する必要があるか\n"
 "(現時点では0または1のみサポート)"
 
-#: mgradm/shared/utils/cmd_utils.go:261 mgradm/shared/utils/cmd_utils.go:273
+#: mgradm/shared/utils/cmd_utils.go:264 mgradm/shared/utils/cmd_utils.go:276
 msgid "Saline port"
 msgstr "Salineポート"
 
-#: mgradm/shared/utils/cmd_utils.go:270
+#: mgradm/shared/utils/cmd_utils.go:273
 msgid ""
 "How many replicas of the Saline container should be started.\n"
 "Leave it unset if you want to keep the previous number of replicas.\n"
@@ -2352,11 +2544,11 @@ msgstr ""
 "以前のレプリカ数を維持する場合は、未設定のままにしておきます。\n"
 "(現時点では0または1のみサポート）"
 
-#: mgradm/shared/utils/cmd_utils.go:280
+#: mgradm/shared/utils/cmd_utils.go:283
 msgid "PostgreSQL Database Container Flags"
 msgstr "PostgreSQLデータベースコンテナフラグ"
 
-#: mgradm/shared/utils/cmd_utils.go:281
+#: mgradm/shared/utils/cmd_utils.go:284
 msgid "PostgreSQL Database"
 msgstr "PostgreSQLデータベース"
 
@@ -2402,17 +2594,61 @@ msgstr "サーバイメージからリリースをフェッチできません"
 msgid "cannot downgrade from version %[1]s to %[2]s"
 msgstr "バージョン %[1]s から %[2]s にダウングレードできません"
 
-#: mgradm/shared/utils/flags.go:155
+#: mgradm/shared/utils/flags.go:156
 msgid "Can only contain letters, digits . _ and -"
 msgstr "文字、数字 ._ -のみを含めることができます"
 
-#: mgradm/shared/utils/flags.go:163
+#: mgradm/shared/utils/flags.go:164
 msgid "Not a valid email address"
 msgstr "有効な電子メールアドレスではありません"
 
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "セットアップスクリプトのレンダリングに失敗しました"
+
+#~ msgid "Hub management"
+#~ msgstr "ハブ管理"
+
+#~ msgid "Tools and utilities for Hub management"
+#~ msgstr "ハブ管理用ツールとユーティリティ"
+
+#~ msgid "Register"
+#~ msgstr "登録"
+
+#~ msgid "Register this peripheral server to Hub API"
+#~ msgstr "この周辺機器サーバをハブAPIに登録する"
+
+#, javascript-format
+#~ msgid "invalid line format: %s"
+#~ msgstr "無効な行のフォーマット: %s"
+
+#, javascript-format
+#~ msgid "mandatory %s entry missing in config"
+#~ msgstr "configに必須 %s エントリがありません"
+
+#, javascript-format
+#~ msgid "Hub API server: %s"
+#~ msgstr "ハブAPIサーバ: %s"
+
+#~ msgid "failed to connect to the Hub server"
+#~ msgstr "ハブサーバへの接続に失敗しました"
+
+#~ msgid "failed to register this peripheral server"
+#~ msgstr "この周辺機器サーバの登録に失敗しました"
+
+#, javascript-format
+#~ msgid "failed to register this peripheral server: %s"
+#~ msgstr "この周辺機器サーバの登録に失敗しました: %s"
+
+#~ msgid "failed to update peripheral server info"
+#~ msgstr "周辺機器サーバ情報の更新に失敗しました"
+
+#, javascript-format
+#~ msgid "failed to update peripheral server info: %s"
+#~ msgstr "周辺機器サーバ情報の更新に失敗しました: %s"
+
+#~ msgid "Registered peripheral server: %[1]s, ID: %[2]d"
+#~ msgstr "登録された周辺機器サーバ: %[1]s、ID: %[2]d"
 
 #~ msgid "unable to get random file prefix"
 #~ msgstr "ランダムなファイルプレフィックスを取得できません"
@@ -2683,9 +2919,6 @@ msgstr "セットアップスクリプトのレンダリングに失敗しまし
 #, fuzzy
 #~ msgid "cannot find either /etc/uyuni-release or /etc/susemanagere-release"
 #~ msgstr "etc/uyuni-releaseも/etc/susemanagere-releaseも見つかりません"
-
-#~ msgid "Not starting Hub XML-RPC API service"
-#~ msgstr "Hub XML-RPC APIサービスが起動しません"
 
 #, javascript-format
 #~ msgid "unable to remove temporary directory, leaving %s intact"

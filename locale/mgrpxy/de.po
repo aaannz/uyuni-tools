@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 10:59+0100\n"
+"POT-Creation-Date: 2026-03-18 13:47+0100\n"
 "PO-Revision-Date: 2025-02-22 05:50+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgrpxy/de/>\n"
@@ -123,7 +123,7 @@ msgid ""
 msgstr ""
 
 #: mgrpxy/cmd/install/podman/utils.go:30
-#: mgrpxy/cmd/support/ptf/podman/utils.go:30 mgrpxy/shared/podman/podman.go:308
+#: mgrpxy/cmd/support/ptf/podman/utils.go:30 mgrpxy/shared/podman/podman.go:317
 msgid "install podman before running this command"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "failed to retrieve proxy config files"
 msgstr ""
 
-#: mgrpxy/cmd/install/podman/utils.go:49 mgrpxy/shared/podman/podman.go:324
+#: mgrpxy/cmd/install/podman/utils.go:49 mgrpxy/shared/podman/podman.go:333
 msgid "Unable to fetch up to date systemid, using one from the provided configuration file"
 msgstr ""
 
@@ -441,60 +441,60 @@ msgstr ""
 msgid "cannot generate systemd conf user configuration file"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:257
+#: mgrpxy/shared/podman/podman.go:261
 #, javascript-format
 msgid "Setting up proxy with configuration %s"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:259
+#: mgrpxy/shared/podman/podman.go:263
 #, javascript-format
 msgid "failed to extract proxy config from %s file"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:262
+#: mgrpxy/shared/podman/podman.go:266
 msgid "No tarball provided. Will check existing configuration files."
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:276
+#: mgrpxy/shared/podman/podman.go:285
 #, javascript-format
 msgid "%s directory has no required permissions. Check your umask settings"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:278
+#: mgrpxy/shared/podman/podman.go:287
 #, javascript-format
 msgid "%s file has no required permissions. Check your umask settings"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:291
+#: mgrpxy/shared/podman/podman.go:300
 #, javascript-format
 msgid "missing required configuration file: %s"
 msgstr "fehlende erforderliche Konfigurationsdateipfad: %s"
 
-#: mgrpxy/shared/podman/podman.go:336
+#: mgrpxy/shared/podman/podman.go:345
 msgid "cannot find httpd image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:340
+#: mgrpxy/shared/podman/podman.go:349
 msgid "cannot find salt-broker image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:344
+#: mgrpxy/shared/podman/podman.go:353
 msgid "cannot find squid image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:348
+#: mgrpxy/shared/podman/podman.go:357
 msgid "cannot find ssh image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:352
+#: mgrpxy/shared/podman/podman.go:361
 msgid "cannot find tftpd image: it will no be upgraded"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:424
+#: mgrpxy/shared/podman/podman.go:433
 msgid "Not a system id event"
 msgstr ""
 
-#: mgrpxy/shared/podman/podman.go:433
+#: mgrpxy/shared/podman/podman.go:442
 msgid "System id not found in returned event"
 msgstr ""
 
