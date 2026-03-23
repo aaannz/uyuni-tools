@@ -1,4 +1,24 @@
 -------------------------------------------------------------------
+Mon Mar 23 08:04:55 CET 2026 - marina.latini@suse.com
+
+- version 5.1.26-0
+  * Fix applying PTF with images from RPMs (bsc#1252548)
+  * Ssl Key file can miss if CA password is blank (bsc#1254154)
+  * mgrpxy ssh tuning should happens before crypto policies (bsc#1254619)
+  * Fix default value for helm registry (bsc#1258927).
+  * Remove hub register command
+  * Optimize postgres migration disk space usage (bsc#1257447)
+  * Add continuous database backup support (bsc#1250367)
+  * Explicitly start proxy pods after operations
+    (bsc#1258015)
+  * Use static supportconfig name to avoid dynamic search
+    (bsc#1257941)
+  * Do not nest multiple tarball files and instead collect
+    all files into one tarball (bsc#1252964)
+  * Show where final tarball was generated (bsc#1259208)
+  * Set proxy config file permissions (bsc#1257660)
+
+-------------------------------------------------------------------
 Thu Feb 19 10:32:20 WET 2026 - psuarezhernandez@suse.com
 
 - version 5.1.25-0
