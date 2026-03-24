@@ -50,29 +50,3 @@ func podmanInspect(
 
 	return nil
 }
-
-func prepareImages(
-	server string, pgsql string, pullPolicy string, registry types.Registry, scc types.SCCCredentials,
-) (serverImage string, dbImage string, err error) {
-	hostData, err := podman.InspectHost()
-	if err != nil {
-		return "", "", err
-	}
-
-	authFile, cleaner, err := podman.PodmanLogin(hostData, registry, scc)
-	if err != nil {
-		return "", "", utils.Errorf(err, L("failed to login to %s"), registry.Host)
-	}
-	defer cleaner()
-
-	serverImage, err = podman.PrepareImage(authFile, server, pullPolicy, true)
-	if err != nil {
-		return "", "", err
-	}
-
-	dbImage, err = podman.PrepareImage(authFile, pgsql, pullPolicy, true)
-	if err != nil {
-		return serverImage, "", err
-	}
-	return serverImage, dbImage, nil
-}
