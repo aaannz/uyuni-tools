@@ -53,7 +53,8 @@ ExecStart=/bin/sh -c '/usr/bin/podman run \
 	--secret {{ .DBCaSecret }},type=mount,target={{ .DBCaPath }} \
 	--health-on-failure=stop \
 	${PODMAN_EXTRA_ARGS} ${UYUNI_IMAGE}'
-ExecStop=/usr/bin/podman exec \
+
+ExecStop=-/usr/bin/podman exec \
     uyuni-server \
     /bin/bash -c 'spacewalk-service stop'
 ExecStop=/usr/bin/podman stop \
