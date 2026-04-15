@@ -42,7 +42,7 @@ func InstallK3sTraefikConfig(ports []types.PortMap) error {
 		return utils.Errorf(err, L("Failed to write Traefik configuration"))
 	}
 
-	// Wait for traefik to be back
+	// Writing the manifest triggers Traefik reconciliation asynchronously; this function does not wait for readiness.
 	return nil
 }
 
