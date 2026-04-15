@@ -84,7 +84,7 @@ func UninstallK3sTraefikConfig(dryRun bool) {
 		if err != nil {
 			log.Error().Err(err).Msg(L("failed to write empty traefik configuration"))
 		} else {
-			log.Error().Err(err).Msg(L("failed to uninstall traefik configuration"))
+			log.Info().Msg(L("Wrote empty Traefik configuration"))
 		}
 	} else {
 		log.Info().Msg(L("Would reinstall Traefik without additionnal configuration"))
