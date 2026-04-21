@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-18 13:47+0100\n"
-"PO-Revision-Date: 2026-04-20 17:04+0000\n"
+"PO-Revision-Date: 2026-04-21 16:04+0000\n"
 "Last-Translator: Alessio Matozzi <alessio.matozzi@studenti.unipg.it>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/it/>\n"
 "Language: it\n"
@@ -432,54 +432,53 @@ msgstr ""
 #: mgradm/cmd/backup/restore/podman_utils.go:47
 #, javascript-format
 msgid "Ignoring unexpected file in the podman backup %s"
-msgstr ""
+msgstr "Ignorare il file imprevisto nel backup di Podman %s"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:58
 msgid "Unable to decode network data backup"
-msgstr ""
+msgstr "Impossibile decodificare il backup dei dati di rete"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:62
 msgid "Incorrect network data backup"
-msgstr ""
+msgstr "Backup errato dei dati di rete"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:96
 #: mgradm/cmd/backup/restore/podman_utils.go:129
 msgid "podman network already exists"
-msgstr ""
+msgstr "la rete podman già esiste"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:101
 msgid "Unable to create podman network! Check the error and create network manually before starting the service"
-msgstr ""
+msgstr "Creazione della rete podman disattivata! Controlla l'errore e crea manualmente una rete prima di avviare il servizio"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:109
 msgid "Would restore network configuration"
-msgstr ""
+msgstr "Ripristinerebbe la configurazione della rete"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:114
 msgid "Failed to read backed up network configuration, trying default"
-msgstr ""
+msgstr "Impossibile leggere la configurazione di rete sottoposta a backup, provando l'impostazione predefinita"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:120
 msgid "Failed to decode backed up network configuration, trying default"
-msgstr ""
+msgstr "Impossibile decodificare la configurazione di rete sottoposta a backup, provando l'impostazione predefinita"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:128
 msgid "Podman network already exists, not restoring unless forced"
-msgstr ""
+msgstr "La rete Podman esiste già, non viene ripristinata a meno che non sia forzata"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:141
 msgid "Restoring podman network"
-msgstr ""
+msgstr "Ripristino della rete podman"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:143
-#, fuzzy
 msgid "Unlable to create podman network"
-msgstr "mancata creazione della directory temporanea: %s"
+msgstr "Creazione della rete podman disattivata"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:160
 #, javascript-format
 msgid "Unable to decode secret %s, using as is"
-msgstr ""
+msgstr "Impossibile decodificare il segreto %s, utilizzando così com'è"
 
 #: mgradm/cmd/backup/restore/podman_utils.go:173
 msgid "Would restore podman secrets"
