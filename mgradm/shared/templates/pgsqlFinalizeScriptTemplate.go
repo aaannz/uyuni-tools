@@ -11,6 +11,11 @@ import (
 
 //nolint:lll
 const postgresFinalizeScriptTemplate = `
+# Fix incorrectly configured report-db CA (bsc#1260806)
+if grep -q "^report_db_sslrootcert\s*=\s*/etc/pki/trust/anchors/LOCAL-RHN-ORG-TRUSTED-SSL-CERT$" /etc/rhn/rhn.conf ; then
+    sed -i -e "s|^report_db_sslrootcert\s*=\s*/etc/pki/trust/anchors/LOCAL-RHN-ORG-TRUSTED-SSL-CERT$|report_db_sslrootcert = /etc/pki/trust/anchors/DB-RHN-ORG-TRUSTED-SSL-CERT|" /etc/rhn/rhn.conf
+fi
+
 {{ if .RunReindex }}
 # Reindexing may not be needed for every collation change, but better be on the safe side.
 echo "Reindexing database. This may take a while, please do not cancel it!"
