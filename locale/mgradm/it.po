@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-18 13:47+0100\n"
-"PO-Revision-Date: 2026-04-21 17:04+0000\n"
+"PO-Revision-Date: 2026-04-27 17:04+0000\n"
 "Last-Translator: Alessio Matozzi <alessio.matozzi@studenti.unipg.it>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/it/>\n"
 "Language: it\n"
@@ -642,16 +642,15 @@ msgstr ""
 
 #: mgradm/cmd/cmd.go:50
 msgid "Server Deployment:"
-msgstr ""
+msgstr "Distribuzione del server:"
 
 #: mgradm/cmd/cmd.go:54
 msgid "Server Management:"
-msgstr "Gestione del Server:"
+msgstr "Gestione del server:"
 
 #: mgradm/cmd/cmd.go:58
-#, fuzzy
 msgid "Administrator tools:"
-msgstr "Password amministratore"
+msgstr "Strumenti di amministrazione:"
 
 #: mgradm/cmd/cmd.go:68
 #, javascript-format
@@ -660,7 +659,7 @@ msgstr "Inizio %s"
 
 #: mgradm/cmd/cmd.go:69
 msgid "Use of this software implies acceptance of the End User License Agreement."
-msgstr ""
+msgstr "L'utilizzo di questo software implica l'accettazione del Contratto di licenza con l'utente finale."
 
 #: mgradm/cmd/cmd.go:73
 msgid "configuration file path"
@@ -923,9 +922,8 @@ msgstr "impossibile trovare l'immagine del container server attualmente in esecu
 #: mgradm/cmd/inspect/kubernetes.go:46 mgradm/cmd/restart/kubernetes.go:27
 #: mgradm/cmd/start/kubernetes.go:27 mgradm/cmd/stop/kubernetes.go:27
 #: mgradm/shared/utils/exec.go:38
-#, fuzzy
 msgid "failed retrieving namespace"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr "recupero non riuscito dello spazio dei nomi"
 
 #: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
 #, fuzzy
@@ -1022,9 +1020,8 @@ msgstr "impossibile aggiornare: %s"
 
 #: mgradm/cmd/install/podman/utils.go:71 mgradm/shared/podman/podman.go:94
 #: mgradm/shared/podman/podman.go:383 mgradm/shared/podman/podman.go:585
-#, fuzzy
 msgid "cannot setup network"
-msgstr "impossibile impostare la rete: %s"
+msgstr "impossibile configurare la rete"
 
 #: mgradm/cmd/install/podman/utils.go:118 mgradm/shared/podman/podman.go:956
 #, javascript-format
@@ -1393,17 +1390,16 @@ msgid "failed to find the uyuni deployment namespace"
 msgstr ""
 
 #: mgradm/cmd/status/kubernetes.go:38
-#, fuzzy
 msgid "failed to get deployment status"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr ""
 
 #: mgradm/cmd/status/kubernetes.go:41
 msgid "Some replicas are not ready: %[1]d / %[2]d"
-msgstr ""
+msgstr "Alcune repliche non sono pronte: %[1]d / %[2]d"
 
 #: mgradm/cmd/status/kubernetes.go:45
 msgid "the pod is not running"
-msgstr ""
+msgstr "il pod non è in esecuzione"
 
 #: mgradm/cmd/status/kubernetes.go:50
 msgid "failed to run spacewalk-service status"
@@ -1423,17 +1419,19 @@ msgstr ""
 
 #: mgradm/cmd/support/config/config.go:22
 msgid "Extract configuration and logs"
-msgstr ""
+msgstr "Estrarre la configurazione e i log"
 
 #: mgradm/cmd/support/config/config.go:23
 msgid ""
 "Extract the host or cluster configuration and logs as well as those from\n"
 "the containers for support to help debugging."
 msgstr ""
+"Estrarre la configurazione e i registri dell'host o del cluster, nonché quelli da\n"
+"i contenitori di supporto per facilitare il debug."
 
 #: mgradm/cmd/support/config/config.go:31
 msgid "path where to extract the data"
-msgstr ""
+msgstr "percorso in cui estrarre i dati"
 
 #: mgradm/cmd/support/config/extractor.go:29
 #, fuzzy, javascript-format
@@ -1441,9 +1439,8 @@ msgid "failed to remove %s temporary file"
 msgstr "mancata identificazione dell'immagine: %s"
 
 #: mgradm/cmd/support/ptf/podman/podman.go:30
-#, fuzzy
 msgid "Install a PTF or Test package on podman"
-msgstr "Installare un nuovo server su Podman"
+msgstr "Installare un pacchetto PTF o Test su podman"
 
 #: mgradm/cmd/support/ptf/podman/podman.go:31
 msgid ""
@@ -1457,15 +1454,15 @@ msgstr ""
 
 #: mgradm/cmd/support/ptf/podman/utils.go:72
 msgid "ptf and test flags cannot be set simultaneously "
-msgstr ""
+msgstr "i flag ptf e test non possono essere impostati simultaneamente "
 
 #: mgradm/cmd/support/ptf/podman/utils.go:75
 msgid "ptf and test flags cannot be empty simultaneously "
-msgstr ""
+msgstr "i flag ptf e test non possono essere vuoti contemporaneamente "
 
 #: mgradm/cmd/support/ptf/podman/utils.go:78
 msgid "user flag cannot be empty"
-msgstr ""
+msgstr "il flag utente non può essere vuoto"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:90
 #, fuzzy
@@ -1479,9 +1476,8 @@ msgstr "impossibile determinare l'URL dell'immagine: %s"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:119
 #: mgradm/cmd/support/ptf/podman/utils.go:123
-#, fuzzy
 msgid "The %[1]s service image is %[2]s"
-msgstr "impossibile determinare l'URL dell'immagine: %s"
+msgstr "L'immagine del servizio %[1]s è %[2]s"
 
 #: mgradm/cmd/support/ptf/podman/utils.go:121
 #, javascript-format
@@ -1565,7 +1561,7 @@ msgstr ""
 
 #: mgradm/cmd/support/support.go:21 mgradm/cmd/support/support.go:22
 msgid "Commands for support operations"
-msgstr ""
+msgstr "Comandi per operazioni di supporto"
 
 #: mgradm/cmd/uninstall/kubernetes.go:28
 msgid "--purge-volumes is ignored on a kubernetes deployment"
@@ -1602,21 +1598,21 @@ msgid "Some volumes have not been removed completely"
 msgstr ""
 
 #: mgradm/cmd/uninstall/podman.go:70
-#, fuzzy, javascript-format
+#, javascript-format
 msgid "cannot delete image %s"
-msgstr "impossible eliminare il volume %s"
+msgstr "Non si può eliminare l'immagine %s"
 
 #: mgradm/cmd/uninstall/podman.go:74
 msgid "All images have been removed"
-msgstr ""
+msgstr "Tutte le immagini sono state rimosse"
 
 #: mgradm/cmd/uninstall/podman.go:96
 msgid "Nothing has been uninstalled, run with --force and --purge-volumes to actually uninstall and clear data"
-msgstr ""
+msgstr "Non è stato disinstallato nulla, esegui --force e --purge-volumes per disinstallare e cancellare effettivamente i dati"
 
 #: mgradm/cmd/uninstall/podman.go:99
 msgid "Data have been kept, use podman volume commands to clear the volumes"
-msgstr ""
+msgstr "I dati sono stati conservati, utilizzare i comandi del volume podman per cancellare i volumi"
 
 #: mgradm/cmd/uninstall/uninstall.go:20
 msgid "Uninstall a server"
@@ -1666,9 +1662,8 @@ msgstr "impossibile abilitare il servizio: %s"
 
 #: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
-#, fuzzy
 msgid "cannot generate systemd conf file"
-msgstr "impossibile abilitare il servizio: %s"
+msgstr "non è possibile generare il file conf systemd"
 
 #: mgradm/shared/hub/xmlrpcapi.go:36
 #, javascript-format
@@ -2406,7 +2401,7 @@ msgstr ""
 
 #: mgradm/shared/utils/cmd_utils.go:185
 msgid "SUSE Customer Center Flags"
-msgstr ""
+msgstr "Bandiere del centro clienti SUSE"
 
 #: mgradm/shared/utils/cmd_utils.go:192
 msgid "Image"
