@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-18 13:47+0100\n"
-"PO-Revision-Date: 2026-04-27 17:04+0000\n"
-"Last-Translator: Alessio Matozzi <alessio.matozzi@studenti.unipg.it>\n"
+"PO-Revision-Date: 2026-05-06 10:04+0000\n"
+"Last-Translator: Lorenzo Proietti <lorenzoproietti110706@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: mgradm/cmd/backup/backup.go:29
 msgid "Create backup"
@@ -254,38 +254,35 @@ msgstr "Backup dell'archiviazione continua di Rebase"
 
 #: mgradm/cmd/backup/db/cmd.go:61
 msgid "Disable continuous archiving backup"
-msgstr ""
+msgstr "Disattiva il backup continuo dell’archivio"
 
 #: mgradm/cmd/backup/db/cmd.go:66
 msgid "Don't ask for confirmation when purging volume"
-msgstr ""
+msgstr "Non chiedere conferma durante lo spurgo del volume"
 
 #: mgradm/cmd/backup/db/cmd.go:67
-#, fuzzy
 msgid "Also remove the volume"
-msgstr "mancata creazione della directory temporanea: %s"
+msgstr "Rimuovere anche il volume"
 
 #: mgradm/cmd/backup/db/cmd.go:76
 msgid "Check WAL based database backup status"
-msgstr ""
+msgstr "Controlla lo stato di backup del database basato su WAL"
 
 #: mgradm/cmd/backup/db/cmd.go:88
-#, fuzzy
-#| msgid "Create backup"
 msgid "Restore database backup"
-msgstr "Crea backup"
+msgstr "Ripristina il backup del database"
 
 #: mgradm/cmd/backup/db/cmd.go:93
 msgid "Don't ask for confirmation"
-msgstr ""
+msgstr "Non chiedere conferma"
 
 #: mgradm/cmd/backup/db/disable.go:17
 msgid "Disabling DB backup"
-msgstr ""
+msgstr "Disattivazione del backup del database"
 
 #: mgradm/cmd/backup/db/disable.go:24 mgradm/cmd/backup/db/enable.go:34
 msgid "Database service needs to be restarted to reload backup configurations, continue"
-msgstr ""
+msgstr "Il servizio del database deve essere riavviato per ricaricare le configurazioni di backup, continuare"
 
 #: mgradm/cmd/backup/db/disable.go:26
 #, fuzzy
@@ -295,7 +292,7 @@ msgstr "Backup della configurazione di Podman"
 
 #: mgradm/cmd/backup/db/disable.go:45
 msgid "Backup volume will be removed, continue?"
-msgstr ""
+msgstr "Il volume di backup verrà rimosso, continuare?"
 
 #: mgradm/cmd/backup/db/disable.go:47
 msgid "Aborting volume purge"
@@ -309,17 +306,15 @@ msgstr ""
 #: mgradm/cmd/backup/db/disable.go:58 mgradm/cmd/backup/db/enable.go:66
 #: mgradm/cmd/backup/db/rebase.go:28
 msgid "Starting database…"
-msgstr ""
+msgstr "Avvio del database…"
 
 #: mgradm/cmd/backup/db/enable.go:22
-#, fuzzy
-#| msgid "Create backup"
 msgid "Enable DB backup"
-msgstr "Crea backup"
+msgstr "Abilita il backup del DB"
 
 #: mgradm/cmd/backup/db/enable.go:25
 msgid "backup is already configured. Use --force to reconfigure"
-msgstr ""
+msgstr "Il backup è già configurato. Usa --force per riconfigurarlo"
 
 #: mgradm/cmd/backup/db/enable.go:36
 #, fuzzy
@@ -333,34 +328,32 @@ msgid "Continuous Archiving backup configured. Backup target volume is '%s'"
 msgstr ""
 
 #: mgradm/cmd/backup/db/enable.go:98
-#, fuzzy
 msgid "failed to generate postgresql backup script"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr "Impossibile generare lo script di backup postgresql"
 
 #: mgradm/cmd/backup/db/rebase.go:17
 msgid "Rebasing postgres WAL backup to new basebackup"
-msgstr ""
+msgstr "Ripristino del backup di Postgres WAL al nuovo backup di base"
 
 #: mgradm/cmd/backup/db/rebase.go:20
 msgid "database backup is not correctly configured: %w"
 msgstr ""
 
 #: mgradm/cmd/backup/db/rebase.go:42
-#, fuzzy
 msgid "Stopping database…"
-msgstr "impossibile aggiornare: %s"
+msgstr "Arresto del database…"
 
 #: mgradm/cmd/backup/db/restore.go:25
 msgid "Restoring DB backup"
-msgstr ""
+msgstr "Ripristino del backup del DB"
 
 #: mgradm/cmd/backup/db/restore.go:28
 msgid "Restoring from backup is a destructive operation. Proceed"
-msgstr ""
+msgstr "Il ripristino da backup è un’operazione distruttiva. Procedere"
 
 #: mgradm/cmd/backup/db/restore.go:29
 msgid "Aborting"
-msgstr ""
+msgstr "Interruzione"
 
 #: mgradm/cmd/backup/db/restore.go:33
 #, fuzzy
@@ -369,37 +362,32 @@ msgid "Stopping database service…"
 msgstr "Interruzione del servizio server"
 
 #: mgradm/cmd/backup/db/restore.go:40
-#, fuzzy
 msgid "failed to determine database image"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr "impossibile determinare l'immagine del database"
 
 #: mgradm/cmd/backup/db/restore.go:56
-#, fuzzy
 msgid "failed to generate postgresql restore script"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr "impossibile generare lo script di ripristino postgresql"
 
 #: mgradm/cmd/backup/db/restore.go:59
 msgid "Restoring base backup…"
-msgstr ""
+msgstr "Ripristino del backup di base…"
 
 #: mgradm/cmd/backup/db/restore.go:73
-#, fuzzy
 msgid "Starting database service…"
-msgstr "impossibile abilitare il servizio: %s"
+msgstr "Avvio del servizio di database…"
 
 #: mgradm/cmd/backup/db/restore.go:78
 msgid "Base backup restore complete. Database is recovering."
-msgstr ""
+msgstr "Ripristino del backup di base completato. Il database è in fase di ripristino."
 
 #: mgradm/cmd/backup/db/restore.go:88 mgradm/cmd/backup/db/restore.go:101
-#, fuzzy
 msgid "Database is restored."
-msgstr "impossibile aggiornare: %s"
+msgstr "Il database è stato ripristinato."
 
 #: mgradm/cmd/backup/db/restore.go:91
-#, fuzzy
 msgid "failed to check database recovery status"
-msgstr "mancata identificazione dell'immagine: %s"
+msgstr "impossibile controllare lo stato di ripristino del database"
 
 #: mgradm/cmd/backup/db/restore.go:95
 msgid " Database is recovering… (use Ctrl-C to interrupt waiting)"
