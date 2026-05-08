@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
+"POT-Creation-Date: 2026-04-28 17:43+0200\n"
 "PO-Revision-Date: 2025-10-19 13:59+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/de/>\n"
@@ -921,39 +921,13 @@ msgstr ""
 msgid "failed retrieving namespace"
 msgstr ""
 
-#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
+#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:41
 msgid "inspect command failed"
 msgstr ""
 
-#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:64
+#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:45
 msgid "cannot print inspect result"
 msgstr ""
-
-#: mgradm/cmd/inspect/podman.go:26
-#, fuzzy
-#| msgid "failed to compute image URL"
-msgid "failed to determine server image"
-msgstr "Abbild-URL konnte nicht berechnet werden"
-
-#: mgradm/cmd/inspect/podman.go:34
-msgid "failed to find the image of the currently running server container"
-msgstr ""
-
-#: mgradm/cmd/inspect/podman.go:41
-#, fuzzy
-#| msgid "failed to compute image URL"
-msgid "failed to determine pgsql image"
-msgstr "Abbild-URL konnte nicht berechnet werden"
-
-#: mgradm/cmd/inspect/podman.go:49
-msgid "failed to find the image of the currently running db container"
-msgstr ""
-
-#: mgradm/cmd/inspect/podman.go:83
-#, fuzzy, javascript-format
-#| msgid "failed to compute image URL"
-msgid "failed to login to %s"
-msgstr "Abbild-URL konnte nicht berechnet werden"
 
 #: mgradm/cmd/install/install.go:20 mgradm/cmd/install/install.go:21
 msgid "Install a new server"
@@ -1625,13 +1599,13 @@ msgstr ""
 msgid "Setting up confidential computing attestation service"
 msgstr ""
 
-#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:120
 #: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
 #: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr ""
 
-#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:127
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr ""
@@ -2490,6 +2464,21 @@ msgstr ""
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr ""
+
+#, fuzzy
+#~| msgid "failed to compute image URL"
+#~ msgid "failed to determine server image"
+#~ msgstr "Abbild-URL konnte nicht berechnet werden"
+
+#, fuzzy
+#~| msgid "failed to compute image URL"
+#~ msgid "failed to determine pgsql image"
+#~ msgstr "Abbild-URL konnte nicht berechnet werden"
+
+#, fuzzy, javascript-format
+#~| msgid "failed to compute image URL"
+#~ msgid "failed to login to %s"
+#~ msgstr "Abbild-URL konnte nicht berechnet werden"
 
 #~ msgid "Register"
 #~ msgstr "Registrieren"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
+"POT-Creation-Date: 2026-04-28 17:43+0200\n"
 "PO-Revision-Date: 2026-04-20 09:04+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/zh_CN/>\n"
@@ -978,34 +978,13 @@ msgstr "找不到目前正在运行的服务器容器的映像：%s"
 msgid "failed retrieving namespace"
 msgstr "无法检索名称空间"
 
-#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
+#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:41
 msgid "inspect command failed"
 msgstr "检查命令失败"
 
-#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:64
+#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:45
 msgid "cannot print inspect result"
 msgstr "无法列显检查结果"
-
-#: mgradm/cmd/inspect/podman.go:26
-msgid "failed to determine server image"
-msgstr "无法确定服务器映像"
-
-#: mgradm/cmd/inspect/podman.go:34
-msgid "failed to find the image of the currently running server container"
-msgstr "找不到目前正在运行的服务器容器的映像"
-
-#: mgradm/cmd/inspect/podman.go:41
-msgid "failed to determine pgsql image"
-msgstr "无法确定 pgsql 映像"
-
-#: mgradm/cmd/inspect/podman.go:49
-msgid "failed to find the image of the currently running db container"
-msgstr "找不到目前正在运行的数据库容器的映像"
-
-#: mgradm/cmd/inspect/podman.go:83
-#, javascript-format
-msgid "failed to login to %s"
-msgstr "无法登录 %s"
 
 #: mgradm/cmd/install/install.go:20 mgradm/cmd/install/install.go:21
 msgid "Install a new server"
@@ -1750,13 +1729,13 @@ msgstr "升级机密计算服务时出错。"
 msgid "Setting up confidential computing attestation service"
 msgstr "设置机密计算认证服务"
 
-#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:120
 #: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
 #: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr "无法生成 systemd 服务单元文件"
 
-#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:127
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "无法生成 systemd 配置文件"
@@ -2605,6 +2584,22 @@ msgstr "不是有效的电子邮件地址"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "无法显示设置脚本"
+
+#~ msgid "failed to determine server image"
+#~ msgstr "无法确定服务器映像"
+
+#~ msgid "failed to find the image of the currently running server container"
+#~ msgstr "找不到目前正在运行的服务器容器的映像"
+
+#~ msgid "failed to determine pgsql image"
+#~ msgstr "无法确定 pgsql 映像"
+
+#~ msgid "failed to find the image of the currently running db container"
+#~ msgstr "找不到目前正在运行的数据库容器的映像"
+
+#, javascript-format
+#~ msgid "failed to login to %s"
+#~ msgstr "无法登录 %s"
 
 #~ msgid "Hub management"
 #~ msgstr "Hub 管理"

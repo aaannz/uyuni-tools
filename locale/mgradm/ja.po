@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
+"POT-Creation-Date: 2026-04-28 17:43+0200\n"
 "PO-Revision-Date: 2026-01-19 09:04+0000\n"
 "Last-Translator: Carina Hagl <vistatec_pm@sunflare.co.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ja/>\n"
@@ -978,34 +978,13 @@ msgstr "現在実行中のサーバコンテナのイメージが見つかりま
 msgid "failed retrieving namespace"
 msgstr "ネームスペースの取得に失敗しました"
 
-#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
+#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:41
 msgid "inspect command failed"
 msgstr "検査コマンドが失敗しました"
 
-#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:64
+#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:45
 msgid "cannot print inspect result"
 msgstr "検査結果を出力できません"
-
-#: mgradm/cmd/inspect/podman.go:26
-msgid "failed to determine server image"
-msgstr "サーバイメージの決定に失敗しました"
-
-#: mgradm/cmd/inspect/podman.go:34
-msgid "failed to find the image of the currently running server container"
-msgstr "現在実行中のサーバコンテナのイメージが見つかりませんでした"
-
-#: mgradm/cmd/inspect/podman.go:41
-msgid "failed to determine pgsql image"
-msgstr "pgsqlイメージの決定に失敗しました"
-
-#: mgradm/cmd/inspect/podman.go:49
-msgid "failed to find the image of the currently running db container"
-msgstr "現在実行中のdbコンテナのイメージが見つかりませんでした"
-
-#: mgradm/cmd/inspect/podman.go:83
-#, javascript-format
-msgid "failed to login to %s"
-msgstr "%s へのログインに失敗しました"
 
 #: mgradm/cmd/install/install.go:20 mgradm/cmd/install/install.go:21
 msgid "Install a new server"
@@ -1750,13 +1729,13 @@ msgstr "コンフィデンシャルコンピューティングサービスのア
 msgid "Setting up confidential computing attestation service"
 msgstr "コンフィデンシャルコンピューティング検証サービスの設定"
 
-#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:120
 #: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
 #: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr "systemdサービスユニットファイルの生成に失敗しました"
 
-#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:127
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "systemd confファイルを生成できません"
@@ -2605,6 +2584,22 @@ msgstr "有効な電子メールアドレスではありません"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "セットアップスクリプトのレンダリングに失敗しました"
+
+#~ msgid "failed to determine server image"
+#~ msgstr "サーバイメージの決定に失敗しました"
+
+#~ msgid "failed to find the image of the currently running server container"
+#~ msgstr "現在実行中のサーバコンテナのイメージが見つかりませんでした"
+
+#~ msgid "failed to determine pgsql image"
+#~ msgstr "pgsqlイメージの決定に失敗しました"
+
+#~ msgid "failed to find the image of the currently running db container"
+#~ msgstr "現在実行中のdbコンテナのイメージが見つかりませんでした"
+
+#, javascript-format
+#~ msgid "failed to login to %s"
+#~ msgstr "%s へのログインに失敗しました"
 
 #~ msgid "Hub management"
 #~ msgstr "ハブ管理"
