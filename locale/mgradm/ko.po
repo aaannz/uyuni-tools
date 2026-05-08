@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
-"PO-Revision-Date: 2026-01-21 01:04+0000\n"
+"POT-Creation-Date: 2026-04-28 17:43+0200\n"
+"PO-Revision-Date: 2026-04-22 08:04+0000\n"
 "Last-Translator: Seeun Lee <selee@e4net.net>\n"
 "Language-Team: Korean <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/ko/>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #: mgradm/cmd/backup/backup.go:29
 msgid "Create backup"
@@ -978,34 +978,13 @@ msgstr "현재 실행 중인 서버 컨테이너의 이미지 찾기 실패: %s"
 msgid "failed retrieving namespace"
 msgstr "네임스페이스를 검색하지 못함"
 
-#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
+#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:41
 msgid "inspect command failed"
 msgstr "검사 명령 실패"
 
-#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:64
+#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:45
 msgid "cannot print inspect result"
 msgstr "검사 결과를 인쇄하지 못함"
-
-#: mgradm/cmd/inspect/podman.go:26
-msgid "failed to determine server image"
-msgstr "서버 이미지를 확인하지 못함"
-
-#: mgradm/cmd/inspect/podman.go:34
-msgid "failed to find the image of the currently running server container"
-msgstr "현재 실행 중인 서버 컨테이너의 이미지를 찾지 못함"
-
-#: mgradm/cmd/inspect/podman.go:41
-msgid "failed to determine pgsql image"
-msgstr "pgsql 이미지를 확인하지 못함"
-
-#: mgradm/cmd/inspect/podman.go:49
-msgid "failed to find the image of the currently running db container"
-msgstr "현재 실행 중인 db 컨테이너의 이미지를 찾지 못함"
-
-#: mgradm/cmd/inspect/podman.go:83
-#, javascript-format
-msgid "failed to login to %s"
-msgstr "%s에 로그인하지 못함"
 
 #: mgradm/cmd/install/install.go:20 mgradm/cmd/install/install.go:21
 msgid "Install a new server"
@@ -1748,13 +1727,13 @@ msgstr "기밀 컴퓨팅 서비스를 업그레이드하는 중 오류가 발생
 msgid "Setting up confidential computing attestation service"
 msgstr "기밀 컴퓨팅 증명 서비스 설정"
 
-#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:120
 #: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
 #: mgradm/shared/saline/saline.go:93
 msgid "failed to generate systemd service unit file"
 msgstr "systemd 서비스 단위 파일을 생성하지 못함"
 
-#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:127
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "systemd conf 파일을 생성할 수 없음"
@@ -2603,6 +2582,22 @@ msgstr "유효한 전자 메일 주소 아님"
 #: mgradm/shared/utils/setup.go:85
 msgid "failed to render setup script"
 msgstr "설치 스크립트를 렌더링하지 못함"
+
+#~ msgid "failed to determine server image"
+#~ msgstr "서버 이미지를 확인하지 못함"
+
+#~ msgid "failed to find the image of the currently running server container"
+#~ msgstr "현재 실행 중인 서버 컨테이너의 이미지를 찾지 못함"
+
+#~ msgid "failed to determine pgsql image"
+#~ msgstr "pgsql 이미지를 확인하지 못함"
+
+#~ msgid "failed to find the image of the currently running db container"
+#~ msgstr "현재 실행 중인 db 컨테이너의 이미지를 찾지 못함"
+
+#, javascript-format
+#~ msgid "failed to login to %s"
+#~ msgstr "%s에 로그인하지 못함"
 
 #~ msgid "Hub management"
 #~ msgstr "허브 관리"

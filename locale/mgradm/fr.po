@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
+"POT-Creation-Date: 2026-04-28 17:43+0200\n"
 "PO-Revision-Date: 2025-09-03 14:59+0000\n"
 "Last-Translator: David D <dadu042@mailo.com>\n"
 "Language-Team: French <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/fr/>\n"
@@ -964,40 +964,15 @@ msgstr "impossible de déterminer l'image du conteneur actuel du serveur: %s"
 msgid "failed retrieving namespace"
 msgstr "échec de la récupération de l’espace de noms"
 
-#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:60
+#: mgradm/cmd/inspect/kubernetes.go:57 mgradm/cmd/inspect/podman.go:41
 #, fuzzy
 msgid "inspect command failed"
 msgstr "la commande inspect a échoué: %s"
 
-#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:64
+#: mgradm/cmd/inspect/kubernetes.go:62 mgradm/cmd/inspect/podman.go:45
 #, fuzzy
 msgid "cannot print inspect result"
 msgstr "impossible d'afficher le résultat de l'inspection: %s"
-
-#: mgradm/cmd/inspect/podman.go:26
-#, fuzzy
-msgid "failed to determine server image"
-msgstr "impossible de déterminer l'image: %s"
-
-#: mgradm/cmd/inspect/podman.go:34
-#, fuzzy
-msgid "failed to find the image of the currently running server container"
-msgstr "impossible de déterminer l'image du conteneur actuel du serveur: %s"
-
-#: mgradm/cmd/inspect/podman.go:41
-#, fuzzy
-msgid "failed to determine pgsql image"
-msgstr "impossible de déterminer l'image: %s"
-
-#: mgradm/cmd/inspect/podman.go:49
-#, fuzzy
-msgid "failed to find the image of the currently running db container"
-msgstr "impossible de déterminer l'image du conteneur actuel du serveur: %s"
-
-#: mgradm/cmd/inspect/podman.go:83
-#, fuzzy, javascript-format
-msgid "failed to login to %s"
-msgstr "impossible de générer %s"
 
 #: mgradm/cmd/install/install.go:20 mgradm/cmd/install/install.go:21
 msgid "Install a new server"
@@ -1747,14 +1722,14 @@ msgstr ""
 msgid "Setting up confidential computing attestation service"
 msgstr ""
 
-#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:116
+#: mgradm/shared/coco/coco.go:100 mgradm/shared/hub/xmlrpcapi.go:120
 #: mgradm/shared/pgsql/pgsql.go:119 mgradm/shared/podman/podman.go:77
 #: mgradm/shared/saline/saline.go:93
 #, fuzzy
 msgid "failed to generate systemd service unit file"
 msgstr "impossible de générer le fichier du service systemd: %s"
 
-#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:123
+#: mgradm/shared/coco/coco.go:110 mgradm/shared/hub/xmlrpcapi.go:127
 #: mgradm/shared/podman/podman.go:105 mgradm/shared/saline/saline.go:101
 msgid "cannot generate systemd conf file"
 msgstr "ne peut pas générer le fichier conf systemd"
@@ -2696,6 +2671,26 @@ msgstr "Pas une adresse email valide"
 #| msgid "Failed to generate setup script"
 msgid "failed to render setup script"
 msgstr "Impossible de générer le script d'installation"
+
+#, fuzzy
+#~ msgid "failed to determine server image"
+#~ msgstr "impossible de déterminer l'image: %s"
+
+#, fuzzy
+#~ msgid "failed to find the image of the currently running server container"
+#~ msgstr "impossible de déterminer l'image du conteneur actuel du serveur: %s"
+
+#, fuzzy
+#~ msgid "failed to determine pgsql image"
+#~ msgstr "impossible de déterminer l'image: %s"
+
+#, fuzzy
+#~ msgid "failed to find the image of the currently running db container"
+#~ msgstr "impossible de déterminer l'image du conteneur actuel du serveur: %s"
+
+#, fuzzy, javascript-format
+#~ msgid "failed to login to %s"
+#~ msgstr "impossible de générer %s"
 
 #, fuzzy
 #~ msgid "failed to connect to the Hub server"
