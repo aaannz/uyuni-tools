@@ -21,37 +21,18 @@ func podmanInspect(
 	_ *cobra.Command,
 	_ []string,
 ) error {
-	serverImage, err := utils.ComputeImage("", utils.DefaultTag, flags.Image)
-	if err != nil && len(serverImage) > 0 {
-		return utils.Errorf(err, L("failed to determine server image"))
+	hostData, err := podman.InspectHost()
+	if err != nil {
+		return err
 	}
 
-	if len(serverImage) <= 0 {
-		log.Debug().Msg("Use already deployed server image")
-
-		serverImage, err = podman.GetRunningImage(podman.ServerContainerName)
-		if err != nil {
-			return utils.Errorf(err, L("failed to find the image of the currently running server container"))
-		}
+	authFile, cleaner, err := podman.PodmanLogin(hostData, flags.Image.Registry, flags.SCC)
+	if err != nil {
+		return err
 	}
+	defer cleaner()
 
-	log.Debug().Msgf("Wanted database image %[1]s", flags.Pgsql.Image.Name)
-	pgsqlImage, err := utils.ComputeImage("", utils.DefaultTag, flags.Pgsql.Image)
-	if err != nil && len(pgsqlImage) > 0 {
-		return utils.Errorf(err, L("failed to determine pgsql image"))
-	}
-
-	if len(pgsqlImage) <= 0 {
-		log.Debug().Msg("Use already deployed database image")
-
-		pgsqlImage, err = podman.GetRunningImage(podman.DBContainerName)
-		if err != nil {
-			return utils.Errorf(err, L("failed to find the image of the currently running db container"))
-		}
-	}
-
-	preparedServerImage, preparedDBImage, err :=
-		prepareImages(serverImage, pgsqlImage, flags.Image.PullPolicy, flags.Image.Registry, flags.SCC)
+	preparedServerImage, preparedDBImage, err := podman.PrepareImages(authFile, flags.Image, flags.Pgsql)
 	if err != nil {
 		return err
 	}
@@ -68,30 +49,4 @@ func podmanInspect(
 	log.Info().Msgf(outputString)
 
 	return nil
-}
-
-func prepareImages(
-	server string, pgsql string, pullPolicy string, registry types.Registry, scc types.SCCCredentials,
-) (serverImage string, dbImage string, err error) {
-	hostData, err := podman.InspectHost()
-	if err != nil {
-		return "", "", err
-	}
-
-	authFile, cleaner, err := podman.PodmanLogin(hostData, registry, scc)
-	if err != nil {
-		return "", "", utils.Errorf(err, L("failed to login to %s"), registry.Host)
-	}
-	defer cleaner()
-
-	serverImage, err = podman.PrepareImage(authFile, server, pullPolicy, true)
-	if err != nil {
-		return "", "", err
-	}
-
-	dbImage, err = podman.PrepareImage(authFile, pgsql, pullPolicy, true)
-	if err != nil {
-		return serverImage, "", err
-	}
-	return serverImage, dbImage, nil
 }
