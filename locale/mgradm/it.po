@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-28 17:43+0200\n"
 "PO-Revision-Date: 2026-05-12 11:04+0000\n"
-"Last-Translator: Lorenzo Proietti <lorenzoproietti110706@gmail.com>\n"
+"Last-Translator: Alessio Matozzi <alessio.matozzi@studenti.unipg.it>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-mgradm-5-1/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -2320,12 +2320,12 @@ msgstr ""
 #: mgradm/shared/utils/cmd_utils.go:128
 #, javascript-format
 msgid "Image for %s container"
-msgstr ""
+msgstr "Immagine per il contenitore %s"
 
 #: mgradm/shared/utils/cmd_utils.go:130
 #, javascript-format
 msgid "Tag for %s container, overrides the global value if set"
-msgstr ""
+msgstr "Tag per il contenitore %s, sovrascrive il valore globale se impostato"
 
 #: mgradm/shared/utils/cmd_utils.go:140
 msgid "Report database name"
