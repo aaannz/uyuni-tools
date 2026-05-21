@@ -1,0 +1,1 @@
+- Remove waitForTraefik function (bsc#1261902)
