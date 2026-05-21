@@ -73,8 +73,6 @@ func shortenName(name string) string {
 	return short
 }
 
-var newRunner = utils.NewRunner
-
 // UninstallK3sTraefikConfig uninstall K3s Traefik configuration.
 func UninstallK3sTraefikConfig(dryRun bool) {
 	// Write a blank file first to get traefik to be reinstalled
