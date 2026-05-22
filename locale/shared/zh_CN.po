@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: shared/kubernetes/k3s.go:133
+#: shared/kubernetes/k3s.go:112
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 13:47+0100\n"
+"POT-Creation-Date: 2026-04-15 17:19+0200\n"
 "PO-Revision-Date: 2025-06-12 08:59+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/uyuni/uyuni-tools-shared/zh_CN/>\n"
@@ -346,47 +346,41 @@ msgstr "无法运行 helm %s"
 msgid "failed to parse the inspected data"
 msgstr "无法分析检查的数据"
 
-#: shared/kubernetes/k3s.go:27
+#: shared/kubernetes/k3s.go:25
 msgid "Installing K3s Traefik configuration"
 msgstr "正在安装 K3s Traefik 配置"
 
-#: shared/kubernetes/k3s.go:44
+#: shared/kubernetes/k3s.go:42
 msgid "Failed to write Traefik configuration"
 msgstr "无法写入 Traefik 配置"
 
-#: shared/kubernetes/k3s.go:81
-msgid "Waiting for Traefik to be reloaded"
-msgstr "正在等待重新加载 Traefik"
-
-#: shared/kubernetes/k3s.go:93
-msgid "Failed to reload Traefik"
-msgstr "无法重新加载 Traefik"
-
-#: shared/kubernetes/k3s.go:100
+#: shared/kubernetes/k3s.go:82
 msgid "Reinstalling Traefik without additionnal configuration"
 msgstr "重新安装 Traefik 而不使用额外的配置"
 
-#: shared/kubernetes/k3s.go:103
+#: shared/kubernetes/k3s.go:85
 msgid "failed to write empty traefik configuration"
 msgstr "无法写入空 Traefik 配置"
 
-#: shared/kubernetes/k3s.go:107
-msgid "failed to uninstall traefik configuration"
-msgstr "无法卸装 Traefik 配置"
+#: shared/kubernetes/k3s.go:87
+#, fuzzy
+#| msgid "failed to write empty traefik configuration"
+msgid "Wrote empty Traefik configuration"
+msgstr "无法写入空 Traefik 配置"
 
-#: shared/kubernetes/k3s.go:111
+#: shared/kubernetes/k3s.go:90
 msgid "Would reinstall Traefik without additionnal configuration"
 msgstr "将重新安装 Traefik 而不使用额外的配置"
 
-#: shared/kubernetes/k3s.go:121
+#: shared/kubernetes/k3s.go:100
 msgid "failed to read the traefik configuration"
 msgstr "无法读取 Traefik 配置"
 
-#: shared/kubernetes/k3s.go:125
+#: shared/kubernetes/k3s.go:104
 msgid "traefik configuration file doesn't contain the helm chart version"
 msgstr "Traefik 配置文件不包含 helm 图表版本"
 
-#: shared/kubernetes/k3s.go:128
+#: shared/kubernetes/k3s.go:107
 msgid "failed to find traefik helm chart version"
 msgstr "找不到 Traefik helm 图表版本"
 
@@ -1860,6 +1854,15 @@ msgstr "Saline"
 #: shared/utils/uyuniservices.go:46
 msgid "Database"
 msgstr "数据库"
+
+#~ msgid "Waiting for Traefik to be reloaded"
+#~ msgstr "正在等待重新加载 Traefik"
+
+#~ msgid "Failed to reload Traefik"
+#~ msgstr "无法重新加载 Traefik"
+
+#~ msgid "failed to uninstall traefik configuration"
+#~ msgstr "无法卸装 Traefik 配置"
 
 #~ msgid "failed to find container supportconfig tarball from command output"
 #~ msgstr "在命令输出中找不到容器 supportconfig Tar 包"
