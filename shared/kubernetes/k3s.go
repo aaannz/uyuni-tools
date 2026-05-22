@@ -10,9 +10,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
-	"time"
 
-	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	. "github.com/uyuni-project/uyuni-tools/shared/l10n"
 	"github.com/uyuni-project/uyuni-tools/shared/types"
@@ -44,8 +42,8 @@ func InstallK3sTraefikConfig(ports []types.PortMap) error {
 		return utils.Errorf(err, L("Failed to write Traefik configuration"))
 	}
 
-	// Wait for traefik to be back
-	return waitForTraefik()
+	// Writing the manifest triggers Traefik reconciliation asynchronously; this function does not wait for readiness.
+	return nil
 }
 
 // GetTraefikEndpointName computes the traefik endpoint name from the service and port names.
@@ -77,22 +75,6 @@ func shortenName(name string) string {
 
 var newRunner = utils.NewRunner
 
-func waitForTraefik() error {
-	log.Info().Msg(L("Waiting for Traefik to be reloaded"))
-	for i := 0; i < 120; i++ {
-		out, err := newRunner("kubectl", "get", "job", "-n", "kube-system",
-			"-o", "jsonpath={.status.completionTime}", "helm-install-traefik").Log(zerolog.TraceLevel).Exec()
-		if err == nil {
-			completionTime, err := time.Parse(time.RFC3339, string(out))
-			if err == nil && time.Since(completionTime.Local()).Seconds() < 60 {
-				return nil
-			}
-		}
-		time.Sleep(1 * time.Second)
-	}
-	return errors.New(L("Failed to reload Traefik"))
-}
-
 // UninstallK3sTraefikConfig uninstall K3s Traefik configuration.
 func UninstallK3sTraefikConfig(dryRun bool) {
 	// Write a blank file first to get traefik to be reinstalled
@@ -102,10 +84,7 @@ func UninstallK3sTraefikConfig(dryRun bool) {
 		if err != nil {
 			log.Error().Err(err).Msg(L("failed to write empty traefik configuration"))
 		} else {
-			// Wait for traefik to be back
-			if err := waitForTraefik(); err != nil {
-				log.Error().Err(err).Msg(L("failed to uninstall traefik configuration"))
-			}
+			log.Info().Msg(L("Wrote empty Traefik configuration"))
 		}
 	} else {
 		log.Info().Msg(L("Would reinstall Traefik without additionnal configuration"))
