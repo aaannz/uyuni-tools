@@ -1,4 +1,17 @@
 -------------------------------------------------------------------
+Wed May 27 12:45:30 CEST 2026 - marina.latini@suse.com
+
+- version 5.1.28-0
+  * Remove waitForTraefik function (bsc#1261902)
+  * Fix inspect: missing registry for db image (bsc#1259739)
+  * Preserve hub replicas during upgrade (bsc#1262708)
+  * Stop automatically unhealthy container
+  * Ignore spacewalk-service stop return code.
+  * Use correct CA for Report DB (bsc#1260806)
+  * Do not call podman healthcheck run to wait for pods to be ready
+    (bsc#1266012)
+
+-------------------------------------------------------------------
 Mon Apr 27 10:21:50 CEST 2026 - marina.latini@suse.com
 
 - version 5.1.27-0
