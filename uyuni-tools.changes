@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Jun 16 23:07:49 CEST 2026 - marina.latini@suse.com
+
+- version 5.1.29-0
+  * Check backup status only after database is started (bsc#1262492)
+
+-------------------------------------------------------------------
 Wed May 27 12:45:30 CEST 2026 - marina.latini@suse.com
 
 - version 5.1.28-0
